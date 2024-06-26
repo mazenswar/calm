@@ -1,0 +1,29 @@
+@use "../util" as u;
+footer {
+	border-top: 10px solid #eee;
+	width: 100%;
+}
+.bottom-banner {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	@include u.breakpoint-down(medium) {
+		flex-direction: column;
+	}
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	span {
+		display: block;
+	}
+}
+
+.copyright {
+	width: 100%;
+	background-color: #eee;
+	padding: 5% 0;
+	display: flex;
+	justify-content: center;
+}

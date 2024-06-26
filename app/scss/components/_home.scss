@@ -1,0 +1,85 @@
+@use "../util" as u;
+
+#home {
+	.quote-section {
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: ivory;
+	}
+	.call-to-action {
+		background: linear-gradient(
+			3deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(82, 72, 159, 1) 0%,
+			rgba(194, 102, 167, 1) 99%
+		);
+		color: ivory;
+	}
+	.home-bio {
+		background: linear-gradient(
+			180deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(82, 72, 159, 1) 0%,
+			rgba(194, 102, 167, 1) 99%
+		);
+		color: ivory;
+	}
+	.link-button-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// background-color: var(--six);
+		// color: ivory;
+	}
+	.therapy-tools {
+		.quiz-links {
+			padding: 5%;
+			display: flex;
+			justify-content: space-evenly;
+			@include u.breakpoint-down(medium) {
+				flex-direction: column;
+			}
+		}
+	}
+	// .home-specialities {
+	// 	background-color: var(--six);
+	// 	color: var(--one);
+	// }
+	.home-get-started,
+	.call-to-action,
+	.quote-section {
+		padding: 5% 0;
+		display: flex;
+		flex-wrap: wrap;
+		height: fit-content;
+		h1 {
+			width: 100%;
+		}
+		h2 {
+			padding: 0 10%;
+		}
+		.text,
+		.image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.text {
+			h2 {
+				padding: 0;
+			}
+			padding: 0 5%;
+			width: 50%;
+			flex-direction: column;
+			align-items: flex-start;
+			// background: red;
+		}
+		.image-container {
+			// background: blue;
+			width: 50%;
+			img {
+				width: 40em;
+			}
+		}
+	}
+}

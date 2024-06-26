@@ -1,0 +1,20 @@
+main {
+	// padding: 5em 0;
+	width: clamp(200px, 100%, 3200px);
+	margin: 0 auto;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	padding: clamp(20px, 7%, 200px);
+	width: 100%;
+
+	// border-bottom: 5px solid #eee;
+	// display: flex;
+	// flex-direction: column;+
+	// justify-content: center;
+}
