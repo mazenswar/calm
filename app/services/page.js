@@ -1,33 +1,27 @@
 import React from "react";
-import { services, specialities } from "../data/services";
+import HowToUseInsurance from "./HowToUseInsurance";
 
 function ServicesPage() {
 	return (
 		<>
 			<main id="services">
-				<section>
+				<section className="fees-container">
 					<h1 className="center-title">
 						Online Therapy Fees (sliding scale available)
 					</h1>
-					<div className="text">
-						<h3>45-minute session: $220</h3>
-						<h3>One-time 75-minute intake session: $365</h3>
+					<div className="fees">
+						<div className="fee-container">
+							<h3>45-minute session</h3>
+							<h2>$220</h2>
+						</div>
+						<div className="fee-container">
+							<h3>One-time 75-minute intake session</h3>
+							<h2>$365</h2>
+						</div>
 					</div>
 				</section>
 
-				<section className="specialities-section">
-					<h1 className="center-title">Areas of Speciality</h1>
-					<div className="text">
-						{specialities.map((spec) => {
-							return (
-								<>
-									<h3 key={`speciality-${spec.title}`}>{spec.title}</h3>
-									<p className="linebreak">{spec.summary}</p>
-								</>
-							);
-						})}
-					</div>
-				</section>
+				<HowToUseInsurance />
 			</main>
 		</>
 	);

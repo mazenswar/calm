@@ -1,24 +1,46 @@
 import Image from "next/image";
 import React from "react";
 import loving from "./assets/loving.svg";
+import balloon from "./assets/balloon.jpg";
+import ScheduleButton from "../components/ScheduleButton";
 
 function CallToAction() {
 	return (
 		<section className="call-to-action linebreak">
 			<h1 className="center-title">Begin Your Journey to Well-being Today</h1>
+
 			<div className="text">
-				<h2 className="linebreak">
-					Feeling overwhelmed or stressed? {"\n"}Take the first step towards a
-					healthier, happier you.
-					{"\n"}Our compassionate and experienced therapists are here to support
-					you on your path to mental wellness.
-					{"\n"}Schedule your free consultation now and start your journey to a
-					brighter future.
-				</h2>
+				<h4 className="linebreak subtext">
+					Are you tired of feeling stuck?{"\n\n"} You feel overwhelmed by
+					stress, anxiety, depression or self loathing making everyday tasks
+					feel like a challenge. {"\n\n"} These struggles impact your health,
+					relationships, and goals and overall quality of life. {"\n\n"} You may
+					experience frustration, guilt, or hopelessness and despite your best
+					efforts, the problems persist, leaving you wondering why it{"'"}s so
+					hard to feel better.{"\n\n"}
+				</h4>
+				<h3 className="linebreak">
+					<strong>
+						There{"'"}s nothing wrong with you. You
+						{"'"}re doing your best with the resources you have. {"\n\n"}With
+						compassionate support and effective strategies, you can overcome
+						these mental health challenges. Contact us today to start your
+						journey towards a more fulfilling life.
+					</strong>
+				</h3>
 			</div>
 			<div className="image-container">
-				<Image src={loving} alt="loving" />
+				<div
+					className="image"
+					style={{
+						backgroundImage: `url(${balloon.src})`,
+					}}
+				></div>
 			</div>
+			<section className="link-button-section">
+				<h2>Online Therapy in NY and PA</h2>
+				<ScheduleButton />
+			</section>
 		</section>
 	);
 }

@@ -1,0 +1,28 @@
+#resources {
+	color: var(--three);
+	.emergency-text {
+		.link {
+			color: rgb(185, 0, 0);
+			font-weight: 700;
+		}
+	}
+	.therapy-tools {
+		// box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+		box-shadow: rgba(0, 0, 0, 0.45) 1px 1px 40px 0px inset;
+		background: linear-gradient(
+			180deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(82, 72, 159, 1) 0%,
+			rgba(194, 102, 167, 1) 150%
+		);
+		color: var(--six);
+		.subtext {
+			padding: 0 1.5em;
+		}
+
+		.subtext,
+		p {
+			color: ivory;
+		}
+	}
+}

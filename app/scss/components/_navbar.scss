@@ -10,7 +10,7 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 	// background-color: var(--two);
-	// color: ivory;
+	color: var(--three);
 
 	h1 {
 		margin: 0;
@@ -62,7 +62,7 @@ nav {
 					width: 0%;
 					height: 1.7px;
 					border-radius: 99px;
-					background: red;
+					background: var(--five);
 					position: absolute;
 					bottom: 0;
 					left: 0;
@@ -177,7 +177,7 @@ nav {
 				a,
 				a:visited {
 					&::after {
-						background: var(--tan);
+						background: var(--five);
 					}
 				}
 			}

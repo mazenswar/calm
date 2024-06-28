@@ -1,10 +1,20 @@
 #contact {
 	.booking-form {
+		h1,
+		label {
+			color: var(--three);
+			font-weight: 500;
+		}
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		a[href^="tel:"] {
+			color: #565656;
+			text-decoration: underline;
+			text-decoration-color: var(--five);
+		}
 		.error {
 			font-weight: 600;
 			color: red;
@@ -28,6 +38,8 @@
 				flex-direction: column;
 				justify-content: space-evenly;
 				width: 100%;
+				margin: 1em;
+
 				// padding: 3em;
 				// margin: 2em 0;
 				input,

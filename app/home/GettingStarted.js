@@ -1,16 +1,19 @@
 import Image from "next/image";
 import React from "react";
-import reading from "./assets/reading.svg";
+import butterflies from "./assets/butterflies.jpg";
 
 function GettingStarted() {
 	return (
 		<section className="home-get-started">
-			<h1 className="center-title">Ready to get started?</h1>
-			<h2>
-				Beginning therapy can be a significant step toward improving your mental
-				health and overall well-being. Here{"'"}s what you can expect when you
-				start:
-			</h2>
+			<div className="title">
+				<h1 className="center-title">Ready to get started?</h1>
+				<h4 className="subtext">
+					Beginning therapy can be a significant step toward improving your
+					mental health and overall well-being. Here{"'"}s what you can expect
+					when you start:
+				</h4>
+			</div>
+
 			<div className="text">
 				<h2>1. Let{"'"}s talk</h2>
 				<p>
@@ -37,7 +40,10 @@ function GettingStarted() {
 				</p>
 			</div>
 			<div className="image-container">
-				<Image src={reading} alt="reading" />
+				<div
+					className="image"
+					style={{ backgroundImage: `url(${butterflies.src})` }}
+				></div>
 			</div>
 		</section>
 	);

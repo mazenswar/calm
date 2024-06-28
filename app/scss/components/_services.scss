@@ -1,4 +1,13 @@
+@use "../util" as u;
 #services {
+	h1,
+	h2 {
+		color: var(--three);
+	}
+	h5,
+	p {
+		color: #565656;
+	}
 	.text {
 		padding: 5% 0;
 		display: flex;
@@ -6,6 +15,55 @@
 		justify-content: space-evenly;
 		h3 {
 			margin: 1em 0;
+		}
+	}
+	///////////////
+	///
+	.fees-container {
+		box-shadow: rgba(0, 0, 0, 0.45) 1px 1px 40px 0px inset;
+		background: linear-gradient(
+			180deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(82, 72, 159, 1) 0%,
+			rgba(194, 102, 167, 1) 150%
+		);
+		h1,
+		h2,
+		p {
+			color: ivory;
+		}
+		h3 {
+			color: (var(--six));
+		}
+		.fees {
+			display: flex;
+			justify-content: space-evenly;
+			.fee-container {
+				margin: 3em 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+	.steps {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2em 0;
+		.step-container {
+			width: 30%;
+		}
+	}
+
+	@include u.breakpoint-down(medium) {
+		.fees,
+		.steps {
+			flex-direction: column;
+			.step-container {
+				width: 80%;
+			}
 		}
 	}
 }

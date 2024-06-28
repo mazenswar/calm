@@ -4,8 +4,7 @@ import Bio from "./Bio";
 import Specialities from "./Specialities";
 import ScheduleButton from "../components/ScheduleButton";
 import GettingStarted from "./GettingStarted";
-import TherapyTools from "./TherapyTools";
-import WhyChooseUs from "./WhyChooseUs";
+
 import quoteBg from "./assets/sky.jpg";
 import meditating from "./assets/meditating.svg";
 import Image from "next/image";
@@ -25,9 +24,6 @@ function QuoteSection() {
 					<span>— Carl Jung</span>
 				</h1>
 			</div>
-			<div className="image-container">
-				<Image src={meditating} alt="meditating" />
-			</div>
 		</section>
 	);
 }
@@ -37,14 +33,11 @@ function Home() {
 		<main id="home">
 			<QuoteSection />
 			<CallToAction />
-			<section className="link-button-section">
-				<ScheduleButton />
-			</section>
+
 			<Bio />
 			<Specialities />
-			<WhyChooseUs />
+
 			<GettingStarted />
-			<TherapyTools />
 		</main>
 	);
 }

@@ -54,11 +54,6 @@ export default function Nav() {
 						Resources
 					</a>
 				</li>
-				<li>
-					<a href="/contact" onClick={() => setMenuClicked(false)}>
-						Bookings
-					</a>
-				</li>
 			</ul>
 			<ScheduleButton />
 			<div

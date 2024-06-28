@@ -17,7 +17,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
 	font-weight: 500;
 	line-height: 1.1;
 	width: fit-content;
@@ -48,6 +49,11 @@ h4 {
 	// font-size: clamp(u.rem(18), u.rem(18) + 1vw, u.rem(24));
 }
 
+h5 {
+	font-size: clamp(18px, 1.2em, 80px);
+	// font-size: clamp(u.rem(18), u.rem(18) + 1vw, u.rem(24));
+}
+
 p,
 label,
 a {
@@ -55,14 +61,14 @@ a {
 	// font-size: clamp(u.rem(16), u.rem(16) + 1vw, u.rem(22));
 	font-size: clamp(16px, 0.8em, 80px);
 	// padding: u.rem(10);
-	text-align: justify;
+	// text-align: justify;
 }
 
 @include u.breakpoint-down(small) {
 	p {
 		margin-top: 0;
 		// font-size: clamp(u.rem(15), u.rem(9) + 3vw, u.rem(20));
-		text-align: justify;
+		// text-align: justify;
 	}
 	.link,
 	.link:visited,
@@ -134,14 +140,25 @@ a:active {
 	text-decoration-color: aqua;
 }
 
-.link-button {
-	background-color: #eee;
+.link-button:visited,
+.link-button:active {
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	padding: 1%;
 	width: fit-content;
+	background-color: var(--three);
+	color: ivory;
+	padding: 1em 2em;
+	border-radius: 2em;
+	border: none;
+	transition: 0.3s ease-in;
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 .center-title {
 	width: 100%;
+	padding-top: 1em;
 	text-align: center;
 }
 
@@ -151,4 +168,36 @@ a:active {
 
 .read-more:visited {
 	color: purple;
+}
+
+.subtext {
+	color: #565656;
+}
+
+.link-button,
+input[type="submit"] {
+	background: linear-gradient(
+		80deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(82, 72, 159, 1) 0%,
+		rgba(194, 102, 167, 1) 150%
+	);
+	// background-color: var(--three);
+	// color: ivory;
+	padding: 1em 2em;
+	border-radius: 2em;
+	border: none;
+	transition: 0.3s ease-in;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+input[type="submit"]:disabled {
+	background: #eee;
+	transition: none;
+	&:hover {
+		transform: none;
+	}
 }
