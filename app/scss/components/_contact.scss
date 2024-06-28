@@ -43,7 +43,8 @@
 				// padding: 3em;
 				// margin: 2em 0;
 				input,
-				textarea {
+				textarea,
+				select {
 					border-radius: 0.5em;
 					border: 1px solid #565656;
 					width: clamp(300px, 60%, 400px);

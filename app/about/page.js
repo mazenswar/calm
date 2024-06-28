@@ -5,7 +5,7 @@ function About() {
 	return (
 		<main id="about">
 			<section>
-				<h1 className="center-title">Tanya Singh, PhD</h1>
+				<h1 className="center-title">Tanya Singh, Ph.D.</h1>
 				<h2>
 					Therapist specialising in treating anxiety and related disorders in
 					New York and Pennsylvania

@@ -1,13 +1,9 @@
 import React from "react";
 import CallToAction from "./CallToAction";
 import Bio from "./Bio";
-import Specialities from "./Specialities";
-import ScheduleButton from "../components/ScheduleButton";
 import GettingStarted from "./GettingStarted";
-
 import quoteBg from "./assets/sky.jpg";
-import meditating from "./assets/meditating.svg";
-import Image from "next/image";
+import HomeSpecialities from "./HomeSpecialities";
 
 ///////////////////////////
 
@@ -35,7 +31,7 @@ function Home() {
 			<CallToAction />
 
 			<Bio />
-			<Specialities />
+			<HomeSpecialities />
 
 			<GettingStarted />
 		</main>

@@ -1,0 +1,52 @@
+@use "../util" as u;
+
+#specialities {
+	h1,
+	h2,
+	h3 {
+		color: var(--three);
+	}
+	h5,
+	p {
+		color: #565656;
+	}
+	#specialities-section {
+		.text {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			.spec-container {
+				background: linear-gradient(
+					180deg,
+					rgba(2, 0, 36, 1) 0%,
+					rgba(82, 72, 159, 1) 0%,
+					rgba(194, 102, 167, 1) 150%
+				);
+				h3 {
+					color: var(--five);
+				}
+				p {
+					color: ivory;
+				}
+				width: 25%;
+				margin: 2em;
+				padding: 1em;
+				border-radius: 1em;
+			}
+		}
+	}
+	@include u.breakpoint-down(medium) {
+		#specialities-section {
+			.text {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				.spec-container {
+					width: 90%;
+					margin-bottom: 2em;
+				}
+			}
+		}
+	}
+}

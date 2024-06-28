@@ -1,13 +1,14 @@
 import React from "react";
-import butterflies from "./assets/butterflies.jpg";
-function Specialities() {
+
+import mountains from "./assets/mountains.jpg";
+function HomeSpecialities() {
 	function truncate(str, id) {
 		return str.length > 500 ? (
 			<div className="trunc-text">
 				<p>
 					{str.substring(0, 499)}...
 					<span>
-						<a href="/about/#specialities-section" className="read-more">
+						<a href="/specialities" className="read-more">
 							Read more
 						</a>
 					</span>
@@ -36,18 +37,18 @@ function Specialities() {
 					"OCD is a diagnosable mental health problem that intensely disrupts the life of the person living with it. It can often feel like living with a bully in your own head. People with OCD experience repeated obsessions and compulsions. The obsessions may present as thoughts, mental images or ideas that are unwanted and/or inappropriate and cause significant distress and anxiety. Compulsions are physical or mental acts people feel compelled to engage in to provide relief from the obsessions. These may include mental compulsions such as counting, making lists, praying, replaying memories etc. or physical compulsions such as reassurance seeking, order checking etc.\n\nWhen most people think of OCD, they imagine a person repeatedly handwashing or repeating words a specific number of times. While these may be signs of a person struggling with OCD, the disease can show up in innumerable ways. In reality, there are so many ways to have OCD such that it may only be limited by human imagination. Fortunately, the research on OCD has advanced tremendously and there are various evidence-based approaches to help those who are struggling.\n\nExposure and Response Prevention (ERP) is the gold-standard behavioral treatment for OCD. It involves approaching your feared situations in a graded manner. In therapy we will collaboratively create a fear hierarchy for you, that will consist of situations that bring about feelings of little to extreme discomfort. Simultaneously, we will work to understand the compulsions you engage in and try to approach those situations without engaging in those reassuring behaviors. In essence, we will work on building your capacity to tolerate discomfort, so you are able to engage in life fully. In addition to ERP, there are many different approaches that can help enhance the effect of the treatment, such as mindfulness and various cognitive strategies. As a process-based therapist, my goal is to target the mechanisms that keep your OCD going and help you identify and utilize the tools that would be most advantageous and compatible with your unique individuality so you can regain control of your life."
 				)}
 
-				<a href="/about/#specialities-section" className="read-more">
+				<a href="/specialities" className="read-more">
 					<h3>Click here for full list of specialities</h3>
 				</a>
 			</div>
 			<div className="image-container">
 				<div
 					className="image"
-					style={{ backgroundImage: `url(${butterflies.src})` }}
+					style={{ backgroundImage: `url(${mountains.src})` }}
 				></div>
 			</div>
 		</section>
 	);
 }
 
-export default Specialities;
+export default HomeSpecialities;

@@ -19,29 +19,4 @@
 	// 		margin: 1em 0;
 	// 	}
 	// }
-	.specialities-section {
-		.text {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			.spec-container {
-				width: 30%;
-				margin-bottom: 2em;
-			}
-		}
-	}
-	@include u.breakpoint-down(medium) {
-		.specialities-section {
-			.text {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				.spec-container {
-					width: 90%;
-					margin-bottom: 2em;
-				}
-			}
-		}
-	}
 }

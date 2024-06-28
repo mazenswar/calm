@@ -1,12 +1,4 @@
-// SERVICES
-export const services = [
-	{ title: "Individual Therapy" },
-	{ title: "Adolescent Therapy" },
-];
-
-//  SPECIALTIES
-
-export const specialities = [
+export const spec = [
 	{
 		title: "Anxiety & Related Disorders",
 		summary:

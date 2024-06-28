@@ -45,6 +45,11 @@ export default function Nav() {
 					</a>
 				</li>
 				<li>
+					<a href="/specialities" onClick={() => setMenuClicked(false)}>
+						Specialities
+					</a>
+				</li>
+				<li>
 					<a href="/faq" onClick={() => setMenuClicked(false)}>
 						FAQs
 					</a>

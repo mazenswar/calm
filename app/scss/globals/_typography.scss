@@ -54,6 +54,36 @@ h5 {
 	// font-size: clamp(u.rem(18), u.rem(18) + 1vw, u.rem(24));
 }
 
+@include u.breakpoint-down(small) {
+	h1 {
+		font-size: clamp(24px, 1.8em, 100px);
+		// font-size: clamp(u.rem(24), u.rem(16) + 2.5vw, u.rem(55));
+		// color: var(--header-text-color);
+		margin-bottom: clamp(10px, 2vw, 80px);
+	}
+
+	h2 {
+		// font-size: clamp(u.rem(20), u.rem(26) + 1vw, u.rem(45));
+		font-size: clamp(18px, 1.6em, 80px);
+	}
+
+	h3 {
+		// font-size: clamp(u.rem(20), u.rem(20) + 1vw, u.rem(26));
+		font-size: clamp(17px, 1.4em, 80px);
+	}
+
+	h4 {
+		font-size: clamp(16px, 1.2em, 80px);
+
+		// font-size: clamp(u.rem(18), u.rem(18) + 1vw, u.rem(24));
+	}
+
+	h5 {
+		font-size: clamp(16px, 1em, 80px);
+		// font-size: clamp(u.rem(18), u.rem(18) + 1vw, u.rem(24));
+	}
+}
+
 p,
 label,
 a {

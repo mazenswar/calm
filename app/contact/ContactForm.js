@@ -7,6 +7,7 @@ const initValues = {
 	email: "",
 	phoneNumber: "",
 	message: "",
+	state: "NY",
 };
 
 const initState = {
@@ -115,6 +116,21 @@ function ContactForm() {
 				<ErrorMessage
 					condition={touched && touched.phoneNumber && !values.phoneNumber}
 				/>
+			</div>
+			<div className="input-container">
+				<label htmlFor="state">State</label>
+				<select
+					value={values.state}
+					onChange={handleChange}
+					onBlur={handleBlur}
+					name="state"
+					required
+					aria-required
+				>
+					<option value={"ny"}>New York</option>
+					<option value={"pa"}>Pennsylvania</option>
+				</select>
+				<ErrorMessage condition={touched && touched.state && !values.state} />
 			</div>
 			<div className="input-container">
 				<label htmlFor="message">
