@@ -37,6 +37,11 @@ export default function Nav() {
 			</div>
 			<ul className={menuClicked ? "navigation active" : "navigation"}>
 				<li>
+					<a href="/" onClick={() => setMenuClicked(false)}>
+						Home
+					</a>
+				</li>
+				<li>
 					<a href="/about" onClick={() => setMenuClicked(false)}>
 						About
 					</a>
