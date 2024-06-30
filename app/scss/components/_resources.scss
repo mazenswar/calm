@@ -1,4 +1,9 @@
 #resources {
+	a,
+	a:visited,
+	a:active {
+		text-decoration: underline;
+	}
 	color: var(--three);
 	section {
 		padding-bottom: 0;

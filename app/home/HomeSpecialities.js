@@ -20,7 +20,7 @@ function HomeSpecialities() {
 	}
 	return (
 		<section className="home-specialities">
-			<h1 className="center-title title">Things I can help with</h1>
+			<h1 className="center-title title">Things we can help with</h1>
 			<div className="text">
 				<h2>Anxiety and Related Disorders</h2>
 

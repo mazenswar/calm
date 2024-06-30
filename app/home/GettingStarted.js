@@ -18,15 +18,15 @@ function GettingStarted() {
 				<h2>1. Let{"'"}s talk</h2>
 				<p>
 					Your journey typically begins with an initial consultation. This
-					consultation is designed to help me understand your concerns,
-					background, and goals. It{"'"}s an opportunity for you to ask
-					questions, learn and ensure you feel comfortable with the therapeutic
-					process.
+					consultation is designed to help you clinician understand your
+					concerns, background, and goals. It{"'"}s an opportunity for you to
+					ask questions, learn and ensure you feel comfortable with the
+					therapeutic process.
 				</p>
 				<h2>2. Initial assessment</h2>
 				<p>
-					I will conduct a thorough assessment to gain a deeper understanding of
-					where you are in your mental health journey. This may involve
+					We will conduct a thorough assessment to gain a deeper understanding
+					of where you are in your mental health journey. This may involve
 					discussing your history, current challenges, and any symptoms you{"'"}
 					re experiencing. Together, we will set realistic and achievable goals
 					tailored to your specific needs and circumstances.
