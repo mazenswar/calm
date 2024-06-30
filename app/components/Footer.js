@@ -9,7 +9,6 @@ function Footer() {
 				<div className="contact-info">
 					<span>Center for Anxiety and Life Management</span>
 					<span>(908) 991-7301</span>
-					<span>tanya@imh.com</span>
 				</div>
 			</section>
 			<section className="copyright">

@@ -8,8 +8,8 @@ function Contact() {
 				<h1 className="center-title">Book a 30 minute consultation</h1>
 				<ContactForm />
 				<h1>Or Call</h1>
-				<a href="tel:8888888888">
-					<h2>888-888-8888</h2>
+				<a href="tel:9019917301">
+					<h2>(901) 991-7301</h2>
 				</a>
 			</section>
 		</main>

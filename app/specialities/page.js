@@ -1,11 +1,12 @@
 import React from "react";
 import { specialities } from "../data/services";
-import Banner from "./Banner";
+import Banner from "../components/Banner";
+import connect from "./assets/images/connect.png";
 
 function Specialities() {
 	return (
 		<main id="specialities">
-			<Banner />
+			<Banner img={connect} />
 			<section id="specialities-section">
 				<h1 className="center-title">Areas of Speciality</h1>
 				<div className="text">

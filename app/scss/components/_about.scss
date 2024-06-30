@@ -1,6 +1,32 @@
 @use "../util" as u;
 
 #about {
+	.grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		.text {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		.image-container {
+			grid-column: 2;
+			grid-row: 1;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.image {
+				box-shadow: none;
+				width: 90%;
+				height: auto;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
 	h1,
 	h2,
 	h3 {
@@ -22,4 +48,14 @@
 	// 		margin: 1em 0;
 	// 	}
 	// }
+	@include u.breakpoint-down(medium) {
+		.grid {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			.image-container {
+				margin: 2em 0;
+			}
+		}
+	}
 }

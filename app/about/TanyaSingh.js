@@ -1,47 +1,59 @@
 import React from "react";
+import tnt from "./assets/images/tnt.jpg";
+import Image from "next/image";
 
 function TanyaSingh() {
 	return (
-		<section>
+		<section className="ts">
 			<h1 className="center-title">Dr. Tanya Singh</h1>
-			<h4>
-				Licensed Clinical Psychologist | Co-Founder & Director, CALM (Center for
-				Anxiety and Life Management)
-			</h4>
+			<div className="grid">
+				<div className="image-container">
+					<Image className="image" src={tnt} alt="tanya" />
+				</div>
+				<div className="text">
+					<h4>
+						Licensed Clinical Psychologist | Co-Founder & Director, CALM (Center
+						for Anxiety and Life Management)
+					</h4>
 
-			<h3>About Me</h3>
-			<p>
-				I{"'"}m a passionate clinical psychologist on a mission to help
-				individuals conquer anxiety and life-related challenges with a warm
-				heart and a wealth of experience. I{"'"}ve dedicated my career to making
-				a positive impact on people{"'"}s lives. At CALM (Center for Anxiety and
-				Life Management), I have co-created a safe haven where healing begins.
-				We believe in nurturing resilience and empowering people to thrive.
-			</p>
+					<h3>About Me</h3>
+					<p>
+						I{"'"}m a passionate clinical psychologist on a mission to help
+						individuals conquer anxiety and life-related challenges with a warm
+						heart and a wealth of experience. I{"'"}ve dedicated my career to
+						making a positive impact on people{"'"}s lives. At CALM (Center for
+						Anxiety and Life Management), I have co-created a safe haven where
+						healing begins. We believe in nurturing resilience and empowering
+						people to thrive.
+					</p>
 
-			<h3>Credentials</h3>
-			<p>
-				I hold a PhD and masters degree in Clinical Psychology from Montclair
-				State University and an MA in Psychology in Education from Teachers
-				College, Columbia University. I have trained and worked at a variety of
-				esteemed institutions, including Harvard University, Massachusetts
-				General Hospital, Rutgers University Behavioral Health Care, SUNY
-				Downstate Medical Center, and the Molecular Imaging and Neuropathology
-				Division at the New York State Psychiatric Institute (NYSPI), as well as
-				multiple private practices. I am also an author of 9 peer-reviewed
-				articles and 3 book chapters and have presented at various conferences
-				and workshops.
-			</p>
-			<h3>Specialization</h3>
-			<p>
-				I specialize in treating a range of anxiety-related disorders, including
-				Generalized Anxiety Disorder, Social Anxiety Disorder,
-				Obsessive-Compulsive Disorder, Perfectionism, and Body Dysmorphia. My
-				integrative approach to therapy combines Cognitive Behavioral Therapy
-				(CBT) with Internal Family Systems (IFS), Acceptance and Commitment
-				Therapy (ACT), Dialectical Behavior Therapy (DBT), mindfulness-based
-				approaches, and Inference-Based Cognitive Behavioral Therapy (I-CBT).
-			</p>
+					<h3>Credentials</h3>
+					<p>
+						I hold a PhD and masters degree in Clinical Psychology from
+						Montclair State University and an MA in Psychology in Education from
+						Teachers College, Columbia University. I have trained and worked at
+						a variety of esteemed institutions, including Harvard University,
+						Massachusetts General Hospital, Rutgers University Behavioral Health
+						Care, SUNY Downstate Medical Center, and the Molecular Imaging and
+						Neuropathology Division at the New York State Psychiatric Institute
+						(NYSPI), as well as multiple private practices. I am also an author
+						of 9 peer-reviewed articles and 3 book chapters and have presented
+						at various conferences and workshops.
+					</p>
+					<h3>Specialization</h3>
+					<p>
+						I specialize in treating a range of anxiety-related disorders,
+						including Generalized Anxiety Disorder, Social Anxiety Disorder,
+						Obsessive-Compulsive Disorder, Perfectionism, and Body Dysmorphia.
+						My integrative approach to therapy combines Cognitive Behavioral
+						Therapy (CBT) with Internal Family Systems (IFS), Acceptance and
+						Commitment Therapy (ACT), Dialectical Behavior Therapy (DBT),
+						mindfulness-based approaches, and Inference-Based Cognitive
+						Behavioral Therapy (I-CBT).
+					</p>
+				</div>
+			</div>
+
 			<h3>Why I Love What I Do</h3>
 			<h4>Deep Connections</h4>
 			<p>

@@ -27,3 +27,16 @@ section {
 	// flex-direction: column;+
 	// justify-content: center;
 }
+
+.banner-container {
+	height: 60vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+@include u.breakpoint-down(medium) {
+	.banner-container {
+		height: 30vh;
+	}
+}
