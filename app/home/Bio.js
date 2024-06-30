@@ -7,7 +7,7 @@ function Bio() {
 				<h1 className="center-title">Tanya Singh, Ph.D.</h1>
 				<p>
 					Welcome to CALM (Center for Anxiety and Life Management). As the
-					co-founder and Director, am dedicated to helping you overcome
+					co-founder and Director, I am dedicated to helping you overcome
 					anxiety-related disorders and navigate life{"'"}s challenges with
 					confidence. I specialize in treating anxiety-related disorders,
 					including Generalized Anxiety Disorder, Social Anxiety Disorder,
