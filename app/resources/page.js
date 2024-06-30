@@ -1,6 +1,8 @@
 import React from "react";
 import { treatmentLinks } from "../data/treatmentResources";
 import TherapyTools from "./TherapyTools";
+import FreeResources from "./FreeResources";
+import SelfAssessmentScales from "./SelfAssessmentScales";
 
 function Resources() {
 	return (
@@ -14,19 +16,9 @@ function Resources() {
 					</a>
 				</h3>
 			</section>
-			<section>
-				<h1>Treatment Links</h1>
-				<ul className="treatment-links">
-					{treatmentLinks.map((tl, i) => (
-						<li key={`treatment-link-${i}`}>
-							<a className="link" href={tl.url}>
-								{tl.text}
-							</a>
-						</li>
-					))}
-				</ul>
-			</section>
-			<TherapyTools />
+
+			<FreeResources />
+			<SelfAssessmentScales />
 		</main>
 	);
 }

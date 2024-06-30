@@ -1,52 +1,50 @@
-export const spec = [
+export const questions = [
 	{
-		title: "Anxiety & Related Disorders",
-		summary:
-			"Anxiety is a normal emotion we all experience, but for those with anxiety disorders (ADs), everyday tasks can feel overwhelming. People with ADs struggle with persistent, intense, and excessive worry, panic, or stress that affects both their physical and mental well-being. Professional help is sometimes necessary to regain control of one's life.\nThere are many types of ADs that affect individuals of all ages and backgrounds, including generalized anxiety disorder, panic disorder, social anxiety disorder, and phobias. Fortunately, effective, evidence-based treatments are available.\nThese treatments help increase awareness of symptoms and teach adaptive coping strategies. Through a collaborative, person-centered approach, we will explore and challenge unhelpful thoughts and assumptions about your fears. We will also use behavioral techniques to help you face your fears in a safe environment and gradually reintroduce activities you may have avoided due to anxiety. When necessary, I may integrate techniques from other therapeutic approaches, such as Internal Family Systems (IFS), based on your unique needs. Therapy will equip you with skills to manage your thoughts and emotions and find joy in your everyday life.",
+		q: "How much does a therapy session cost?",
+		a: "A 45-minute psychotherapy session costs $220, and the one-time 75-minute intake assessment is $365. We offer a limited number of lower-cost slots to make therapy more accessible for those with lower incomes. Please let us know if you need a reduced rate to attend therapy.\n All clients begin with a complimentary 30-minute consultation call to see if we are a good therapeutic fit.",
 	},
 	{
-		title: "Body Dysmorphia",
-		summary:
-			"While many people experience dissatisfaction with their appearance, those with Body Dysmorphic Disorder (BDD) suffer from extreme distress over perceived flaws that are often unnoticed by others. This intense preoccupation leads to significant self-criticism and behaviors such as mirror checking, comparing to others, and seeking reassurance.\n BDD is a challenging condition often associated with high levels of depression, social anxiety, and shame. It can impact finances, relationships, work, study, and overall life satisfaction.\nCognitive Behavioral Therapy is effective for BDD. Treatment focuses on identifying and understanding the thoughts that contribute to your negative body image. We will work on reducing reassurance-seeking behaviors and developing coping strategies to manage difficult thoughts and urges. We will also set and work towards goals that enrich your life and align with your values.",
+		q: "How do I schedule an appointment?",
+		a: "Please use the 'Bookings' tab to contact us, and someone will reach out to you within 24 hours during business days. Alternatively, you can call us at (908) 991-7301 and leave a message.",
 	},
 	{
-		title: "Depression",
-		summary:
-			"Depression is a serious mood disorder characterized by persistent feelings of sadness and impacts thoughts, functioning, relationships, and quality of life. Those with depression may lose interest in activities they once enjoyed, experience sleep and memory difficulties, concentration problems, appetite changes, irritability, hopelessness, low self-esteem, and physical symptoms. Thoughts of suicide are also common.\nEarly detection and treatment are key. In therapy, you will have a safe space to understand and process your emotions while learning skills to manage and reduce depressive episodes. Treatment is tailored to your specific symptoms, culture, environment, and family structure.",
+		q: "What should I expect in my first therapy session?",
+		a: "In your first session, your therapist will ask about your background, current concerns, and symptoms, and understand what you hope to achieve through therapy. It's a chance for you to get to know your therapist and ask any questions you might have.",
 	},
 	{
-		title: "Life Adjustment/Transition",
-		summary:
-			"Life's changes can be difficult to accept and adapt to. Therapy can help you adjust by providing tools to manage worry and uncertainty. You will learn how to show up as your best self despite challenges and gain insights about your experiences. Common challenges include adjusting to a new job, school, or country; dealing with family issues such as divorce or blended family dynamics; coping with grief and loss; and managing unemployment or other major life changes.",
+		q: "How long does each therapy session last?",
+		a: "A typical therapy session is about 45 minutes long.",
 	},
 	{
-		title: "Obsessive Compulsive Disorder (OCD)",
-		summary:
-			"OCD is a diagnosable mental health condition that can feel like living with a bully in your head. People with OCD experience repeated obsessions and compulsions. Obsessions are unwanted thoughts, images, or ideas that cause distress, while compulsions are physical or mental acts performed to relieve the distress.\nOCD can manifest in many ways beyond the common image of handwashing or repeating actions. Fortunately, there are evidence-based treatments available. \nExposure and Response Prevention (ERP) is the gold-standard treatment for OCD. It involves gradually facing feared situations without engaging in compulsive behaviors. In therapy, we will create a fear hierarchy and work to tolerate discomfort, allowing you to engage in life fully. I often also use metacognitive approaches in therapy, such as mindfulness-based interventions and Inference-Based Cognitive Behavioral Therapy (i-CBT), in conjunction with ERP, when appropriate to maximize benefits. As a process-based therapist, I integrate techniques from other approaches to target the mechanisms sustaining your OCD and help you regain control of your life.",
+		q: "How long will I need to be in therapy?",
+		a: "The length of therapy varies from person to person. Some people find relief in a few sessions, while others may benefit from longer-term therapy. Your therapist will work with you to develop a plan that meets your needs. You are free to stay in therapy as long as you need and may end your sessions at any time for any reason.",
 	},
 	{
-		title: "Panic Disorders",
-		summary:
-			"Panic disorder is characterized by recurrent, unexpected panic attacks—sudden periods of intense fear or discomfort. These attacks can include symptoms such as heart palpitations, sweating, trembling, shortness of breath, and feelings of impending doom. People with panic disorder often worry about when the next attack will occur and may avoid situations where they fear an attack might happen.\n Cognitive Behavioral Therapy (CBT) is effective in treating panic disorder. Treatment involves understanding and challenging the thoughts that trigger panic attacks, learning to cope with physical symptoms, and gradually facing feared situations.",
+		q: "Are you able to see children, teenagers, couples, or families?",
+		a: "At this time, we only work with individuals aged 16 years and older.",
 	},
 	{
-		title: "Perfectionism",
-		summary:
-			"Perfectionism involves setting excessively high standards for oneself and striving for flawlessness. While striving for excellence can be positive, perfectionism often leads to chronic stress, burnout, and dissatisfaction. Individuals with perfectionistic tendencies may struggle with fear of failure, procrastination, and an inability to celebrate achievements.\nCognitive Behavioral Therapy can help address perfectionistic thinking by challenging unrealistic standards and developing healthier, more flexible thinking patterns. In therapy, we will explore the roots of your perfectionism, work on self-compassion, and set realistic goals. You will learn strategies to manage perfectionistic behaviors and reduce the negative impact on your well-being.",
+		q: "What if I need to cancel or reschedule an appointment?",
+		a: "We understand that sometimes life happens. Please try to give at least 24 hours' notice if you need to cancel or reschedule your appointment. This allows us to offer the slot to another client.",
 	},
 	{
-		title: "Self Esteem/Self Worth",
-		summary:
-			"Low self-esteem or self-worth can be detrimental to mental health and hinder you from living the life you want. Therapy can help you understand unhelpful thought patterns and develop healthier ways to engage with these thoughts. We will work on improving your self-talk and moving towards goals that align with your values and help you become the best version of yourself.",
+		q: "What types of therapy do you offer?",
+		a: "We offer a range of evidence-based therapies, including cognitive-behavioral therapy (CBT), mindfulness-based therapy, acceptance-based therapies, and more. Your therapist will recommend the approach that's best suited to your needs.",
 	},
 	{
-		title: "Social Anxiety Disorder",
-		summary:
-			"Social anxiety disorder involves an intense fear of social situations where one might be judged, embarrassed, or scrutinized by others. This fear can lead to avoidance of social interactions and significant impairment in daily life.\nCognitive Behavioral Therapy (CBT) is effective for social anxiety disorder. Treatment focuses on challenging negative thoughts about social situations, developing social skills, and gradually facing feared social interactions.",
+		q: "What should I do if I have a crisis between sessions?",
+		a: "If you experience a crisis between sessions, please call 911 or visit the nearest emergency room. If you need immediate assistance, 24/7 help is available at:\n- Suicide and Crisis Hotline: Text or call 988\n- Crisis Text Line: Text “HOME” to 741-741:",
 	},
 	{
-		title: "Stress Management / Work-Life Balance",
-		summary:
-			"Stress is an inevitable part of life. Learning to manage stress is essential for well-being. If you struggle with managing stress or balancing professional and personal demands, therapy can help build awareness and teach you to respond intentionally to stressors rather than react to them. Additionally, you will learn to manage issues like procrastination and negative self-talk, which can unintentionally add to stress.",
+		q: "Do you offer online therapy sessions?",
+		a: "Yes, we currently offer online therapy sessions and hope to offer in-person sessions in PA soon! Online therapy is conducted via secure video conferencing to ensure your privacy and confidentiality.",
+	},
+	{
+		q: "Will my insurance cover therapy?",
+		a: 'Your insurance policy might cover your sessions at "out-of-network" rates, potentially covering some or all of your session costs. You may need to meet deductibles, make co-payments or co-insurance payments, and be aware of any limits on the number of sessions covered, all of which could influence your out-of-pocket expenses. It is advisable to check with your insurance provider to confirm your out-of-network benefits before starting treatment. After each therapy session, we can provide you with a Superbill, which you can submit to your insurance company for reimbursement.',
+	},
+	{
+		q: "Why don’t you accept insurance directly?",
+		a: "We understand that working with a therapist who isn't in-network with your insurance can be financially challenging, and it can be a dealbreaker for many people. To help, we offer some reduced-rate slots. There are also several advantages to not using insurance: \n1. Privacy: Using insurance means agreeing to share certain treatment details, such as diagnoses and treatment dates, with the insurance company.\n2. Quality of Care: To provide the highest quality of care, we prefer not to have insurance companies influence the treatment plan or create administrative hurdles. This allows us to focus on your care and offer flexible payment options to support clients from various socioeconomic backgrounds.\n3. Treatment Flexibility: Insurance companies often place limits on the type and duration of treatment, which can negatively impact the effectiveness of therapy. For example, intensive treatments that involve multiple sessions per week or longer session durations, as well as treatments conducted outside of the office (e.g., at home, work, or public places), are often not covered by insurance. By not contracting with insurance companies, we can make treatment decisions based solely on your best interests, enhancing the likelihood of achieving your treatment goals more effectively and promptly.",
 	},
 ];

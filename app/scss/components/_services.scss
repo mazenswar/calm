@@ -54,7 +54,24 @@
 		align-items: center;
 		padding: 2em 0;
 		.step-container {
+			background: linear-gradient(
+				180deg,
+				rgba(2, 0, 36, 1) 0%,
+				rgba(82, 72, 159, 1) 0%,
+				rgba(194, 102, 167, 1) 150%
+			);
+			height: 12em;
+			width: 15em;
+			padding: 1em;
+			margin: 1em;
+			border-radius: 1em;
 			width: 30%;
+			h2 {
+				color: var(--six);
+			}
+			p {
+				color: ivory;
+			}
 		}
 	}
 

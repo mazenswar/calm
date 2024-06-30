@@ -1,9 +1,11 @@
 import React from "react";
 import { specialities } from "../data/services";
+import Banner from "./Banner";
 
 function Specialities() {
 	return (
 		<main id="specialities">
+			<Banner />
 			<section id="specialities-section">
 				<h1 className="center-title">Areas of Speciality</h1>
 				<div className="text">

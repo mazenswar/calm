@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 // import useScreenDimensions from "../hooks/useScreenDimensions";
 import dynamic from "next/dynamic";
 import ScheduleButton from "./ScheduleButton";
+import Image from "next/image";
+import logo from "./assets/images/CALM logo_E4.png";
 
 const useScreenDimensions = dynamic(
 	() => import("../hooks/useScreenDimensions"),
@@ -30,7 +32,7 @@ export default function Nav() {
 		<nav ref={ref}>
 			<div role="heading" aria-level="1" className="header">
 				<a href="/">
-					<h1>CALM</h1>
+					<Image className="logo" src={logo} alt="logo" />
 				</a>
 			</div>
 			<ul className={menuClicked ? "navigation active" : "navigation"}>

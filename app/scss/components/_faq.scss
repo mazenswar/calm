@@ -13,22 +13,15 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		.question-container {
-			width: 30%;
-			margin-bottom: 2em;
+			width: 100%;
+			margin: 2em 0;
 		}
 	}
-	@include u.breakpoint-down(medium) {
-		.specialities-section {
-			.text {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				.spec-container {
-					width: 90%;
-					margin-bottom: 2em;
-				}
-			}
-		}
-	}
+	// @include u.breakpoint-down(medium) {
+	// 	.questions-container {
+	// 		.question-container {
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
 }

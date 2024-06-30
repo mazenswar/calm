@@ -1,6 +1,12 @@
 @use "../util" as u;
 
 #specialities {
+	.banner-container {
+		height: 60vh;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+	}
 	h1,
 	h2,
 	h3 {
@@ -36,6 +42,9 @@
 		}
 	}
 	@include u.breakpoint-down(medium) {
+		.banner-container {
+			height: 30vh;
+		}
 		#specialities-section {
 			.text {
 				display: flex;

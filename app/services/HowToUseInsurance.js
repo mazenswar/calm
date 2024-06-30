@@ -29,7 +29,7 @@ function HowToUseInsurance() {
 					<p>
 						A {'"'}superbill{'"'} is the paperwork you submit to your insurance
 						to get reimbursed for services. I{"'"}ll share one with you on a
-						regular basis for you to send to your insurance. More info below.
+						regular basis for you to send to your insurance.
 					</p>
 				</div>
 				<div className="step-container">

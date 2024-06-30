@@ -9,7 +9,7 @@ function Faq() {
 					{questions.map((obj) => (
 						<div key={obj.q} className="question-container">
 							<h3>{obj.q}</h3>
-							<p>{obj.a}</p>
+							<p className="linebreak">{obj.a}</p>
 						</div>
 					))}
 				</div>

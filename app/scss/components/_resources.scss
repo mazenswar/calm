@@ -1,9 +1,14 @@
 #resources {
 	color: var(--three);
+	section {
+		padding-bottom: 0;
+	}
 	.emergency-text {
 		.link {
 			color: rgb(185, 0, 0);
 			font-weight: 700;
+			margin: 0;
+			display: inline;
 		}
 	}
 	.therapy-tools {
@@ -23,6 +28,26 @@
 		.subtext,
 		p {
 			color: ivory;
+		}
+	}
+
+	// a {
+	// 	display: block;
+	// 	margin: 2em 0;
+	// 	color: var(--two);
+	// 	font-weight: 600;
+	// }
+	h4 {
+		color: var(--five);
+	}
+	.free-resources {
+		.resource-container {
+			padding: 2em 0;
+		}
+	}
+	.scales {
+		.assess-container {
+			padding-top: 2em;
 		}
 	}
 }
