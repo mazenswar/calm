@@ -10,7 +10,7 @@ function CallToAction() {
 			<h1 className="center-title">Begin Your Journey to Well-being Today</h1>
 
 			<div className="text">
-				<h4 className="linebreak subtext">
+				<h4 className="linebreak">
 					Are you tired of feeling stuck?{"\n\n"} You feel overwhelmed by
 					stress, anxiety, depression or self loathing making everyday tasks
 					feel like a challenge. {"\n\n"} These struggles impact your health,

@@ -48,7 +48,7 @@ export default function Nav() {
 				</li>
 				<li>
 					<a href="/services" onClick={() => setMenuClicked(false)}>
-						Fees & Services
+						Fees
 					</a>
 				</li>
 				<li>

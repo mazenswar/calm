@@ -12,7 +12,7 @@ function Footer() {
 				</div>
 			</section>
 			<section className="copyright">
-				<p>© 2024 Center for Anxiety and Life Managment</p>
+				<p>© 2024 Center for Anxiety and Life Management</p>
 			</section>
 		</footer>
 	);
