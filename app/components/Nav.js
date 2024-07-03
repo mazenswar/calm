@@ -1,11 +1,14 @@
 "use client";
+import { isMobile } from "react-device-detect";
 
 import { useEffect, useRef, useState } from "react";
 // import useScreenDimensions from "../hooks/useScreenDimensions";
 import dynamic from "next/dynamic";
 import ScheduleButton from "./ScheduleButton";
 import Image from "next/image";
-import logo from "./assets/images/CALM logo_E4.png";
+
+import horLogo from "./assets/images/hor-logo.png";
+import verLogo from "./assets/images/CALM logo_E4.png";
 
 const useScreenDimensions = dynamic(
 	() => import("../hooks/useScreenDimensions"),
@@ -17,10 +20,13 @@ const useScreenDimensions = dynamic(
 export default function Nav() {
 	const [menuClicked, setMenuClicked] = useState(false);
 	const ref = useRef(null);
-
+	const [logo, setLogo] = useState(horLogo);
 	const { dimensions } = useScreenDimensions();
 
 	useEffect(() => {
+		if (isMobile) {
+			setLogo(verLogo);
+		}
 		const children =
 			document.getElementsByClassName("navigation")[0].children.length;
 		const height = ref.current.clientHeight + "px";

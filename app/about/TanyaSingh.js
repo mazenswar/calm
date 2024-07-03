@@ -145,27 +145,6 @@ function Training() {
 						New Brunswick, NJ
 					</p>
 				</li>
-				<li>
-					<p>
-						Externship: Harvard University/Massachusetts General Hospital,
-						Boston, MA
-					</p>
-				</li>
-				<li>
-					<p>Externship: Behavioral Associates, New York, NY</p>
-				</li>
-				<li>
-					<p>
-						Externship: SUNY Downstate Medical Center – Children’s Mental Health
-						Center, New York, NY
-					</p>
-				</li>
-				<li>
-					<p>
-						Externship: Hoboken University Medical Center – Partial Hospital
-						Program, Hoboken, NJ
-					</p>
-				</li>
 			</ul>
 		</>
 	);

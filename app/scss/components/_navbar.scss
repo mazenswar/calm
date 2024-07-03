@@ -15,12 +15,15 @@ nav {
 	h1 {
 		margin: 0;
 	}
+	.link-button {
+		padding: 1em 2em;
+	}
 
 	.header {
 		// padding: clamp(u.rem(20), u.rem(35) + 2vh, u.rem(40));
 		// background-color: red;
 		height: 100%;
-		width: 15%;
+		width: 25%;
 
 		padding: 0;
 		margin: 0;
@@ -37,8 +40,8 @@ nav {
 			justify-content: center;
 			align-items: center;
 			img {
-				height: 100%;
-				width: auto;
+				height: auto;
+				width: 100%;
 				// width: 100%;
 			}
 		}
@@ -131,7 +134,8 @@ nav {
 		// background-color: #d264b6;
 
 		.header {
-			font-size: clamp(u.rem(10), u.rem(15) + 1.5vw, u.rem(35));
+			// font-size: clamp(u.rem(10), u.rem(15) + 1.5vw, u.rem(35));
+			padding: 0.1em;
 		}
 		.menu {
 			display: flex;
@@ -174,13 +178,17 @@ nav {
 }
 
 @include u.breakpoint-down(small) {
+	.link-button {
+		padding: 0.2em;
+	}
 	nav {
 		--font-size: clamp(15px, 10vw, 25px);
 		.header {
 			a,
 			a:visited {
 				img {
-					height: clamp(20px, 60%, 80px);
+					height: 100%;
+					width: auto;
 				}
 			}
 		}

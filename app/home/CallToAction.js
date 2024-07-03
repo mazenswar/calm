@@ -11,10 +11,10 @@ function CallToAction() {
 
 			<div className="text">
 				<h4 className="linebreak">
-					Are you tired of feeling stuck?{"\n\n"} You feel overwhelmed by
+					Are you tired of feeling stuck?{"\n\n"} Are you feel overwhelmed by
 					stress, anxiety, depression or self loathing making everyday tasks
 					feel like a challenge. {"\n\n"} These struggles impact your health,
-					relationships, and goals and overall quality of life. {"\n\n"} You may
+					relationships, goals and overall quality of life. {"\n\n"} You may
 					experience frustration, guilt, or hopelessness and despite your best
 					efforts, the problems persist, leaving you wondering why it{"'"}s so
 					hard to feel better.{"\n\n"}

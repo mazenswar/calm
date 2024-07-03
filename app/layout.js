@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./scss/style.scss";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
 				{children}
 				<Footer />
 			</body>
+			<GoogleAnalytics gaId="G-FF7QZWYSJL" />
 		</html>
 	);
 }
