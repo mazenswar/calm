@@ -8,6 +8,10 @@ export const questions = [
 		a: "Please use the 'Bookings' tab to contact us, and someone will reach out to you within 24 hours during business days. Alternatively, you can call us at (908) 991-7301 and leave a message.",
 	},
 	{
+		q: "Where do you currently provide services?",
+		a: "We currently offer online therapy exclusively for residents of New York and Pennsylvania. However, we hope to expand our services to other areas soon. Thank you for your understanding and support.",
+	},
+	{
 		q: "What should I expect in my first therapy session?",
 		a: "In your first session, your therapist will ask about your background, current concerns, and symptoms, and understand what you hope to achieve through therapy. It's a chance for you to get to know your therapist and ask any questions you might have.",
 	},

@@ -9,30 +9,22 @@ import Image from "next/image";
 
 import horLogo from "./assets/images/hor-logo.png";
 import verLogo from "./assets/images/CALM logo_E4.png";
-
-const useScreenDimensions = dynamic(
-	() => import("../hooks/useScreenDimensions"),
-	{
-		ssr: false,
-	}
-);
+import useResizeWatcher from "../hooks/useResizeWatcher";
 
 export default function Nav() {
 	const [menuClicked, setMenuClicked] = useState(false);
 	const ref = useRef(null);
 	const [logo, setLogo] = useState(horLogo);
-	const { dimensions } = useScreenDimensions();
+	const { width } = useResizeWatcher();
 
 	useEffect(() => {
-		if (isMobile) {
-			setLogo(verLogo);
-		}
+		width < 650 ? setLogo(verLogo) : setLogo(horLogo);
 		const children =
 			document.getElementsByClassName("navigation")[0].children.length;
 		const height = ref.current.clientHeight + "px";
 		document.documentElement.style.setProperty("--children", children);
 		document.documentElement.style.setProperty("--nav-height", height);
-	}, [dimensions]);
+	}, [width]);
 
 	return (
 		<nav ref={ref}>
