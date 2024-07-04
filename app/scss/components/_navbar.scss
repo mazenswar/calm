@@ -14,22 +14,20 @@ nav {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+
 	// background-color: var(--two);
 	color: var(--three);
 
 	h1 {
 		margin: 0;
 	}
-	.link-button {
-		padding: 1em 2em;
-	}
 
 	.header {
 		// padding: clamp(u.rem(20), u.rem(35) + 2vh, u.rem(40));
 		// background-color: red;
 		height: 100%;
-		width: 25%;
+		width: 23%;
 
 		padding: 0;
 		margin: 0;
@@ -184,9 +182,6 @@ nav {
 }
 
 @include u.breakpoint-down(small) {
-	.link-button {
-		padding: 0.2em;
-	}
 	nav {
 		--font-size: clamp(15px, 10vw, 25px);
 		.header {

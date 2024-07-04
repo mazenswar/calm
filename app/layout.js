@@ -1,20 +1,18 @@
-import { Inter } from "next/font/google";
 import "./scss/style.scss";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
-	title: "Center for Anxiety and Life Management (Calm)",
-	description: "Individual online therapy in New York and Pennsylvania",
+	title: "Center for Anxiety and Life Management (Calm Therapy)",
+	description:
+		"Center for Anxiety and Life Management (CALM Therapy) is a professional PLLC specializing in the treatment of anxiety-related disorders, including generalized anxiety disorder, OCD, body dysmorphia, and panic disorder. We use a variety of evidence-based approaches, such as CBT, ACT, and meta-cognitive approaches, to help manage these issues. Currently, we offer virtual therapy sessions for residents of Pennsylvania and New York.",
 };
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 				<Nav />
 				{children}
