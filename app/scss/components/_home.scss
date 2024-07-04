@@ -225,4 +225,15 @@
 			}
 		}
 	}
+
+	///////////
+	.schedule-section {
+		h1 {
+			color: var(--three);
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }

@@ -5,7 +5,7 @@ import Image from "next/image";
 function TanyaSingh() {
 	return (
 		<section className="ts">
-			<h1 className="center-title">Dr. Tanya Singh</h1>
+			<h1 className="center-title">Dr. Tanya Singh, Ph.D.</h1>
 			<div className="grid">
 				<div className="image-container">
 					<Image className="image" src={tnt} alt="tanya" />

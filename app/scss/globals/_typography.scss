@@ -193,13 +193,22 @@ a:active {
 }
 
 .read-more {
-	color: blue;
+	color: var(--three);
 }
 
-.read-more:visited {
+.read-more:visited,
+.read-more:active {
 	color: purple;
 }
 
+.read-more,
+.read-more:visited,
+.read-more:active {
+	transition: 0.4s;
+	&:hover {
+		color: var(--five);
+	}
+}
 .subtext {
 	color: #565656;
 }

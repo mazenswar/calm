@@ -7,13 +7,13 @@ import ScheduleButton from "../components/ScheduleButton";
 function CallToAction() {
 	return (
 		<section className="call-to-action linebreak">
-			<h1 className="center-title">Begin Your Journey to Well-being Today</h1>
+			<h1 className="center-title">Begin Your Journey to Well-Being Today</h1>
 
 			<div className="text">
 				<h4 className="linebreak">
 					Are you tired of feeling stuck?{"\n\n"} Are you feel overwhelmed by
 					stress, anxiety, depression or self loathing making everyday tasks
-					feel like a challenge. {"\n\n"} These struggles impact your health,
+					feel like a challenge? {"\n\n"} These struggles impact your health,
 					relationships, goals and overall quality of life. {"\n\n"} You may
 					experience frustration, guilt, or hopelessness and despite your best
 					efforts, the problems persist, leaving you wondering why it{"'"}s so
@@ -21,11 +21,10 @@ function CallToAction() {
 				</h4>
 				<h3 className="linebreak">
 					<strong>
-						There{"'"}s nothing wrong with you. You
-						{"'"}re doing your best with the resources you have. {"\n\n"}With
-						compassionate support and effective strategies, you can overcome
-						these mental health challenges. Contact us today to start your
-						journey towards a more fulfilling life.
+						There{"'"}s nothing wrong with you. You are doing your best with the
+						resources you have. {"\n\n"}With compassionate support and effective
+						strategies, you can overcome these mental health challenges. Contact
+						us today to start your journey towards a more fulfilling life.
 					</strong>
 				</h3>
 			</div>

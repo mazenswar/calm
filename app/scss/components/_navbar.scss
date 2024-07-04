@@ -2,6 +2,12 @@
 @use "sass:math" as m;
 
 nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: white;
+	border-bottom: 0.2em solid var(--four);
+	/////////////
 	z-index: 200;
 	--font-size: clamp(10px, 2.5vw, 25px);
 	height: clamp(50px, 25vh, 200px);

@@ -1,5 +1,8 @@
 @use "../util" as u;
 footer {
+	border-top: 10px solid #eee;
+	width: 100%;
+
 	h1,
 	h2,
 	h3,
@@ -11,37 +14,48 @@ footer {
 	}
 	span {
 		color: #565656;
-	}
-	border-top: 10px solid #eee;
-	width: 100%;
-}
-.bottom-banner {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	@include u.breakpoint-down(medium) {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-	}
-}
-.contact-info {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 1em 0;
-	span {
 		display: block;
 	}
-}
-
-.copyright {
-	width: 100%;
-	background-color: #eee;
-	padding: 5% 0;
-	display: flex;
-	justify-content: center;
+	.bottom-banner {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		@include u.breakpoint-down(medium) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+	}
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding: 1em 0;
+	}
+	.footer-links {
+		padding-top: 3em;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		a {
+			margin: 0 1em;
+		}
+	}
+	.copyright {
+		width: 100%;
+		background-color: #eee;
+		padding: 5% 0;
+		display: flex;
+		justify-content: center;
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			color: var(--five);
+		}
+	}
 }

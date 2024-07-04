@@ -133,9 +133,7 @@ function ContactForm() {
 				<ErrorMessage condition={touched && touched.state && !values.state} />
 			</div>
 			<div className="input-container">
-				<label htmlFor="message">
-					Tell us a little about why you are looking to start therapy
-				</label>
+				<label htmlFor="message">Availability</label>
 				<textarea
 					value={values.message}
 					onChange={handleChange}
@@ -143,11 +141,13 @@ function ContactForm() {
 					name="message"
 					required
 					aria-required
+					placeholder="Example: Tuesday: 8am-11am, Friday: 12pm-5pm"
 				/>
 				<ErrorMessage
 					condition={touched && touched.message && !values.message}
 				/>
 			</div>
+
 			<input
 				disabled={
 					!values.name ||

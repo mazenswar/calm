@@ -3,6 +3,12 @@
 	a:visited,
 	a:active {
 		text-decoration: underline;
+		h4 {
+			transition: 0.3s;
+			&:hover {
+				color: var(--three);
+			}
+		}
 	}
 	color: var(--three);
 	section {

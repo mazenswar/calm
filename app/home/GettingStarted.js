@@ -17,7 +17,7 @@ function GettingStarted() {
 			<div className="text">
 				<h2>1. Let{"'"}s talk</h2>
 				<p>
-					Your journey typically begins with an initial consultation. This
+					Your journey typically begins with a free 15-minute consultation. This
 					consultation is designed to help you clinician understand your
 					concerns, background, and goals. It{"'"}s an opportunity for you to
 					ask questions, learn and ensure you feel comfortable with the

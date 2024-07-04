@@ -14,8 +14,14 @@
 		.text {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: space-between;
+
 			.spec-container {
+				height: fit-content;
+				width: 30%;
+				margin: 1em 0;
+				padding: 1em;
+				border-radius: 1em;
 				background: linear-gradient(
 					180deg,
 					rgba(2, 0, 36, 1) 0%,
@@ -23,15 +29,22 @@
 					rgba(194, 102, 167, 1) 150%
 				);
 				h3 {
-					color: var(--five);
+					color: var(--six);
+					text-align: center;
+					width: 100%;
 				}
 				p {
 					color: ivory;
 				}
-				width: 25%;
-				margin: 2em;
-				padding: 1em;
-				border-radius: 1em;
+				button {
+					border: none;
+					background-color: transparent;
+					color: ivory;
+					font-weight: 600;
+					width: 100%;
+					text-align: center;
+					cursor: pointer;
+				}
 			}
 		}
 	}

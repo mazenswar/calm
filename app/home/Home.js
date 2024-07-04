@@ -4,6 +4,7 @@ import Bio from "./Bio";
 import GettingStarted from "./GettingStarted";
 import quoteBg from "./assets/sky.jpg";
 import HomeSpecialities from "./HomeSpecialities";
+import Schedule from "./Schedule";
 
 ///////////////////////////
 
@@ -34,6 +35,7 @@ function Home() {
 			<HomeSpecialities />
 
 			<GettingStarted />
+			<Schedule />
 		</main>
 	);
 }

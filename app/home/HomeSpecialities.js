@@ -1,23 +1,30 @@
 import React from "react";
-
 import mountains from "./assets/mountains.jpg";
-function HomeSpecialities() {
-	function truncate(str, id) {
-		return str.length > 500 ? (
-			<div className="trunc-text">
-				<p>
-					{str.substring(0, 499)}...
-					<span>
+
+function truncate(str, id) {
+	let expanded = true;
+	if (str.length > 500) {
+		str = str.substring(0, 499) + "...";
+		expanded = false;
+	}
+	return (
+		<div className="trunc-text">
+			<p>
+				{str}
+				<span>
+					{expanded ? (
+						""
+					) : (
 						<a href="/specialities" className="read-more">
 							Read more
 						</a>
-					</span>
-				</p>
-			</div>
-		) : (
-			input
-		);
-	}
+					)}
+				</span>
+			</p>
+		</div>
+	);
+}
+function HomeSpecialities() {
 	return (
 		<section className="home-specialities">
 			<h1 className="center-title title">Things we can help with</h1>
