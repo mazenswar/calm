@@ -16,6 +16,28 @@ footer {
 		color: #565656;
 		display: block;
 	}
+	.top-banner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		background: linear-gradient(
+			180deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(82, 72, 159, 1) 0%,
+			rgba(194, 102, 167, 1) 150%
+		);
+		.box {
+			h2,
+			h3,
+			p {
+				color: ivory;
+			}
+			display: flex;
+			flex-direction: column;
+			width: 30%;
+		}
+	}
 	.bottom-banner {
 		width: 100%;
 		display: flex;

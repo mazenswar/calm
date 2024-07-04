@@ -7,10 +7,10 @@ function useResizeWatcher() {
 	useEffect(() => {
 		if (window !== undefined) {
 			setWidth(window.innerWidth);
+
 			const handleResize = () => {
 				setWidth(window.innerWidth);
 			};
-
 			window.addEventListener("resize", handleResize);
 
 			return () => {

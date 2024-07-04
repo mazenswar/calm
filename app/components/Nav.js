@@ -1,8 +1,7 @@
 "use client";
-import { isMobile } from "react-device-detect";
 
 import { useEffect, useRef, useState } from "react";
-// import useScreenDimensions from "../hooks/useScreenDimensions";
+
 import dynamic from "next/dynamic";
 import ScheduleButton from "./ScheduleButton";
 import Image from "next/image";

@@ -4,6 +4,7 @@ import Image from "next/image";
 function Footer() {
 	return (
 		<footer>
+			<TopBanner />
 			<section className="bottom-banner">
 				<Image src={logo} alt="logo" width={200} />
 				<div className="contact-info">
@@ -34,6 +35,21 @@ function Footer() {
 				<p>© 2024 Center for Anxiety and Life Management</p>
 			</section>
 		</footer>
+	);
+}
+
+function TopBanner() {
+	return (
+		<section className="top-banner">
+			<div className="box">
+				<h3>LGBTQ+ Affirming Space</h3>
+				<p>You are welcome and celebrated</p>
+			</div>
+
+			<div className="box">
+				<h3>Psychology Today Banner</h3>
+			</div>
+		</section>
 	);
 }
 
