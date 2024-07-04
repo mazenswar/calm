@@ -19,7 +19,7 @@ function Footer() {
 					<a href="/about">
 						<span>About</span>
 					</a>
-					<a href="/fees">
+					<a href="/services">
 						<span>Fees</span>
 					</a>
 					<a href="/faq">
