@@ -45,11 +45,23 @@ footer {
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
+	}
+	.top-banner,
+	.bottom-banner {
 		@include u.breakpoint-down(medium) {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			width: 100%;
+			.box {
+				width: 100%;
+				h2,
+				h3,
+				p {
+					width: 100%;
+					text-align: center;
+				}
+			}
 		}
 	}
 	.contact-info {
