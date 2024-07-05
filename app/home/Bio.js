@@ -9,10 +9,10 @@ function Bio() {
 					Welcome to the Center for Anxiety and Life Management (CALM). As the
 					co-founder and Director, I am dedicated to helping you overcome
 					anxiety-related disorders and navigate life{"'"}s challenges with
-					confidence. I specialize in treating anxiety-related disorders,
-					including Generalized Anxiety Disorder, Social Anxiety Disorder,
-					Obsessive-Compulsive Disorder, Perfectionism, Body Dysmorphia, and
-					managing significant life transitions.
+					confidence. I specialize in treating anxiety and obsessive-compulsive
+					related disorders, including Generalized Anxiety Disorder, Social
+					Anxiety Disorder, Obsessive-Compulsive Disorder, Perfectionism, Body
+					Dysmorphia, and managing significant life transitions.
 				</p>
 				<p>
 					Being a clinical psychologist is incredibly rewarding for me, both

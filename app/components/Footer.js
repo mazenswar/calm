@@ -45,10 +45,6 @@ function TopBanner() {
 				<h3>LGBTQ+ Affirming Space</h3>
 				<p>You are welcome and celebrated</p>
 			</div>
-
-			<div className="box">
-				<h3>Psychology Today Banner</h3>
-			</div>
 		</section>
 	);
 }
