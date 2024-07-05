@@ -42,14 +42,14 @@ function TanyaSingh() {
 					</p>
 					<h3>Specialization</h3>
 					<p>
-						I specialize in treating a range of anxiety-related disorders,
-						including Generalized Anxiety Disorder, Social Anxiety Disorder,
-						Obsessive-Compulsive Disorder, Perfectionism, and Body Dysmorphia.
-						My integrative approach to therapy combines Cognitive Behavioral
-						Therapy (CBT) with Internal Family Systems (IFS), Acceptance and
-						Commitment Therapy (ACT), Dialectical Behavior Therapy (DBT),
-						mindfulness-based approaches, and Inference-Based Cognitive
-						Behavioral Therapy (I-CBT).
+						I specialize in treating a range of anxiety and obsessive compulsive
+						related disorders, including Generalized Anxiety Disorder, Social
+						Anxiety Disorder, Obsessive-Compulsive Disorder, Perfectionism, and
+						Body Dysmorphia. My integrative approach to therapy combines
+						Cognitive Behavioral Therapy (CBT) with Internal Family Systems
+						(IFS), Acceptance and Commitment Therapy (ACT), Dialectical Behavior
+						Therapy (DBT), mindfulness-based approaches, and Inference-Based
+						Cognitive Behavioral Therapy (I-CBT).
 					</p>
 				</div>
 			</div>
