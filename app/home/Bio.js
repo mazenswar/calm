@@ -28,7 +28,8 @@ function Bio() {
 				<p>
 					Growing up in India and moving to the US for my undergraduate studies
 					has given me a unique perspective and identity. My
-					values—authenticity, service, accountability, and respect for everyone
+					values—authenticity, service, curiosity, integrity, loyalty,
+					tolerance, courage and respect for everyone
 					{"'"}s dignity—are influenced by both cultures and guide my everyday
 					interactions.
 				</p>
