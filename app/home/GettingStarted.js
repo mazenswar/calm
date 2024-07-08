@@ -25,9 +25,10 @@ function GettingStarted() {
 				</p>
 				<h2>2. Initial assessment</h2>
 				<p>
-					We will conduct a thorough assessment to gain a deeper understanding
-					of where you are in your mental health journey. This may involve
-					discussing your history, current challenges, and any symptoms you{"'"}
+					After your consultation, we will conduct a thorough assessment to gain
+					a deeper understanding of where you are in your mental health journey.
+					This may involve discussing your history, current challenges, and any
+					symptoms you{"'"}
 					re experiencing. Together, we will set realistic and achievable goals
 					tailored to your specific needs and circumstances.
 				</p>

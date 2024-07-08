@@ -31,25 +31,28 @@ function TanyaSingh() {
 					<p>
 						I hold a PhD and masters degree in Clinical Psychology from
 						Montclair State University and an MA in Psychology in Education from
-						Teachers College, Columbia University. I have trained and worked at
-						a variety of esteemed institutions, including Harvard University,
-						Massachusetts General Hospital, Rutgers University Behavioral Health
-						Care, SUNY Downstate Medical Center, and the Molecular Imaging and
-						Neuropathology Division at the New York State Psychiatric Institute
-						(NYSPI), as well as multiple private practices. I am also an author
-						of 9 peer-reviewed articles and 3 book chapters and have presented
-						at various conferences and workshops.
+						Teachers College, Columbia University. I completed my Postdoctoral
+						Fellowship at the CBT Center for Anxiety & OCD in PA and my
+						Predoctoral internship at Rutgers University Behavioral Health Care.
+						I have also trained and worked at a variety of esteemed
+						institutions, including Harvard University, Massachusetts General
+						Hospital, SUNY Downstate Medical Center, and the Molecular Imaging
+						and Neuropathology Division at the New York State Psychiatric
+						Institute (NYSPI), as well as multiple private practices. I am also
+						an author of 9 peer-reviewed articles and 3 book chapters and have
+						presented at various conferences and workshops.
 					</p>
 					<h3>Specialization</h3>
 					<p>
 						I specialize in treating a range of anxiety and obsessive compulsive
-						related disorders, including Generalized Anxiety Disorder, Social
-						Anxiety Disorder, Obsessive-Compulsive Disorder, Perfectionism, and
-						Body Dysmorphia. My integrative approach to therapy combines
-						Cognitive Behavioral Therapy (CBT) with Internal Family Systems
-						(IFS), Acceptance and Commitment Therapy (ACT), Dialectical Behavior
-						Therapy (DBT), mindfulness-based approaches, and Inference-Based
-						Cognitive Behavioral Therapy (I-CBT).
+						related disorders, including Generalized Anxiety Disorder (GAD),
+						Social Anxiety Disorder (SAD), Obsessive-Compulsive Disorder (OCD),
+						Perfectionism, and Body Dysmorphic Disorder (BDD) etc. My
+						integrative approach to therapy combines Cognitive Behavioral
+						Therapy (CBT) with Internal Family Systems (IFS), Acceptance and
+						Commitment Therapy (ACT), Dialectical Behavior Therapy (DBT),
+						mindfulness-based approaches, and Inference-Based Cognitive
+						Behavioral Therapy (I-CBT).
 					</p>
 				</div>
 			</div>
@@ -92,9 +95,6 @@ function TanyaSingh() {
 				I{"'"}m here to listen, guide, and support you on your journey toward
 				inner peace. Reach out—I{"'"}d love to be part of your story.
 			</p>
-			<Education />
-			<Training />
-			<Dissertation />
 		</section>
 	);
 }

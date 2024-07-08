@@ -28,14 +28,16 @@ footer {
 			rgba(194, 102, 167, 1) 150%
 		);
 		.box {
-			h2,
-			h3,
+			h4,
 			p {
 				color: ivory;
+				text-align: center;
 			}
 			display: flex;
 			flex-direction: column;
-			width: 30%;
+			justify-content: center;
+			align-items: center;
+			width: 90%;
 		}
 	}
 	.bottom-banner {

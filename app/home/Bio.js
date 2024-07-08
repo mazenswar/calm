@@ -7,12 +7,13 @@ function Bio() {
 				<h1 className="center-title">Dr. Tanya Singh, Ph.D.</h1>
 				<p>
 					Welcome to the Center for Anxiety and Life Management (CALM). As the
-					co-founder and Director, I am dedicated to helping you overcome
+					Director and co-founder, I am dedicated to helping you overcome
 					anxiety-related disorders and navigate life{"'"}s challenges with
 					confidence. I specialize in treating anxiety and obsessive-compulsive
-					related disorders, including Generalized Anxiety Disorder, Social
-					Anxiety Disorder, Obsessive-Compulsive Disorder, Perfectionism, Body
-					Dysmorphia, and managing significant life transitions.
+					related disorders, including Generalized Anxiety Disorder (GAD),
+					Social Anxiety Disorder (SAD), Obsessive-Compulsive Disorder (OCD),
+					Perfectionism, Body Dysmorphic Disorder (BDD). Additionally, I can
+					offer care in managing significant life transitions.
 				</p>
 				<p>
 					Being a clinical psychologist is incredibly rewarding for me, both
@@ -28,8 +29,8 @@ function Bio() {
 				<p>
 					Growing up in India and moving to the US for my undergraduate studies
 					has given me a unique perspective and identity. My
-					values—authenticity, service, curiosity, integrity, loyalty,
-					tolerance, courage and respect for everyone
+					values—authenticity, service, integrity, loyalty, courage and respect
+					for everyone
 					{"'"}s dignity—are influenced by both cultures and guide my everyday
 					interactions.
 				</p>

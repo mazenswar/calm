@@ -42,8 +42,10 @@ function TopBanner() {
 	return (
 		<section className="top-banner">
 			<div className="box">
-				<h3>LGBTQ+ Affirming Space</h3>
-				<p>You are welcome and celebrated</p>
+				<h4>
+					Committed to Inclusion and Respect for All Genders, Races, Ethnicities
+					and Identities
+				</h4>
 			</div>
 		</section>
 	);
