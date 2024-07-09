@@ -158,13 +158,11 @@
 			// background-color: var(--six);
 			// color: ivory;
 		}
-		h1 {
+		h2 {
 			width: 100%;
 			grid-column: 1 / span 2;
 		}
-		h2 {
-			// padding: 0 10%;
-		}
+
 		.text {
 			display: flex;
 			justify-content: center;
@@ -228,7 +226,7 @@
 
 	///////////
 	.schedule-section {
-		h1 {
+		.title-text {
 			color: var(--three);
 		}
 		display: flex;

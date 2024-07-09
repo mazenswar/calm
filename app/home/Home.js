@@ -7,6 +7,9 @@ import HomeSpecialities from "./HomeSpecialities";
 import Schedule from "./Schedule";
 
 ///////////////////////////
+export const metadata = {
+	title: "home",
+};
 
 function QuoteSection() {
 	return (
@@ -15,11 +18,11 @@ function QuoteSection() {
 			style={{ backgroundImage: `url(${quoteBg.src})` }}
 		>
 			<div className="text">
-				<h1>
+				<p className="title-text">
 					“Until you make the unconscious conscious, it will direct your life
 					and you will call it fate.”
 					<span>— Carl Jung</span>
-				</h1>
+				</p>
 			</div>
 		</section>
 	);

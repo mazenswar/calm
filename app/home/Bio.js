@@ -4,7 +4,7 @@ function Bio() {
 	return (
 		<section className="home-bio">
 			<div className="text">
-				<h1 className="center-title">Dr. Tanya Singh, Ph.D.</h1>
+				<h2 className="center-title title-text">Dr. Tanya Singh, Ph.D.</h2>
 				<p>
 					Welcome to the Center for Anxiety and Life Management (CALM). As the
 					Director and co-founder, I am dedicated to helping you overcome

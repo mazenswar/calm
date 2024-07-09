@@ -2,6 +2,11 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import ContactText from "./ContactText";
 
+export const metadata = {
+	title: "contact",
+	description: "contact form to schedule consultation",
+};
+
 function Contact() {
 	return (
 		<main id="contact">

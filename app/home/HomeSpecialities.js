@@ -27,7 +27,7 @@ function truncate(str, id) {
 function HomeSpecialities() {
 	return (
 		<section className="home-specialities">
-			<h1 className="center-title title">Things we can help with</h1>
+			<p className="center-title title title-text">Things we can help with</p>
 			<div className="text">
 				<h2>Anxiety and Related Disorders</h2>
 

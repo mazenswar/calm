@@ -6,7 +6,7 @@ function GettingStarted() {
 	return (
 		<section className="home-get-started">
 			<div className="title">
-				<h1 className="center-title">Ready to get started?</h1>
+				<h2 className="center-title title-text">Ready to get started?</h2>
 				<h4 className="subtext">
 					Beginning therapy can be a significant step toward improving your
 					mental health and overall well-being. Here{"'"}s what you can expect

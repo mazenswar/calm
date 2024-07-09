@@ -2,6 +2,11 @@ import React from "react";
 import { questions } from "../data/faq";
 import Banner from "../components/Banner";
 import sunset from "./assets/images/sunset1.jpg";
+
+export const metadata = {
+	title: "faq",
+	description: "Frequently Asked Questions about therapy, services and fees",
+};
 function Faq() {
 	return (
 		<main id="faq">

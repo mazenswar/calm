@@ -6,6 +6,11 @@ import SelfAssessmentScales from "./SelfAssessmentScales";
 import Banner from "../components/Banner";
 import mountains from "./assets/images/mountains1.png";
 
+export const metadata = {
+	title: "resources",
+	description: "free therapy resources and tools",
+};
+
 function Resources() {
 	return (
 		<main id="resources">

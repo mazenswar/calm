@@ -7,7 +7,9 @@ import ScheduleButton from "../components/ScheduleButton";
 function CallToAction() {
 	return (
 		<section className="call-to-action linebreak">
-			<h1 className="center-title">Begin Your Journey to Well-Being Today</h1>
+			<h2 className="center-title title-text">
+				Begin Your Journey to Well-Being Today
+			</h2>
 
 			<div className="text">
 				<h4 className="linebreak">
