@@ -33,6 +33,7 @@ function Footer() {
 			</section>
 			<section className="copyright">
 				<p>© 2024 Center for Anxiety and Life Management</p>
+				<a href="/privacyPolicy">Privacy Policy</a>
 			</section>
 		</footer>
 	);

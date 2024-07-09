@@ -86,9 +86,12 @@ footer {
 		background-color: #eee;
 		padding: 5% 0;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 	}
 	a {
+		transition: 0.5s;
 		text-decoration: underline;
 		&:hover {
 			color: var(--five);
