@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./assets/images/CALM logo_E4.png";
 import Image from "next/image";
+import PsychologyToday from "./PsychologyToday";
 function Footer() {
 	return (
 		<footer>
@@ -48,6 +49,8 @@ function TopBanner() {
 					and Identities
 				</h4>
 			</div>
+
+			<PsychologyToday />
 		</section>
 	);
 }
