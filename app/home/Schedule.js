@@ -7,7 +7,6 @@ function Schedule() {
 			<h2 className="title-text">
 				Schedule your free 15-minute consultation today
 			</h2>
-			<ScheduleButton />
 		</section>
 	);
 }

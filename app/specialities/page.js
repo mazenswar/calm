@@ -17,10 +17,28 @@ specialities.forEach((k) => {
 	defaultState[k.title] = false;
 });
 
+////////////////////////////////////
+
+// export const metadata = {
+// 	title: "Specialities",
+// 	description:
+// 		"Information about mental health issues that the center can help with",
+// };
 //////////////////////////////////////
 function Specialities() {
 	const [expanded, setExpanded] = useState(defaultState);
-	console.log(expanded);
+	useEffect(() => {
+		if (window) {
+			const pathArr = window.location.href.split("/");
+			const pageName = pathArr[pathArr.length - 1];
+			if (pageName.includes("#")) {
+				let currentScrollY = window.scrollY;
+				let currentScrollX = window.scrollX;
+				window.scrollTo(currentScrollX, currentScrollY - 90);
+			}
+		}
+	}, []);
+	///////////////////////////
 	function expandButton(key) {
 		if (expanded[key]) {
 			return (
@@ -45,7 +63,11 @@ function Specialities() {
 				<div className="text">
 					{specialities.map((spec) => {
 						return (
-							<div key={`speciality-${spec.title}`} className="spec-container">
+							<div
+								key={`speciality-${spec.id}`}
+								id={spec.id}
+								className="spec-container"
+							>
 								<h3>{spec.title}</h3>
 								{expanded[spec.title] ? (
 									<p className="linebreak">{spec.summary}</p>

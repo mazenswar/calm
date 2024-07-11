@@ -38,10 +38,10 @@ function CallToAction() {
 					}}
 				></div>
 			</div>
-			<section className="link-button-section">
+			{/* <section className="link-button-section">
 				<h2>Online Therapy in NY and PA</h2>
 				<ScheduleButton />
-			</section>
+			</section> */}
 		</section>
 	);
 }

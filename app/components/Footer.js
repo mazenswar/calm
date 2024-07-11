@@ -17,20 +17,6 @@ function Footer() {
 						<span>tsingh@calmtherapy.center</span>
 					</a>
 				</div>
-				<div className="footer-links">
-					<a href="/about">
-						<span>About</span>
-					</a>
-					<a href="/services">
-						<span>Fees</span>
-					</a>
-					<a href="/faq">
-						<span>FAQs</span>
-					</a>
-					<a href="/resources">
-						<span>Resources</span>
-					</a>
-				</div>
 			</section>
 			<section className="copyright">
 				<p>© 2024 Center for Anxiety and Life Management</p>

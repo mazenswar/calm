@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 import ContactText from "./ContactText";
 
 export const metadata = {
-	title: "contact",
+	title: "Book a free consultation",
 	description: "contact form to schedule consultation",
 };
 
@@ -16,7 +16,7 @@ function Contact() {
 					<ContactText />
 					<ContactForm />
 				</div>
-				<h1>Or Call</h1>
+				<h2 className="title-text">Or Call</h2>
 				<a href="tel:9089917301">
 					<h2>(908) 991-7301</h2>
 				</a>

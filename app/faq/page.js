@@ -4,8 +4,8 @@ import Banner from "../components/Banner";
 import sunset from "./assets/images/sunset1.jpg";
 
 export const metadata = {
-	title: "faq",
-	description: "Frequently Asked Questions about therapy, services and fees",
+	title: "Frequently Asked Questions",
+	description: "Common about therapy, services and fees",
 };
 function Faq() {
 	return (

@@ -2,7 +2,7 @@ import React from "react";
 import HowToUseInsurance from "./HowToUseInsurance";
 
 export const metadata = {
-	title: "fees and services",
+	title: "Fees and services",
 	description: "information about therapy rates and how to use insurance",
 };
 

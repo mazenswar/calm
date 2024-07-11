@@ -5,10 +5,12 @@ import GettingStarted from "./GettingStarted";
 import quoteBg from "./assets/sky.jpg";
 import HomeSpecialities from "./HomeSpecialities";
 import Schedule from "./Schedule";
+import Title from "./Title";
 
 ///////////////////////////
 export const metadata = {
-	title: "home",
+	title: "Center For Anxiety and Life Management (Calm Therapy)",
+	description: "Online therapy services in New York and Pennsylvania",
 };
 
 function QuoteSection() {
@@ -32,6 +34,7 @@ function Home() {
 	return (
 		<main id="home">
 			<QuoteSection />
+			<Title />
 			<CallToAction />
 
 			<Bio />
