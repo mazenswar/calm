@@ -2,6 +2,7 @@ import "./scss/style.scss";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Head from "next/head";
 
 export const metadata = {
 	title: "Center for Anxiety and Life Management (Calm Therapy)",
@@ -12,6 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<Head>
+				<meta
+					name="google-site-verification"
+					content="HLY4tQ5zcfv4L7ffmk3EhUPPJfnFOITw6Hd8-YAP20Y"
+				/>
+			</Head>
 			<body>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 				<Nav />
