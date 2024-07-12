@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./assets/images/CALM logo_E4.png";
+import linkedinLogo from "./assets/images/LI-In-Bug.png";
 import Image from "next/image";
+
 import PsychologyToday from "./PsychologyToday";
 function Footer() {
 	return (
@@ -15,6 +17,17 @@ function Footer() {
 					</a>
 					<a href="mailto: tsingh@calmtherapy.center">
 						<span>tsingh@calmtherapy.center</span>
+					</a>
+					<a
+						href="https://www.linkedin.com/company/center-for-anxiety-and-life-management-calm-therapy"
+						target="_blank"
+						className="linkedin-link"
+					>
+						<Image
+							className="linkedin"
+							src={linkedinLogo}
+							alt="linkedin-logo"
+						/>
 					</a>
 				</div>
 			</section>
