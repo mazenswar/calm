@@ -16,10 +16,21 @@ function Contact() {
 					<ContactText />
 					<ContactForm />
 				</div>
-				<h2 className="title-text">Or Call</h2>
-				<a href="tel:9089917301">
-					<h2>(908) 991-7301</h2>
-				</a>
+				<h2 className="center-title title-text">Or</h2>
+				<div className="or">
+					<div className="or-content">
+						<h2 className="title-text">Call</h2>
+						<a href="tel:9089917301">
+							<h2>(908) 991-7301</h2>
+						</a>
+					</div>
+					<div className="or-content">
+						<h2 className="title-text">Email</h2>
+						<a href="mailto:tsingh@calmtherapy.center">
+							<h2>tsingh@calmtherapy.center</h2>
+						</a>
+					</div>
+				</div>
 			</section>
 		</main>
 	);

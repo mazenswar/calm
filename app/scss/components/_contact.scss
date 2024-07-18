@@ -1,6 +1,9 @@
 @use "../util" as u;
 
 #contact {
+	h2 {
+		color: var(--three);
+	}
 	.booking-form {
 		h1,
 		label {
@@ -37,11 +40,7 @@
 				}
 			}
 		}
-		a[href^="tel:"] {
-			color: #565656;
-			text-decoration: underline;
-			text-decoration-color: var(--five);
-		}
+
 		.error {
 			font-weight: 600;
 			color: red;
@@ -86,7 +85,33 @@
 			}
 		}
 	}
+	.or {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		h2 {
+			color: var(--three);
+		}
+
+		.or-content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			a {
+				color: #565656;
+				text-decoration: underline;
+				text-decoration-color: var(--five);
+			}
+		}
+	}
 	@include u.breakpoint-down(medium) {
+		h2 {
+			padding: 0;
+		}
+		.or {
+			flex-direction: column;
+		}
 		.booking-form {
 			.contact-container {
 				flex-direction: column;
