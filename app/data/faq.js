@@ -1,7 +1,7 @@
 export const questions = [
 	{
 		q: "How much does a therapy session cost?",
-		a: "A 45-minute psychotherapy session costs $220, and the one-time 75-minute intake assessment is $365. We offer a limited number of lower-cost slots to make therapy more accessible for those with lower incomes. Please let us know if you need a reduced rate to attend therapy.\n\n All clients begin with a complimentary 30-minute consultation call to see if we are a good therapeutic fit.",
+		a: "A 45-minute psychotherapy session costs $220, and the one-time 75-minute intake assessment is $365. We offer a limited number of lower-cost slots to make therapy more accessible for those with lower incomes. Please let us know if you need a reduced rate to attend therapy.\n\n All clients begin with a complimentary 15-minute consultation call to see if we are a good therapeutic fit.",
 	},
 	{
 		q: "How do I schedule an appointment?",
