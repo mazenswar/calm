@@ -7,7 +7,7 @@ function Title() {
 				Center For Anxiety and Life Management {"\n"}(Calm Therapy)
 			</h1>
 			<h2 className="center-title">
-				Online Therapy in Pennsylvania and New York
+				Online Therapy in Pennsylvania, New York & New Jersey
 			</h2>
 		</section>
 	);

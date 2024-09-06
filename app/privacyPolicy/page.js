@@ -69,8 +69,8 @@ function PrivacyPolicy() {
 					</li>
 					<li>
 						<p>
-							<strong>Country</strong> refers to: Pennsylvania and New York,
-							United States
+							<strong>Country</strong> refers to: Pennsylvania, New Jersey & New
+							York, United States
 						</p>
 					</li>
 					<li>

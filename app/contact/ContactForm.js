@@ -128,6 +128,7 @@ function ContactForm() {
 					aria-required
 				>
 					<option value={"ny"}>New York</option>
+					<option value={"nj"}>New Jersey</option>
 					<option value={"pa"}>Pennsylvania</option>
 				</select>
 				<ErrorMessage condition={touched && touched.state && !values.state} />

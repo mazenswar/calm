@@ -9,7 +9,7 @@ export const questions = [
 	},
 	{
 		q: "Where do you currently provide services?",
-		a: "We currently offer online therapy exclusively for residents of New York and Pennsylvania. However, we hope to expand our services to other areas soon. Thank you for your understanding and support.",
+		a: "We currently offer online therapy exclusively for residents of New York, New Jersey & Pennsylvania. However, we hope to expand our services to other areas soon. Thank you for your understanding and support.",
 	},
 	{
 		q: "What should I expect in my first therapy session?",
