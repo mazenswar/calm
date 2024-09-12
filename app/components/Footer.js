@@ -4,6 +4,7 @@ import linkedinLogo from "./assets/images/LI-In-Bug.png";
 import Image from "next/image";
 
 import PsychologyToday from "./PsychologyToday";
+import Zencare from "./Zencare";
 function Footer() {
 	return (
 		<footer>
@@ -50,6 +51,7 @@ function TopBanner() {
 			</div>
 
 			<PsychologyToday />
+			<Zencare />
 		</section>
 	);
 }

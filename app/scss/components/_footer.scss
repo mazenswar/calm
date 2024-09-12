@@ -20,6 +20,7 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
+		align-items: center;
 		width: 100%;
 		background: linear-gradient(
 			180deg,
@@ -27,7 +28,8 @@ footer {
 			rgba(82, 72, 159, 1) 0%,
 			rgba(194, 102, 167, 1) 150%
 		);
-		.pt {
+		.pt,
+		.zc {
 			width: 40%;
 			display: flex;
 			justify-content: center;

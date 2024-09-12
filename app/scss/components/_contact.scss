@@ -50,40 +50,43 @@
 			color: #565656;
 			font-weight: 400;
 		}
-		form {
-			margin-bottom: 4em;
-			height: 100%;
-			// width: clamp(300px, 75%, 800px);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			.input-container {
-				width: fit-content;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-evenly;
-				width: 100%;
-				margin: 0.8em;
+		// .calendly-cal {
+		// 	width: 50%;
+		// }
+		// form {
+		// 	margin-bottom: 4em;
+		// 	height: 100%;
+		// 	// width: clamp(300px, 75%, 800px);
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// 	.input-container {
+		// 		width: fit-content;
+		// 		display: flex;
+		// 		flex-direction: column;
+		// 		justify-content: space-evenly;
+		// 		width: 100%;
+		// 		margin: 0.8em;
 
-				// padding: 3em;
-				// margin: 2em 0;
-				input,
-				textarea,
-				select {
-					border-radius: 0.5em;
-					border: 1px solid #565656;
-					width: clamp(300px, 60%, 400px);
-					margin: 0.6em 0;
-					padding: 1em;
-				}
+		// 		// padding: 3em;
+		// 		// margin: 2em 0;
+		// 		input,
+		// 		textarea,
+		// 		select {
+		// 			border-radius: 0.5em;
+		// 			border: 1px solid #565656;
+		// 			width: clamp(300px, 60%, 400px);
+		// 			margin: 0.6em 0;
+		// 			padding: 1em;
+		// 		}
 
-				textarea {
-					// min-height: 150px;
-					width: 100%;
-				}
-			}
-		}
+		// 		textarea {
+		// 			// min-height: 150px;
+		// 			width: 100%;
+		// 		}
+		// 	}
+		// }
 	}
 	.or {
 		width: 100%;

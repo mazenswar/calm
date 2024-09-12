@@ -2,6 +2,8 @@ import "./scss/style.scss";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Calendly from "./components/Calendly";
+import CalendlyLink from "./components/CalendlyLink";
 
 export const metadata = {
 	title: "Center for Anxiety and Life Management (Calm Therapy)",
@@ -18,6 +20,8 @@ export default function RootLayout({ children }) {
 			<body>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 				<Nav />
+				<Calendly />
+
 				{children}
 				<Footer />
 			</body>

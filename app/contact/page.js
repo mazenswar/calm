@@ -1,6 +1,8 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import ContactText from "./ContactText";
+import Calendly from "../components/Calendly";
+import CalendlyCal from "../components/CalendlyCal";
 
 export const metadata = {
 	title: "Book a free consultation",
@@ -14,7 +16,8 @@ function Contact() {
 				<h1 className="center-title">Book a free 15-minute consultation</h1>
 				<div className="contact-container">
 					<ContactText />
-					<ContactForm />
+					<CalendlyCal />
+					{/* <ContactForm /> */}
 				</div>
 				<h2 className="center-title title-text">Or</h2>
 				<div className="or">
