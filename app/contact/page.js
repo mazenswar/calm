@@ -23,8 +23,8 @@ function Contact() {
 				<div className="or">
 					<div className="or-content">
 						<h2 className="title-text">Call</h2>
-						<a href="tel:9089917301">
-							<h2>(908) 991-7301</h2>
+						<a href="tel:9145704196">
+							<h2>(914) 570-4196</h2>
 						</a>
 					</div>
 					<div className="or-content">
