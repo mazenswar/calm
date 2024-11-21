@@ -26,7 +26,7 @@ questions.forEach((ele) => {
 	defaultState[ele.q] = false;
 });
 
-function page() {
+function FAQPage() {
 	const [expanded, setExpanded] = useState(defaultState);
 	useEffect(() => {
 		if (window) {
@@ -101,4 +101,4 @@ function page() {
 	);
 }
 
-export default page;
+export default FAQPage;

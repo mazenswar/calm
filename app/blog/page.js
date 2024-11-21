@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import MediumArticles from "./MediumArticles";
 import Article from "./Article";
 
-function page() {
+function BlogPage() {
 	const [mainArticle, setMainArticle] = useState(false);
 	const [articles, setArticles] = useState([]);
 
@@ -31,4 +31,4 @@ function page() {
 	);
 }
 
-export default page;
+export default BlogPage;
