@@ -1,9 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import Article from "./Article";
-
 const MediumArticles = ({ articles, setMainArticle }) => {
 	// console.log(articles);
 	function makeArticles() {

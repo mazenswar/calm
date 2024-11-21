@@ -1,11 +1,7 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import MediumArticles from "./MediumArticles";
 import Article from "./Article";
-
-const mediumArticle =
-	"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014";
 
 function page() {
 	const [mainArticle, setMainArticle] = useState(false);
