@@ -9,6 +9,7 @@ const MediumArticles = ({ articles, setMainArticle }) => {
 	function makeArticles() {
 		return articles.map((a) => (
 			<div
+				key={a.title}
 				role="link"
 				className="article-link"
 				onClick={() => setMainArticle(a)}
