@@ -6,9 +6,9 @@ function Specs() {
 			<h2 className="center-title">Things we can help with</h2>
 			<div className="container">
 				{specialities.map((s) => (
-					<div key={s.title} className="spec">
+					<a href={`/specialities#` + s.id} key={s.title} className="spec">
 						<p>{s.title}</p>
-					</div>
+					</a>
 				))}
 			</div>
 		</div>

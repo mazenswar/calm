@@ -245,6 +245,20 @@ export function Six() {
 								<strong>2-hour session:</strong> $580
 							</li>
 						</ul>
+						<h5>Accessibility Options</h5>
+
+						<p>
+							I understand that cost can be a barrier for some, so I offer a
+							limited number of sliding scale slots to ensure this treatment
+							remains as accessible as possible.
+						</p>
+
+						<p>
+							This work is an investment in your mental health, and many clients
+							find it to be a life-changing part of their healing journey. If
+							you have any questions or concerns about costs or insurance,
+							please don{"'"}t hesitate to reach out!
+						</p>
 					</div>
 					<div className="journey-fee">
 						<h4>Journey Clinical Medical Costs</h4>
