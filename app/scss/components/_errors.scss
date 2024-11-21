@@ -1,3 +1,14 @@
 #not-found {
 	color: var(--three);
+
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.error-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
