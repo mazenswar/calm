@@ -24,7 +24,7 @@ function HomeBio() {
 				in a deep respect for the sacredness of human experience. I combine
 				evidence-based modalities like CBT and IFS with metacognitive approaches
 				to create a tailored, compassionate space for growth and healing.
-				{"\n\n"}I also offer ketamine-assisted psychotherapy, which can be
+				{"\n\n"}I also offer Ketamine-Assisted Psychotherapy (KAP), which can be
 				especially helpful for individuals struggling with anxiety,
 				obsessive-compulsive disorders, or navigating significant life
 				transitions. This approach can complement traditional therapy by
