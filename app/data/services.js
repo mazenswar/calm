@@ -59,7 +59,7 @@ export const specialities = [
 		title: "Social Anxiety Disorder (SAD)",
 		id: "sad",
 		summary:
-			"SAD involves an intense fear of social situations where one might be judged, embarrassed, or scrutinized by others. This fear can lead to avoidance of social interactions and significant impairment in daily life.\nCognitive Behavioral Therapy (CBT) is effective for SAD. Treatment focuses on challenging negative thoughts about social situations, developing social skills, and gradually facing feared social interactions.",
+			"SAD involves an intense fear of social situations where one might be judged, embarrassed, or scrutinized by others. This fear can lead to avoidance of social interactions and significant impairment in daily life.Cognitive Behavioral Therapy (CBT) is effective for SAD. Treatment focuses on challenging negative thoughts about social situations, developing social skills, and gradually facing feared social interactions.",
 	},
 	{
 		title: "Stress Management / Work-Life Balance",

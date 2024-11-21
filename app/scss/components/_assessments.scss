@@ -1,0 +1,18 @@
+#assessments {
+	.scales {
+		background-color: var(--t3);
+		max-width: 1300px;
+		margin: 2em;
+		border-radius: 1em;
+		h1 {
+			color: var(--three);
+		}
+		h5 {
+			color: #4d4d4d;
+		}
+		a {
+			color: var(--four);
+			text-decoration: underline;
+		}
+	}
+}

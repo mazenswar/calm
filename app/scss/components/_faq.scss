@@ -1,27 +1,114 @@
 @use "../util" as u;
+
 #faq {
 	h1,
+	h2,
 	h3 {
 		color: var(--three);
 	}
-	// .question-container {
-	// 	margin-bottom: 5em;
-	// }
+	h5,
+	p {
+		color: #565656;
+	}
+	#faq-section {
+		background-color: var(--t2);
+		.text {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
 
-	.questions-container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		.question-container {
-			width: 100%;
-			margin: 2em 0;
+			.faq-container {
+				height: 25vh;
+				width: clamp(400px, 45%, 800px);
+				margin: 1em;
+				padding: 1em;
+				border-radius: 1em;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				background: var(--t3);
+				.icon {
+					cursor: pointer;
+					width: 100%;
+					padding: 1em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				&.active {
+					min-height: 40vh;
+					height: fit-content;
+				}
+				.content {
+					height: 0;
+					overflow: hidden;
+					&.active {
+						font-size: 1.15em;
+
+						height: fit-content;
+						margin: 1em 3em 3em 3em;
+						cursor: text;
+					}
+				}
+				h3 {
+					color: var(--three);
+					text-align: center;
+					width: 100%;
+					margin: 1em 0;
+				}
+				p {
+					color: #4d4d4d;
+				}
+				button {
+					border: none;
+					background-color: transparent;
+					color: #4d4d4d;
+					font-weight: 600;
+					width: 100%;
+					text-align: center;
+					cursor: pointer;
+				}
+			}
 		}
 	}
-	// @include u.breakpoint-down(medium) {
-	// 	.questions-container {
-	// 		.question-container {
-	// 			width: 100%;
-	// 		}
-	// 	}
-	// }
+	@include u.breakpoint-down(medium) {
+		.banner-container {
+			height: 30vh;
+		}
+		#faq-section {
+			.text {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+
+				.faq-container {
+					width: 90%;
+					margin-bottom: 2em;
+					&.active {
+						.content.active {
+							padding: 0.5em;
+							margin: 0;
+						}
+					}
+					.content {
+						height: 0;
+						overflow: hidden;
+						&.active {
+							height: fit-content;
+						}
+					}
+
+					// display: flex;
+					// flex-direction: column;
+					// flex-wrap: wrap;
+					// justify-content: center;
+				}
+			}
+		}
+	}
 }

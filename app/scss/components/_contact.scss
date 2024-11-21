@@ -1,10 +1,51 @@
 @use "../util" as u;
 
 #contact {
+	li,
+	a {
+		font-size: 1.1em;
+	}
+	p {
+		font-size: 1.7em;
+	}
 	h2 {
 		color: var(--three);
 	}
+	#contact-info {
+		width: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		li {
+			width: 30%;
+			margin: 0.5em;
+			text-align: center;
+			// background-color: var(--t2);
+			color: #565656;
+			// height: 2em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-self: center;
+
+			.clink {
+				// width: 1%;
+				padding: 2em 0;
+				text-decoration: underline;
+			}
+			// background-color: red;
+			span {
+				display: inline-block;
+				width: 30%;
+			}
+		}
+	}
 	.booking-form {
+		padding: 1em 0;
+		// height: fit-content;
 		h1,
 		label {
 			color: var(--three);
@@ -18,17 +59,52 @@
 
 		.contact-container {
 			display: flex;
+			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
-
+			// background-color: var(--t3);
+			max-width: 1600px;
+			width: clamp(300px, 85%, 1500px);
+			border-radius: 2em;
+			background-color: var(--t3);
+			border-radius: 2em;
+			margin: 4em 0;
+			padding: 4em;
+			.image {
+				width: 15em;
+				height: 15em;
+				background-size: contain;
+				border-radius: 100%;
+			}
+			// height: 300vh;
+			#calendly-cal {
+				.calendly-inline-widget {
+					width: 100vw;
+				}
+				// padding: 1em;
+			}
 			.contact-text {
-				width: 40%;
+				width: 80%;
 				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
+				// flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
 				align-items: center;
+
+				.topa {
+					width: 60%;
+					text-align: center;
+				}
+				.topb,
+				p {
+					width: 100%;
+					text-align: center;
+				}
+				p {
+					padding: 3em 0 1.7em 0;
+				}
 				img {
-					width: 90%;
+					width: 40%;
 					height: auto;
 					margin: 1em 0;
 				}
@@ -88,38 +164,37 @@
 		// 	}
 		// }
 	}
-	.or {
-		width: 100%;
-		display: flex;
-		justify-content: space-evenly;
-		h2 {
-			color: var(--three);
-		}
 
-		.or-content {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			a {
-				color: #565656;
-				text-decoration: underline;
-				text-decoration-color: var(--five);
-			}
-		}
-	}
-	@include u.breakpoint-down(medium) {
+	@include u.breakpoint-down(extra-medium) {
 		h2 {
 			padding: 0;
 		}
-		.or {
-			flex-direction: column;
-		}
+
 		.booking-form {
 			.contact-container {
 				flex-direction: column;
+				padding: 0;
+				margin-top: 1em;
+				#contact-info {
+					flex-direction: column;
+					li {
+						width: 100%;
+					}
+				}
 				.contact-text {
+					padding-top: 2em;
 					width: 80%;
+					flex-direction: column;
+
+					p,
+					h2.linebreak {
+						text-align: center;
+						width: 100%;
+						font-size: 1.3em;
+					}
+					p {
+						padding: 2em 0;
+					}
 				}
 			}
 		}

@@ -1,0 +1,39 @@
+#insurance-page {
+	#insurance-section {
+		background-color: var(--t3);
+		align-items: center;
+		h1,
+		h2 {
+			color: var(--three);
+			margin-bottom: 1em;
+		}
+		h4 {
+			margin: 4em 0;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				margin: 1.5em 0;
+			}
+		}
+		.subtext {
+			text-align: center;
+			margin-bottom: clamp(20px, 5em, 40px);
+			width: clamp(300px, 60%, 700px);
+			font-size: 1.5em;
+		}
+		.steps {
+			// background-color: var(--t2);
+			border: 0.6em solid var(--t2);
+			padding: clamp(20px, 5em, 40px);
+			margin-top: 3em;
+			width: clamp(300px, 50%, 1000px);
+
+			p {
+				color: #4d4d4d;
+			}
+		}
+	}
+}

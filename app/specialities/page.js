@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { specialities } from "../data/services";
 import Banner from "../components/Banner";
-import connect from "./assets/images/connect.png";
+import sky from "./assets/images/sky.jpg";
+import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function truncate(str, id) {
 	if (str.length > 300) {
@@ -14,7 +16,7 @@ function truncate(str, id) {
 
 const defaultState = {};
 specialities.forEach((k) => {
-	defaultState[k.title] = false;
+	defaultState[k.id] = false;
 });
 
 ////////////////////////////////////
@@ -55,26 +57,35 @@ function Specialities() {
 		}
 	}
 
+	function handleClick(id) {
+		setExpanded({ ...expanded, [id]: !expanded[id] });
+	}
+
 	return (
 		<main id="specialities">
-			<Banner img={connect} />
+			<Banner img={sky} backPos="bottom" text="Areas of Speciality" />
 			<section id="specialities-section">
-				<h1 className="center-title">Areas of Speciality</h1>
 				<div className="text">
 					{specialities.map((spec) => {
 						return (
 							<div
 								key={`speciality-${spec.id}`}
 								id={spec.id}
-								className="spec-container"
+								className={
+									expanded[spec.id] ? "spec-container active" : "spec-container"
+								}
 							>
 								<h3>{spec.title}</h3>
-								{expanded[spec.title] ? (
-									<p className="linebreak">{spec.summary}</p>
-								) : (
-									truncate(spec.summary)
-								)}
-								{expandButton(spec.title)}
+								<p className={expanded[spec.id] ? "content active" : "content"}>
+									{spec.summary}
+								</p>
+								<div className="icon" onClick={() => handleClick(spec.id)}>
+									<FontAwesomeIcon
+										icon={expanded[spec.id] ? faArrowUp : faArrowDown}
+										size="1x"
+										color="var(--four)"
+									/>
+								</div>
 							</div>
 						);
 					})}

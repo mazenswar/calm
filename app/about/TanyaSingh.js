@@ -5,12 +5,13 @@ import Image from "next/image";
 function TanyaSingh() {
 	return (
 		<section className="ts">
-			<h1 className="center-title">Dr. Tanya Singh, Ph.D.</h1>
 			<div className="grid">
-				<div className="image-container">
-					<Image className="image" src={tnt} alt="tanya" />
-				</div>
+				<div
+					className="image"
+					style={{ backgroundImage: `url("${tnt.src}")` }}
+				></div>
 				<div className="text">
+					<h1 className="center-title">Dr. Tanya Singh, Ph.D.</h1>
 					<h4>
 						Licensed Clinical Psychologist | Co-Founder & Director, CALM (Center
 						for Anxiety and Life Management)
@@ -56,45 +57,51 @@ function TanyaSingh() {
 					</p>
 				</div>
 			</div>
-
-			<h3>Why I Love What I Do</h3>
-			<h4>Deep Connections</h4>
-			<p>
-				Connecting with diverse individuals daily fuels my passion and reminds
-				me why I chose this path.
-			</p>
-			<h4>Meaningful Impact</h4>
-			<p>
-				Witnessing transformation, whether helping someone conquer panic attacks
-				or guiding them toward self-acceptance, is my greatest reward.
-			</p>
-			<h4>Real-Life Insights</h4>
-			<p>
-				My work allows me to step into others{"'"} shoes, gaining profound
-				insights into their experiences, keeping me grounded and empathetic.
-			</p>
-			<h3>From India to the US</h3>
-			<h4>Cultural Fusion</h4>
-			<p>
-				Growing up in India and pursuing my studies in the US, I{"'"}ve woven
-				together a rich tapestry of cultural influences, reflected in my values,
-				principles, and dreams.
-			</p>
-			<h4>Curious Explorer</h4>
-			<p>
-				Beyond my practice, I{"'"}m an avid learner, exploring the mysteries of
-				consciousness and the wisdom of Buddhism.
-			</p>
-			<h4>Nature Lover</h4>
-			<p>
-				You{"'"}ll find me taking serene nature walks, savoring new cuisines,
-				and sharing laughter with the kids in my life.
-			</p>
-			<h4>Let{"'"}s Connect</h4>
-			<p>
-				I{"'"}m here to listen, guide, and support you on your journey toward
-				inner peace. Reach out—I{"'"}d love to be part of your story.
-			</p>
+			<div className="cx">
+				<div className="subcx">
+					<h3>Why I Love What I Do</h3>
+					<h4>Deep Connections</h4>
+					<p>
+						Connecting with diverse individuals daily fuels my passion and
+						reminds me why I chose this path.
+					</p>
+					<h4>Meaningful Impact</h4>
+					<p>
+						Witnessing transformation, whether helping someone conquer panic
+						attacks or guiding them toward self-acceptance, is my greatest
+						reward.
+					</p>
+					<h4>Real-Life Insights</h4>
+					<p>
+						My work allows me to step into others{"'"} shoes, gaining profound
+						insights into their experiences, keeping me grounded and empathetic.
+					</p>
+				</div>
+				<div className="subcx">
+					<h3>From India to the US</h3>
+					<h4>Cultural Fusion</h4>
+					<p>
+						Growing up in India and pursuing my studies in the US, I{"'"}ve
+						woven together a rich tapestry of cultural influences, reflected in
+						my values, principles, and dreams.
+					</p>
+					<h4>Curious Explorer</h4>
+					<p>
+						Beyond my practice, I{"'"}m an avid learner, exploring the mysteries
+						of consciousness and the wisdom of Buddhism.
+					</p>
+					<h4>Nature Lover</h4>
+					<p>
+						You{"'"}ll find me taking serene nature walks, savoring new
+						cuisines, and sharing laughter with the kids in my life.
+					</p>
+					{/* <h4>Let{"'"}s Connect</h4>
+					<p>
+						I{"'"}m here to listen, guide, and support you on your journey
+						toward inner peace. Reach out—I{"'"}d love to be part of your story.
+					</p> */}
+				</div>
+			</div>
 		</section>
 	);
 }

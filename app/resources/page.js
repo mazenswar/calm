@@ -14,7 +14,7 @@ export const metadata = {
 function Resources() {
 	return (
 		<main id="resources">
-			<Banner img={mountains} />
+			{/* <Banner img={mountains} /> */}
 			<section>
 				<h3 className="emergency-text">
 					If you are in crisis or facing a life-threatening emergency, please
@@ -26,7 +26,6 @@ function Resources() {
 			</section>
 
 			<FreeResources />
-			<SelfAssessmentScales />
 		</main>
 	);
 }

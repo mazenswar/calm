@@ -1,8 +1,9 @@
 import React from "react";
-import Home from "./home/Home";
+
+import HomeTwo from "./homeTwo/HomeTwo";
 
 function Main() {
-	return <Home />;
+	return <HomeTwo />;
 }
 
 export default Main;

@@ -1,0 +1,253 @@
+@use "../util" as u;
+@use "sass:math" as m;
+
+:root {
+	--t1: #edede9;
+	--t2: #d6ccc2;
+	--t3: #f5ebe0;
+}
+
+////////////////////////// DESKTOP
+main {
+	justify-content: flex-start;
+}
+#homeTwo {
+	// color: #585858;
+	#home-bio {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			color: var(--three);
+		}
+		.image-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2em 0;
+			.image {
+				width: 15em;
+				height: 15em;
+				background-position: center;
+				background-size: cover;
+				border-radius: 100%;
+			}
+			h6 {
+				font-size: 1.4em;
+				color: var(--three);
+				margin-bottom: 0.5em;
+			}
+			span {
+				color: #4d4d4d;
+				text-align: center;
+			}
+		}
+		p {
+			max-width: 900px;
+			text-align: center;
+			font-size: 1.2em;
+			line-height: 1.8em;
+			color: #4d4d4d;
+		}
+	}
+	.landing-header {
+		background-color: var(--t1);
+		// color: var(--two);
+		color: #4d4d4d;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		// align-items: center;
+		padding: 4em 0.5em;
+		.text {
+			width: 45%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			h1 {
+				font-size: 2em;
+				color: var(--two);
+			}
+		}
+		.image {
+			// position: absolute;
+			// right: 5%;
+			// top: 0;
+			width: 30em;
+			height: 30em;
+
+			background-position: center;
+			background-size: cover;
+			border-radius: 2em;
+			// height: fit-content;
+		}
+	}
+	h1 {
+		// background-color: red;
+		font-size: 1em;
+		font-weight: 500;
+		padding: 0;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin: 0.5em 0;
+		width: 100%;
+		text-align: center;
+	}
+	h2 {
+		margin: 1em 0;
+		color: #4d4d4d;
+	}
+	h3,
+	p {
+		color: #4d4d4d;
+	}
+	h4 {
+		font-weight: 400;
+		color: #4d4d4d;
+	}
+	.icons-container {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: var(--four);
+		border-radius: 2em;
+		margin: 3em 0;
+		padding: 1em;
+		.icon {
+			// background-color: red;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1em;
+			span {
+				margin-top: 2em;
+				text-align: center;
+				color: ivory;
+			}
+		}
+	}
+	.fs-banner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: #d6ccc2;
+		width: 100%;
+		.f-container {
+			width: 50%;
+			padding: 2em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			a,
+			a:active,
+			a:visited {
+				font-size: inherit;
+				text-decoration: underline;
+				color: var(--four);
+			}
+			.center-title {
+				font-size: 3em;
+				color: var(--two);
+			}
+			.f {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				padding: 1em;
+				.fee-container {
+					background-color: var(--t3);
+					width: 45%;
+					padding: 2em;
+					border-radius: 1em;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		.specs {
+			width: 50%;
+			.container {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				.spec {
+					background-color: #f5ebe0;
+					padding: 2em;
+					margin: 1em;
+					border-radius: 1em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					p {
+						margin: 0;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+/////////////////////////// END DESKTOP
+
+////////////////////////////// TABLET AND MOBILE
+
+@include u.breakpoint-down(extra-medium) {
+	#homeTwo {
+		.fs-banner {
+			width: 100%;
+			flex-direction: column;
+			.specs {
+				width: 100%;
+			}
+			.f-container {
+				width: 100%;
+				.center-title {
+					font-size: 2.5em;
+				}
+				.f {
+					flex-direction: column;
+
+					.fee-container {
+						width: 100%;
+						margin: 1em auto;
+					}
+				}
+			}
+		}
+		.landing-header {
+			// background: red;
+			flex-direction: column-reverse;
+
+			.text {
+				width: 70%;
+				.icons-container {
+					flex-direction: column;
+					width: fit-content;
+					margin: 2em auto;
+				}
+			}
+			.image {
+				width: 20em;
+				height: 20em;
+				// background-color: red;
+				background-position: center;
+				background-size: cover;
+				border-radius: 100%;
+				padding: 1em;
+				margin-bottom: 4em;
+			}
+		}
+	}
+}

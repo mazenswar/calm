@@ -1,7 +1,9 @@
 @use "../util" as u;
 
 #specialities {
-	h1,
+	h1 {
+		color: ivory;
+	}
 	h2,
 	h3 {
 		color: var(--three);
@@ -10,36 +12,67 @@
 	p {
 		color: #565656;
 	}
+	background-color: var(--t2);
+	// border-radius: 3em;
+
 	#specialities-section {
+		padding: 2em;
 		.text {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;
+			justify-content: center;
+			.content {
+				height: 0;
+				overflow: hidden;
+				line-height: 1.5;
+				color: #4d4d4d;
+				cursor: text;
 
+				&.active {
+					height: fit-content;
+					margin: 1em 3em;
+				}
+			}
 			.spec-container {
-				height: fit-content;
-				width: 30%;
-				margin: 1em 0;
+				height: 25vh;
+				width: clamp(200px, 45%, 800px);
+				hyphens: auto;
+
+				// height: 60vh;
+				margin: 1em;
 				padding: 1em;
 				border-radius: 1em;
-				background: linear-gradient(
-					180deg,
-					rgba(2, 0, 36, 1) 0%,
-					rgba(82, 72, 159, 1) 0%,
-					rgba(194, 102, 167, 1) 150%
-				);
-				h3 {
-					color: var(--six);
-					text-align: center;
+				background: var(--t3);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				.icon {
+					cursor: pointer;
 					width: 100%;
+					padding: 1em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				&.active {
+					min-height: 35vh;
+					height: fit-content;
+				}
+				h3 {
+					color: var(--three);
+					text-align: center;
+					// width: 100%;
+					margin: 1em auto;
 				}
 				p {
-					color: ivory;
+					color: #4d4d4d;
+					font-size: 1.15em;
 				}
 				button {
 					border: none;
 					background-color: transparent;
-					color: ivory;
+					color: #4d4d4d;
 					font-weight: 600;
 					width: 100%;
 					text-align: center;
@@ -54,14 +87,22 @@
 		}
 		#specialities-section {
 			.text {
+				width: 100%;
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
 				justify-content: space-between;
 				align-items: center;
+				.content {
+					&.active {
+						margin: 1em 0.2em;
+					}
+				}
+
 				.spec-container {
-					width: 90%;
-					margin-bottom: 2em;
+					width: 100%;
+					margin: 2em 0;
+					// margin-bottom: 2em;
 				}
 			}
 		}

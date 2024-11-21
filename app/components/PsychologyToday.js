@@ -4,7 +4,7 @@ import React from "react";
 function PsychologyToday() {
 	return (
 		<div
-			className="pt"
+			id="pt"
 			dangerouslySetInnerHTML={{
 				__html: `<!-- Professional verification provided by Psychology Today -->
 <a href="https://www.psychologytoday.com/profile/1338674" class="sx-verified-seal"></a>

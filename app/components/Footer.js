@@ -3,13 +3,16 @@ import logo from "./assets/images/CALM logo_E4.png";
 import linkedinLogo from "./assets/images/LI-In-Bug.png";
 import instagramLogo from "./assets/images/Instagram.png";
 import Image from "next/image";
+import jb from "./assets/images/jckap.png";
 
 import PsychologyToday from "./PsychologyToday";
 import Zencare from "./Zencare";
+import Diversity from "./Diversity";
 function Footer() {
 	return (
 		<footer>
 			<TopBanner />
+			<Diversity />
 			<section className="bottom-banner">
 				<Image src={logo} alt="logo" width={200} />
 				<div className="contact-info">
@@ -54,16 +57,17 @@ function Footer() {
 	);
 }
 
+function Journey() {
+	return (
+		<a href="https://www.journeyclinical.com/" target="_blank" id="journey">
+			<Image src={jb} alt="journey-logo" />
+		</a>
+	);
+}
 function TopBanner() {
 	return (
 		<section className="top-banner">
-			<div className="box">
-				<h4>
-					Committed to Inclusion and Respect for All Genders, Races, Ethnicities
-					and Identities
-				</h4>
-			</div>
-
+			<Journey />
 			<PsychologyToday />
 			<Zencare />
 		</section>

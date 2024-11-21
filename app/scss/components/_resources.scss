@@ -10,12 +10,15 @@
 			}
 		}
 	}
-	color: var(--three);
+	h1 {
+		color: var(--three);
+	}
+	color: #4d4d4d;
 	section {
-		padding-bottom: 1em;
-		padding-top: 1em;
+		max-width: 1200px;
 	}
 	.emergency-text {
+		padding: 2em 0;
 		.link {
 			color: rgb(185, 0, 0);
 			font-weight: 700;
@@ -53,6 +56,9 @@
 		color: var(--five);
 	}
 	.free-resources {
+		background-color: var(--t3);
+		margin-bottom: 2em;
+		border-radius: 2em;
 		.resource-container {
 			padding: 2em 0;
 		}
