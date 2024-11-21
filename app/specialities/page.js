@@ -34,9 +34,15 @@ function Specialities() {
 			const pathArr = window.location.href.split("/");
 			const pageName = pathArr[pathArr.length - 1];
 			if (pageName.includes("#")) {
+				let arr = pageName.split("#");
+				let id = arr[arr.length - 1];
 				let currentScrollY = window.scrollY;
 				let currentScrollX = window.scrollX;
 				window.scrollTo(currentScrollX, currentScrollY - 90);
+				if (expanded[id] === false) {
+					let newState = { ...expanded, [id]: true };
+					setExpanded(newState);
+				}
 			}
 		}
 	}, []);
