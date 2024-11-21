@@ -286,8 +286,11 @@ export function Seven() {
 			<div className="content">
 				<p>
 					If you would like to explore the possibility of working with me on
-					KAP, please e-mail me at XXX@gmail.com to discuss eligibility and next
-					steps.
+					KAP, please e-mail me at{" "}
+					<a className="clink" href="mailto:tsingh@calmtherapy.center">
+						tsingh@calmtherapy.center
+					</a>{" "}
+					to discuss eligibility and next steps.
 				</p>
 			</div>
 		</>
