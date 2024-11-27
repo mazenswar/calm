@@ -1,11 +1,11 @@
 import React from "react";
 
-// At CALM Therapy, we are committed to providing high-quality, individualized care tailored to your unique needs. To maintain this level of service, we choose to operate as out-of-network providers. This approach allows us to:
-// 	•	Provide Comprehensive, Unrestricted Care: Insurance often limits the type, length, and frequency of sessions, which may not align with what’s best for your treatment.
-// 	•	Maintain Confidentiality: Insurance companies require detailed records, which can compromise your privacy. By not accepting insurance, we ensure your information remains secure and confidential.
-// 	•	Focus on Specialized Care: As experts in anxiety, OCD, and related disorders, we prioritize evidence-based, client-centered approaches without restrictions imposed by insurance companies.
-
-// You may still be eligible for partial or full reimbursement for our services through your insurance plan. We’re happy to provide you with a superbill to submit to your insurance company.
+export const metadata = {
+	title: "Insurance Informaton",
+	description:
+		"Information about why we do not directly take insurance and how to get reimbursed by your insurance provider for our services",
+	keywords: "insurance, out-of-network provider, reimbursement",
+};
 
 function Insurance() {
 	return (

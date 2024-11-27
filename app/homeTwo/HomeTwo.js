@@ -6,10 +6,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import j1 from "./assets/jr1.jpg";
-import Image from "next/image";
-import Specs from "./Specs";
 import BottomBanner from "./BottomBanner";
 import HomeBio from "./HomeBio";
+
+export const metadata = {
+	title: "Center For Anxiety and Life Management (Calm Therapy)",
+	description:
+		"Online therapy services in New Jersey, New York and Pennsylvania",
+	keywords: "calm, online therapy, virtual therapy",
+};
 
 function HomeTwo() {
 	return (

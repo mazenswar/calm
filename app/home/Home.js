@@ -10,7 +10,9 @@ import Title from "./Title";
 ///////////////////////////
 export const metadata = {
 	title: "Center For Anxiety and Life Management (Calm Therapy)",
-	description: "Online therapy services in New York and Pennsylvania",
+	description:
+		"Online therapy services in New Jersey, New York and Pennsylvania",
+	keywords: "calm, online therapy, virtual therapy",
 };
 
 function QuoteSection() {

@@ -1,5 +1,10 @@
 import React from "react";
 
+export const metadata = {
+	title: "Self Assessment Scales",
+	description: "links to free reputable self-assessment scales",
+	keywords: "self-assessment, scales, assessment",
+};
 function SelfAssessmentScales() {
 	return (
 		<main id="assessments">

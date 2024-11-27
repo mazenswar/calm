@@ -6,7 +6,9 @@ import CalendlyCal from "../components/CalendlyCal";
 
 export const metadata = {
 	title: "Book a free consultation",
-	description: "contact form to schedule consultation",
+	description:
+		"Information and links to schedule a free 15 minute consultation",
+	keywords: "booking, appointments, consulation, complimentary",
 };
 
 function Contact() {

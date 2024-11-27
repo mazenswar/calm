@@ -1,34 +1,13 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import MediumArticles from "./MediumArticles";
-import Article from "./Article";
+import React from "react";
+import Blog from "./Blog";
 
+export const metadata = {
+	title: "Blog",
+	description: "latest blogs about mental health, tools, tips and guides",
+	keywords: "blog, writing, mental health, tips, guides",
+};
 function BlogPage() {
-	const [mainArticle, setMainArticle] = useState(false);
-	const [articles, setArticles] = useState([]);
-
-	useEffect(() => {
-		fetch(
-			"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014"
-		)
-			.then((res) => res.json())
-			.then((data) => setArticles(data.items));
-	}, []);
-	return (
-		<main id="blog">
-			<section>
-				{mainArticle ? (
-					<Article
-						title={mainArticle.title}
-						description={mainArticle.description}
-						closeArticle={() => setMainArticle(false)}
-					/>
-				) : (
-					<MediumArticles articles={articles} setMainArticle={setMainArticle} />
-				)}
-			</section>
-		</main>
-	);
+	return <Blog />;
 }
 
 export default BlogPage;
