@@ -70,6 +70,9 @@ function NewNav() {
 						<li>
 							<a href="/insurance">Insurance</a>
 						</li>
+						<li>
+							<a href="/groups">Groups</a>
+						</li>
 					</ul>
 				</li>
 
