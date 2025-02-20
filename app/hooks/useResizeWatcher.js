@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 function useResizeWatcher() {
-	const [width, setWidth] = useState(window.innerWidth);
+	const [width, setWidth] = useState();
 
 	useEffect(() => {
 		if (window !== undefined) {
