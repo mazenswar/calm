@@ -1,5 +1,6 @@
 import React from "react";
 import tanya from "./assets/tanya.png";
+import VideoEmbed from "./VideoEmbed";
 
 function HomeBio() {
 	return (

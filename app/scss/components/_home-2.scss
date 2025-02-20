@@ -11,12 +11,14 @@
 main {
 	justify-content: flex-start;
 }
+
 #homeTwo {
 	// color: #585858;
 	#home-bio {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		// padding: 0;
 		h2 {
 			color: var(--three);
 		}
@@ -228,7 +230,7 @@ main {
 		}
 		.landing-header {
 			// background: red;
-			flex-direction: column-reverse;
+			flex-direction: column;
 
 			.text {
 				width: 70%;

@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import j1 from "./assets/jr1.jpg";
 import BottomBanner from "./BottomBanner";
 import HomeBio from "./HomeBio";
+import VideoEmbed from "./VideoEmbed";
 
 export const metadata = {
 	title: "Center For Anxiety and Life Management (Calm Therapy)",
@@ -20,6 +21,7 @@ function HomeTwo() {
 	return (
 		<main id="homeTwo">
 			<section className="landing-header">
+				<VideoEmbed />
 				<div className="text">
 					<h1 className="linebreak">
 						Center for Anxiety and Life Management {"\n"}(CALM Therapy)
@@ -33,21 +35,18 @@ function HomeTwo() {
 
 					<div className="icons-container">
 						<div className="icon">
-							<FontAwesomeIcon icon={faVideo} size="4x" color="ivory" />
+							<FontAwesomeIcon icon={faVideo} size="2x" color="ivory" />
 							<span>Telehealth Appointments</span>
 						</div>
 						<div className="icon">
-							<FontAwesomeIcon icon={faUserCheck} size="4x" color="ivory" />
+							<FontAwesomeIcon icon={faUserCheck} size="2x" color="ivory" />
 							<span>Accepting New Patients</span>
 						</div>
 						<div className="icon">
-							<FontAwesomeIcon icon={faLocationDot} size="4x" color="ivory" />
+							<FontAwesomeIcon icon={faLocationDot} size="2x" color="ivory" />
 							<span>Serving NJ, NY & PA</span>
 						</div>
 					</div>
-				</div>
-				<div className="image" style={{ backgroundImage: `url(${j1.src})` }}>
-					{/* <Image src={j1} alt="journey" /> */}
 				</div>
 			</section>
 			<HomeBio />
