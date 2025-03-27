@@ -1,5 +1,24 @@
 import React from "react";
 import FAQ from "./FAQ";
+import { questions } from "../data/faq";
+
+function makeJsonLd() {
+	const me = questions.map((ele) => ({
+		"@type": "Quetion",
+		name: ele.q,
+		acceptedAnswer: {
+			"@type": "answer",
+			text: ele.a,
+		},
+	}));
+	return {
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		mainEntity: me,
+	};
+}
+
+const jsonLd = makeJsonLd();
 
 export const metadata = {
 	title: "Common Questions",
@@ -21,7 +40,15 @@ export const metadata = {
 };
 
 function FAQPage() {
-	return <FAQ />;
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
+			<FAQ />;
+		</>
+	);
 }
 
 export default FAQPage;
