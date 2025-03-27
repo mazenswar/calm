@@ -17,6 +17,7 @@ export const metadata = {
 		siteName: "CALM Therapy",
 		locale: "en_US",
 		type: "website",
+		images: "/images/Social Media_A Instagram.png",
 	},
 };
 
