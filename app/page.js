@@ -19,8 +19,29 @@ export const metadata = {
 		type: "website",
 	},
 };
+
+const jsonLd = {
+	"@type": "Organization",
+	name: "CALM Therapy",
+	legalName: "Center for Anxiety and Life Mangement PLLC",
+	url: "https://calmtherapy.center",
+	"@id": "https://calmtherapy.center",
+	sameAs: [
+		"https://www.linkedin.com/company/center-for-anxiety-and-life-management-calm-therapy",
+		"https://www.psychologytoday.com/us/therapists/tanya-singh-edison-nj/1338674",
+		"https://zencare.co/provider/therapist/tanya-singh",
+	],
+};
 function Main() {
-	return <HomeTwo />;
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+			/>
+			<HomeTwo />;
+		</>
+	);
 }
 
 export default Main;
