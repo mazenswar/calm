@@ -25,43 +25,6 @@ function Insurance() {
 			<section id="insurance-section">
 				<h1 className="center-title">Insurance</h1>
 				<h3 className="subtext">
-					we are a out-of-network provider for all insurance companies, which
-					means we do not accept insurance directly. However, many insurance
-					plans offer excellent out-of-network reimbursement for therapy. After
-					each session, we will provide a superbill (a detailed receipt) that
-					you can submit to your insurance company for potential reimbursement.
-				</h3>
-
-				<h3 className="subtext">
-					I encourage you to check with your provider to understand your
-					specific coverage. You may want to ask:
-				</h3>
-				<ul>
-					<li>
-						What percentage of the session fee is reimbursed for out-of-network
-						therapy?
-					</li>
-					<li>Is there a deductible I need to meet first?</li>
-					<li>How do I submit a superbill for reimbursement?</li>
-				</ul>
-
-				<h3 className="subtext">
-					While in-network therapy may seem more convenient, there are many
-					reasons why working with an out-of-network therapist can be a
-					worthwhile investment:
-				</h3>
-
-				<h3 className="subtext">Why Choose an Out-of-Network Therapist?</h3>
-				<h4 className="subtext">
-					Therapy is most effective when you work with someone who truly
-					understands your needs. In-network options can be limited, and you may
-					not find a therapist who specializes in your concerns. Choosing an
-					out-of-network provider allows you to prioritize fit, expertise, and
-					the quality of care.
-				</h4>
-
-				{/* //////////////////////// */}
-				<h3 className="subtext">
 					We are a out-of-network provider for all insurance companies, which
 					means we do not accept insurance directly. However, many insurance
 					plans offer excellent out-of-network reimbursement for therapy. After
