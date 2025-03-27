@@ -18,6 +18,7 @@ export const metadata = {
 		locale: "en_US",
 		type: "website",
 		images: "/images/Social Media_A Instagram.png",
+		logo: "/images/CALM logo_E4.png",
 	},
 };
 
