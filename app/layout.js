@@ -11,7 +11,7 @@ import NewNav from "./components/NewNav";
 export const metadata = {
 	title: "Center for Anxiety and Life Management (Calm Therapy)",
 	description:
-		"Center for Anxiety and Life Management (CALM Therapy) specializes in treating anxiety and obsessive compulsive related disorders like GAD, OCD, body dysmorphia, and panic disorder. We use evidence-based approaches, including CBT, ACT, and meta-cognitive techniques. Offering virtual therapy sessions for residents of Pennsylvania, New York & New Jersey.",
+		"CALM Therapy specializes in treating anxiety and OCD-related disorders and managing life transitions. Using evidence-based approaches and integrative therapy techniques, we offer virtual therapy sessions to residents in Pennsylvania, New York, and New Jersey.",
 	verification: {
 		google: "HLY4tQ5zcfv4L7ffmk3EhUPPJfnFOITw6Hd8-YAP20Y",
 	},

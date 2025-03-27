@@ -20,7 +20,7 @@ const MediumArticles = ({ articles, setMainArticle }) => {
 			<h1 className="center-title">Blogs</h1>
 			{makeArticles()}
 			<div role="link" className="article-link soon">
-				<h2>New Blogs Coming Soon</h2>
+				<h2>More Blogs Coming Soon!</h2>
 			</div>
 		</div>
 	);

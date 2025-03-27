@@ -3,9 +3,9 @@ import React from "react";
 function Fees() {
 	return (
 		<div className="f-container" id="fees">
-			<h1 className="center-title linebreak">
+			<h2 className="center-title linebreak">
 				Online Therapy Fees {"\n"}(sliding scale available)
-			</h1>
+			</h2>
 			<h3 className="linebreak">
 				We do not accept insurance so that we can provide the highest quality
 				services, but you may still be able to get reimbursed for our therapy

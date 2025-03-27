@@ -4,6 +4,17 @@ export const metadata = {
 	title: "Self Assessment Scales",
 	description: "links to free reputable self-assessment scales",
 	keywords: "self-assessment, scales, assessment",
+	alternates: {
+		canonical: "https://calmtherapy.center/assessments",
+	},
+	openGraph: {
+		title: "Self Assessment Scales",
+		description: "links to free reputable self-assessment scales",
+		url: "https://calmtherapy.center/assessments",
+		siteName: "CALM Therapy",
+		locale: "en_US",
+		type: "website",
+	},
 };
 function SelfAssessmentScales() {
 	return (

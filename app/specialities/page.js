@@ -6,6 +6,23 @@ import sky from "./assets/images/sky.jpg";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+export const metadata = {
+	title: "Specialities",
+	description: "Specialities and areas of expertise",
+	alternates: {
+		canonical: "https://calmtherapy.center/specialities",
+	},
+	openGraph: {
+		title: "Specialities",
+		description: "Specialities and areas of expertise",
+		url: "https://calmtherapy.center/specialities",
+		siteName: "CALM Therapy",
+		locale: "en_US",
+		type: "website",
+	},
+};
+///////////////////////
+
 function truncate(str, id) {
 	if (str.length > 300) {
 		str = str.substring(0, 299) + "...";

@@ -10,6 +10,17 @@ export const metadata = {
 	title: "Ketamine-Assisted Psychotherapy",
 	description: "information about ketamine-assisted psychotherapy",
 	keywords: "journey, ketamine-assisted psychotherapy, therapy, online therapy",
+	alternates: {
+		canonical: "https://calmtherapy.center/kap",
+	},
+	openGraph: {
+		title: "Ketamine-Assisted Psychotherapy",
+		description: "information about ketamine-assisted psychotherapy",
+		url: "https://calmtherapy.center/kap",
+		siteName: "CALM Therapy",
+		locale: "en_US",
+		type: "website",
+	},
 };
 
 //////////////

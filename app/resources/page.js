@@ -7,8 +7,19 @@ import Banner from "../components/Banner";
 import mountains from "./assets/images/mountains1.png";
 
 export const metadata = {
-	title: "resources",
+	title: "Resources",
 	description: "free therapy resources and tools",
+	alternates: {
+		canonical: "https://calmtherapy.center/resources",
+	},
+	openGraph: {
+		title: "Resources",
+		description: "free therapy resources and tools",
+		url: "https://calmtherapy.center/resources",
+		siteName: "CALM Therapy",
+		locale: "en_US",
+		type: "website",
+	},
 };
 
 function Resources() {
