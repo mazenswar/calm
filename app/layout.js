@@ -11,7 +11,7 @@ import NewNav from "./components/NewNav";
 export const metadata = {
 	title: "Center for Anxiety and Life Management (Calm Therapy)",
 	description:
-		"CALM Therapy specializes in treating anxiety and OCD-related disorders and managing life transitions. Using evidence-based approaches and integrative therapy techniques, we offer virtual therapy sessions to residents in Pennsylvania, New York, and New Jersey.",
+		"CALM Therapy treats anxiety, OCD & life transitions with evidence-based approaches. We offer virtual therapy for Pennsylvania, New York & New Jersey residents.",
 	verification: {
 		google: "HLY4tQ5zcfv4L7ffmk3EhUPPJfnFOITw6Hd8-YAP20Y",
 	},
