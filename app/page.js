@@ -26,7 +26,7 @@ export const metadata = {
 const jsonLd = {
 	"@type": "Organization",
 	name: "CALM Therapy",
-	legalName: "Center for Anxiety and Life Mangement PLLC",
+	legalName: "Center for Anxiety and Life Management PLLC",
 	url: "https://calmtherapy.center",
 	"@id": "https://calmtherapy.center",
 	sameAs: [
