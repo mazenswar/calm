@@ -5,7 +5,8 @@ export const metadata = {
 	title: "Center For Anxiety and Life Management (Calm Therapy)",
 	description:
 		"Online therapy services in New Jersey, New York and Pennsylvania",
-	keywords: "calm, online therapy, virtual therapy",
+	keywords:
+		"calm, online therapy, virtual therapy, therapist in nj, therapist in ny, therapist in pa",
 	alternates: {
 		canonical: "https://calmtherapy.center",
 	},
