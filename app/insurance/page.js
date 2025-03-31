@@ -26,7 +26,7 @@ function Insurance() {
 			<section id="insurance-section">
 				<h1 className="center-title">Insurance</h1>
 				<p>
-					we are a out-of-network provider for all insurance companies, which
+					We are a out-of-network provider for all insurance companies, which
 					means we do not accept insurance directly. However, many insurance
 					plans offer excellent out-of-network reimbursement for therapy. After
 					each session, we will provide a superbill (a detailed receipt) that
@@ -34,7 +34,7 @@ function Insurance() {
 				</p>
 
 				<h2 className="purple">
-					I encourage you to check with your provider to understand your
+					We encourage you to check with your provider to understand your
 					specific coverage. You may want to ask:
 				</h2>
 				<ul>
@@ -62,25 +62,28 @@ function Insurance() {
 				</p>
 				<h3 className="purple">More Specialized Care</h3>
 				<p>
-					I specialize in treating anxiety, OCD, and perfectionism, and I offer
-					ketamine-assisted therapy for treatment-resistant conditions. These
-					services may not always be available within insurance networks.
+					While some in-network providers treat anxiety and OCD, these
+					conditions often require specialized training to be addressed
+					effectively. Our practice focuses on anxiety-related disorders, OCD,
+					and perfectionism, utilizing evidence-based approaches that require
+					advanced expertise. Additionally, we offer ketamine-assisted therapy
+					for treatment-resistant conditions, a service not commonly available
+					in insurance networks.
 				</p>
 				<h3 className="purple">A Personalized Approach</h3>
 				<p>
 					Insurance companies often impose restrictions on session length,
-					frequency, and treatment modalities. As an out-of-network provider, I
+					frequency, and treatment modalities. As an out-of-network provider, we
 					have the flexibility to tailor therapy to what works best for you,
 					rather than following insurance-mandated guidelines.
 				</p>
 				<h3 className="purple">Higher Reimbursement Than Expected</h3>
 				<p>
-					Than Expected: Many people assume out-of-network therapy is
-					unaffordable, but some plans reimburse a significant portion of
-					session fees after a deductible is met. If you have a high deductible
-					plan, you may be paying out-of-pocket for therapy either way—so
-					choosing a therapist who best fits your needs may be the better
-					option.
+					Many people assume out-of-network therapy is unaffordable, but some
+					plans reimburse a significant portion of session fees after a
+					deductible is met. If you have a high deductible plan, you may be
+					paying out-of-pocket for therapy either way—so choosing a therapist
+					who best fits your needs may be the better option.
 				</p>
 
 				<h2 className="purple">How to Use Your Out-of-Network Benefits</h2>
@@ -88,18 +91,20 @@ function Insurance() {
 				<p className="linebreak">
 					If your insurance plan includes out-of-network benefits, you may be
 					able to receive reimbursement for a portion of your session fees.
-					After each session, I provide a superbill, which you can submit to
-					your insurance company. Some clients also use Reimbursify or Mentaya,
-					which simplify the claims process.{"\n\n"}Before starting therapy, I
-					recommend confirming your benefits to ensure that your budget and
-					coverage align with my rates.
+					After each session, We will provide a superbill, which you can submit
+					to your insurance company. Some clients also use{" "}
+					<a href="https://reimbursify.com/">Reimbursify</a> or{" "}
+					<a href="https://www.mentaya.com/">Mentaya</a>, which simplify the
+					claims process.{"\n\n"}
+					Before starting therapy, we recommend confirming your benefits to
+					ensure that your budget and coverage align with our rates.
 				</p>
 
 				<div className="steps">
 					<div className="step-container">
 						<h2>Step 1: Verify Your Coverage</h2>
 						<p>
-							Contact your insurance provider and provide them with my business
+							Contact your insurance provider and provide them with our business
 							information to confirm if they offer out-of-network reimbursement
 							benefits.
 						</p>
@@ -121,7 +126,7 @@ function Insurance() {
 						</p>
 					</div>
 				</div>
-				<h3 className="purple help">
+				<h3 className="purple help center-title">
 					If you have any questions about out-of-network reimbursement, feel
 					free to <Link href={"/contact"}>reach out</Link>. We are happy to help
 					you navigate the process!

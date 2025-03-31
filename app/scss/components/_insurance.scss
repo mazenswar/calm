@@ -2,6 +2,11 @@
 	#insurance-section {
 		background-color: var(--t3);
 		align-items: center;
+		a {
+			color: var(--three);
+			font-size: inherit;
+			text-decoration: underline;
+		}
 		h1,
 		h2,
 		h3,
