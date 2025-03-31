@@ -9,7 +9,7 @@ let opts = {
 	height: 430,
 	width: 360,
 	playerVars: {
-		autoplay: 1, // Auto-play the video
+		autoplay: 0, // Don't Auto-play the video
 		controls: 1, // Show player controls
 		rel: 0, // No related videos at the end
 		modestbranding: 1, // Minimal YouTube branding
