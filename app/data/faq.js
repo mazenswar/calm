@@ -7,7 +7,7 @@ export const questions = [
 	{
 		id: "two",
 		q: "How do I schedule an appointment?",
-		a: "Please use the 'Bookings' tab to contact us, and someone will reach out to you within 24 hours during business days. Alternatively, you can call us at (908) 991-7301 and leave a message.",
+		a: "Please use the 'Bookings' tab to contact us, and someone will reach out to you within 24 hours during business days. Alternatively, you can call us at (914) 570-4196 and leave a message.",
 	},
 	{
 		id: "three",
