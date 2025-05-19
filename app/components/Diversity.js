@@ -11,8 +11,8 @@ function Diversity() {
 				role="image"
 			></div>
 			<h2>
-				Committed to Inclusion and Respect for All Genders, Races, Ethnicities
-				and Identities
+				Committed to inclusion and respect for people of all genders, races,
+				ethnicities, and identities.
 			</h2>
 		</section>
 	);

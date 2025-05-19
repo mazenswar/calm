@@ -4,6 +4,9 @@
 ///////////////////// General
 
 nav {
+	position: sticky;
+	top: 0;
+	background-color: white;
 	display: flex;
 	justify-content: space-evenly;
 	width: 100vw;
@@ -36,6 +39,10 @@ nav {
 		a {
 			font-size: 1.2em;
 			color: var(--three);
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			&:visited,
 			&:active {
 				color: var(--three);
@@ -45,10 +52,10 @@ nav {
 			z-index: 100;
 			a {
 				font-size: 1.2em;
-				color: ivory;
+				color: var(--three);
 				&:visited,
 				&:active {
-					color: ivory;
+					color: var(--three);
 				}
 			}
 		}
@@ -71,12 +78,13 @@ nav {
 		}
 		li {
 			padding: 1em;
+			cursor: default;
 		}
 		.dropdown {
 			position: relative;
 			&:hover {
 				.submenu {
-					border-radius: 1em 0 1em 0;
+					border-radius: 1em;
 					padding: 1em;
 					display: flex;
 					flex-direction: column;
@@ -84,12 +92,11 @@ nav {
 					align-items: center;
 					background: linear-gradient(
 						180deg,
-						rgba(2, 0, 36, 1) 0%,
-						rgba(82, 72, 159, 1) 0%,
-						rgba(194, 102, 167, 1) 150%
+						rgba(252, 243, 232, 1) 50%,
+						rgba(231, 200, 231, 1) 100%
 					);
-					color: ivory;
-					border: 1px solid ivory;
+					color: var(--three);
+					border: 1px solid var(--three);
 					display: block;
 					position: absolute;
 					top: 2.2em;
@@ -120,7 +127,7 @@ nav {
 			.bar3 {
 				width: 35px;
 				height: 5px;
-				background-color: #333;
+				background-color: var(--four);
 				margin: 6px 0;
 				transition: 0.4s;
 			}
@@ -162,9 +169,8 @@ nav {
 			align-items: center;
 			background: linear-gradient(
 				180deg,
-				rgba(2, 0, 36, 1) 0%,
-				rgba(82, 72, 159, 1) 0%,
-				rgba(194, 102, 167, 1) 150%
+				rgba(252, 243, 232, 1) 50%,
+				rgba(231, 200, 231, 1) 100%
 			);
 
 			ul {
@@ -186,17 +192,21 @@ nav {
 					left: 60%;
 					background-color: inherit;
 					border: none;
-					color: ivory;
+					// color: ivory;
 					// padding: 0 1em;
 				}
 				.submenu {
 					display: none;
-					background-color: rgb(69, 67, 67, 0.5);
-					padding: 1em 0;
+					// background-color: rgb(69, 67, 67, 0.5);
+					padding: 1.5em 0;
 					// overflow: none;
 				}
 				.submenu.active {
 					display: block;
+					background-color: var(--t2);
+					a {
+						color: var(--three);
+					}
 					width: 100vh;
 				}
 				// &:hover {
@@ -212,8 +222,11 @@ nav {
 		}
 		.nav-links.active {
 			height: fit-content;
+			padding-top: 1em;
+			border-bottom: 0.3em solid var(--three);
+			border-radius: 0 0 1em 1em;
 			a {
-				color: ivory;
+				color: var(--three);
 			}
 		}
 	}

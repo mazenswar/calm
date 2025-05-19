@@ -1,29 +1,33 @@
 import React from "react";
-import med from "./assets/images/girl.png";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faCalendar,
 	faEnvelope,
 	faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import bookingImg from "./assets/images/bookingbrain.png";
+
 function ContactText() {
 	return (
 		<div className="contact-text">
-			<div
-				role="image"
-				className="image"
-				style={{ backgroundImage: `url("${med.src}")` }}
-				alt="meditating in nature"
-			></div>
-			<h1 className="center-title">Book a free 15-minute consultation</h1>
+			<Image
+				src={bookingImg.src}
+				alt="contact us illustration"
+				width={800}
+				height={800}
+			/>
+			<h1 className="center-title">Get in Touch</h1>
 			<h2 className="linebreak topb">
-				At this time, we are only able to provide online services to patients
-				located in New York, New Jersey & Pennsylvania but hope to expand to
-				more areas soon. Thank you for your understanding and support.
+				Whether you{"'"}re ready to book a consultation, have a question about
+				our services, or want to explore a professional collaboration, we{"'"}
+				re glad you{"'"}re here.
 			</h2>
-			<p>You can request a free 15-minute consultation by:</p>
-			<ul id="contact-info">
+
+			{/* <h3>Ready to Get Started?</h3>
+			<h3>Fill Out This Form and We Will Get Back to You in 24 Hours</h3> */}
+
+			{/* <ul id="contact-info">
 				<li>
 					<FontAwesomeIcon icon={faCalendar} size="2x" color="var(--three)" />
 					<a className="clink" disabled>
@@ -45,7 +49,7 @@ function ContactText() {
 						tsingh@calmtherapy.center
 					</a>
 				</li>
-			</ul>
+			</ul> */}
 		</div>
 	);
 }

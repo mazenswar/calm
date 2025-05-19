@@ -2,33 +2,52 @@ import React from "react";
 
 import HomeTwo from "./homeTwo/HomeTwo";
 export const metadata = {
-	title: "Center For Anxiety and Life Management (Calm Therapy)",
+	title: "Center for Anxiety and Life Management (CALM Therapy)",
 	description:
-		"Online therapy services in New Jersey, New York and Pennsylvania",
-	keywords:
-		"calm, online therapy, virtual therapy, therapist in nj, therapist in ny, therapist in pa",
-	alternates: {
-		canonical: "https://calmtherapy.center",
-	},
+		"Offering virtual therapy for adults navigating anxiety, OCD, perfectionism, and spiritual inquiry. Our integrative approach combines evidence-based psychology with Eastern wisdom traditions. Licensed in NJ, NY, and PA.",
 	openGraph: {
-		title: "CALM Therapy",
+		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:
-			"Online therapy services in New Jersey, New York and Pennsylvania",
-		url: "https://calmtherapy.center/contact",
-		siteName: "CALM Therapy",
+			"Offering virtual therapy for adults navigating anxiety, OCD, perfectionism, and spiritual inquiry. Our integrative approach combines evidence-based psychology with Eastern wisdom traditions. Licensed in NJ, NY, and PA.",
+		url: "https://calmtherapy.center",
+		siteName: "Center for Anxiety and Life Management (CALM Therapy)",
+		images: [
+			{
+				url: "https://calmtherapy.center/social/ss.png",
+				width: 1200,
+				height: 630,
+				alt: "CALM Therapy logo and tagline",
+			},
+		],
 		locale: "en_US",
 		type: "website",
-		images: "/images/Social Media_A Instagram.png",
-		logo: "/images/CALM logo_E4.png",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Center for Anxiety and Life Management (CALM Therapy)",
+		description:
+			"Virtual therapy rooted in science and soul. We help adults move through anxiety, burnout, and spiritual inquiry with grounded care. Serving NJ, NY, and PA.",
+		images: ["https://calmtherapy.center/social/ss.png"],
 	},
 };
-
 const jsonLd = {
+	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://calmtherapy.center/#organization",
 	name: "CALM Therapy",
 	legalName: "Center for Anxiety and Life Management PLLC",
 	url: "https://calmtherapy.center",
-	"@id": "https://calmtherapy.center",
+	logo: "https://calmtherapy.center/calm_logo.png",
+	founder: [
+		{
+			"@type": "Person",
+			name: "Dr. Tanya Singh",
+		},
+		{
+			"@type": "Person",
+			name: "Mazen Alswar",
+		},
+	],
 	sameAs: [
 		"https://www.linkedin.com/company/center-for-anxiety-and-life-management-calm-therapy",
 		"https://www.psychologytoday.com/us/therapists/tanya-singh-edison-nj/1338674",
@@ -42,7 +61,7 @@ function Main() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
-			<HomeTwo />;
+			<HomeTwo />
 		</>
 	);
 }

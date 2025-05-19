@@ -1,85 +1,253 @@
+@use "../util" as u;
+@use "sass:math" as m;
 #insurance-page {
-	#insurance-section {
-		background-color: var(--t3);
+	a {
+		text-decoration: underline;
+		color: var(--five);
+		font-size: inherit;
+	}
+	background: #fcf3e8;
+	h1,
+	h2,
+	h3 {
+		color: var(--three);
+	}
+	p,
+	li {
+		font-size: 1.3em;
+		line-height: 1.6;
+		color: #4d4d4d;
+		margin: 0;
+	}
+	#fees {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		a {
-			color: var(--three);
-			font-size: inherit;
-			text-decoration: underline;
-		}
-		h1,
-		h2,
-		h3,
-		h4 {
-			// text-align: center;
-			// margin-bottom: clamp(20px, 5em, 40px);
-			width: clamp(300px, 80%, 900px);
-			color: #4d4d4d;
-		}
-		p {
-			font-size: 1.3em;
-			width: clamp(300px, 80%, 900px);
-			color: #4d4d4d;
-			padding: 0.5em 0;
-		}
-		h1 {
-			color: var(--four);
-			margin-bottom: 0;
-			font-size: 1.8em;
-		}
-		h2.purple {
-			font-size: 1.4em;
-			margin-bottom: 0;
-			text-decoration: underline;
-		}
-		h3 {
-			font-size: 1.3em;
-			margin-bottom: 0;
-		}
-		font-size: 1em;
-
-		.purple {
-			color: var(--four);
-		}
-		ul {
-			margin-top: 0;
-			margin-bottom: 0;
-			width: clamp(300px, 80%, 700px);
-			li {
-				margin: 1.5em 0;
-				font-size: 1.2em;
-				color: #4d4d4d;
+		padding: 4em 0 0 0;
+		background: #fcf3e8;
+		background: linear-gradient(
+			0deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+		.intro {
+			margin: 2em;
+			width: clamp(300px, 80%, 1200px);
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-evenly;
+			align-items: center;
+			img {
+				width: 20em;
+				height: auto;
+			}
+			.text {
+				h3 {
+					width: 100%;
+					text-align: center;
+					margin-bottom: 1em;
+				}
 			}
 		}
-		.subtext {
+		.fees-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding: 6em;
+			width: 100%;
+		}
+		h2 {
+			width: 100%;
 			text-align: center;
-			margin-bottom: clamp(20px, 5em, 40px);
-			width: clamp(300px, 60%, 700px);
-			font-size: 1.5em;
+			color: var(--three);
+			font-size: 1.8em;
+			margin: 2em 0;
 		}
-		.help {
-			padding: 2em 0;
-			a {
-				color: var(--two);
-				font-size: inherit;
-				text-decoration: underline;
+
+		.fee {
+			background-color: ivory;
+			border-radius: 20px;
+			border: 5px solid var(--six);
+			margin: 0 2em;
+			padding: 2em;
+			h2.linebreak,
+			.price {
+				margin: 0;
+			}
+			.price {
+				font-size: 4em;
+				margin: 1em 0 0.7em 0;
+				color: var(--five);
 			}
 		}
-		.steps {
-			// background-color: var(--t2);
-			border: 0.6em solid var(--t2);
-			padding: clamp(20px, 5em, 40px);
-			// margin-top: 3em;
-			width: clamp(375px, 80%, 1000px);
-			.step-container {
+
+		.intro {
+			border-radius: 20px;
+			border: 5px solid var(--six);
+			margin: 0 2em;
+			background: linear-gradient(
+				90deg,
+				rgba(252, 243, 232, 1) 0%,
+				rgba(231, 200, 231, 1) 100%
+			);
+			padding: 2em;
+		}
+	}
+	.insurance-sections {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		// background: #fcf3e8;
+		background: linear-gradient(
+			180deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+		// p,
+		// h2 {
+		// 	width: clamp(300px, 60%, 1000px);
+		// }
+
+		.insurance-section {
+			// width: clamp(300px, 100%, 1000px);
+			// padding: 0;
+			padding: 6em 16em;
+			// padding-top: 2em;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background: var(--seven);
+			&.alt {
+				background: ivory;
+			}
+			.ofn-banner {
 				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				flex-direction: row-reverse;
+				justify-content: space-evenly;
 				align-items: center;
-				text-align: center;
+				padding: 4em 0;
+				img {
+					height: 15em;
+					width: auto;
+				}
 			}
-			p {
-				color: #4d4d4d;
+			.steps {
+				.step-container {
+					padding: 3em;
+					margin-bottom: 2em;
+					border-radius: 20px;
+					background-color: var(--seven);
+					// border: 5px solid var(--six);
+					// background: linear-gradient(
+					// 	90deg,
+					// 	rgba(252, 243, 232, 1) 0%,
+					// 	rgba(231, 200, 231, 1) 100%
+					// );
+				}
+			}
+			&.cta {
+				padding: 10em;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				h3 {
+					width: clamp(350px, 50%, 1000px);
+				}
+				img {
+					width: 20em;
+					height: auto;
+				}
+				a {
+					text-decoration: underline;
+					color: var(--five);
+					font-size: inherit;
+				}
+			}
+		}
+		.sub-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.sub {
+				padding: 3em;
+				margin-bottom: 2em;
+				background: ivory;
+				border-radius: 20px;
+				// border: 5px solid var(--six);
+				// background: linear-gradient(
+				// 	180deg,
+				// 	rgba(252, 243, 232, 1) 0%,
+				// 	rgba(231, 200, 231, 1) 100%
+				// );
+			}
+		}
+	}
+
+	////////////////////
+	///
+	@include u.breakpoint-down(extra-medium) {
+		#fees {
+			padding: 0;
+			padding-top: 2em;
+			.fee {
+				margin: 1em 0;
+				width: 90%;
+				align-self: center;
+			}
+		}
+		/////////////////////////////////
+		#fees {
+			.intro,
+			div.fees-container {
+				flex-direction: column;
+				padding: 1em;
+				.fee {
+					text-align: center;
+				}
+			}
+		}
+		//////////////////////////
+		.insurance-sections {
+			.insurance-section {
+				padding: 2em;
+				h2,
+				h3,
+				p {
+					text-align: center;
+				}
+				.ofn-banner {
+					flex-direction: column;
+					padding: 0;
+					img {
+						height: 10em;
+					}
+				}
+				&.cta {
+					flex-direction: column;
+
+					padding: 2em;
+					img {
+						width: 10em;
+					}
+				}
+			}
+
+			.sub-container {
+				flex-direction: column;
+				.sub {
+					width: 100%;
+					h2,
+					h3,
+					p {
+						text-align: center;
+					}
+				}
 			}
 		}
 	}

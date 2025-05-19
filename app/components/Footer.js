@@ -50,8 +50,10 @@ function Footer() {
 				</div>
 			</section>
 			<section className="copyright">
-				<p>© 2024 Center for Anxiety and Life Management</p>
-				<a href="/privacyPolicy">Privacy Policy</a>
+				<p>© 2025 Center for Anxiety and Life Management</p>
+				<a href="/privacyPolicy" className="link">
+					Privacy Policy
+				</a>
 			</section>
 		</footer>
 	);

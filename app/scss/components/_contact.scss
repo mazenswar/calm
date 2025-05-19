@@ -1,202 +1,134 @@
 @use "../util" as u;
 
 #contact {
-	li,
-	a {
-		font-size: 1.1em;
-	}
-	p {
-		font-size: 1.7em;
-	}
-	h2 {
-		color: var(--three);
-	}
-	#contact-info {
-		width: 100%;
-		list-style: none;
-		margin: 0;
-		padding: 0;
+	.booking-form {
+		// padding: 0;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: row;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
-		li {
-			width: 30%;
-			margin: 0.5em;
-			text-align: center;
-			// background-color: var(--t2);
-			color: #565656;
-			// height: 2em;
+		background: linear-gradient(
+			180deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+		.microcopy {
+			h2 {
+				color: var(--three);
+			}
+			p {
+				color: #4d4d4d;
+			}
+		}
+		label {
+			color: #4d4d4d;
+		}
+		.contact-text {
+			width: clamp(300px, 45%, 1000px);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			align-self: center;
-
-			.clink {
-				// width: 1%;
-				padding: 2em 0;
-				text-decoration: underline;
+			align-items: center;
+			text-align: center;
+			h1 {
+				color: var(--three);
 			}
-			// background-color: red;
-			span {
-				display: inline-block;
-				width: 30%;
+			h2 {
+				margin-bottom: 1em;
+			}
+			h3 {
+				margin: 0.5em;
+				color: var(--four);
+			}
+
+			color: #4d4d4d;
+
+			img {
+				width: 25%;
+				height: auto;
 			}
 		}
-	}
-	.booking-form {
-		padding: 1em 0;
-		// height: fit-content;
-		h1,
-		label {
-			color: var(--three);
-			font-weight: 500;
-		}
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		.contact-container {
+		form {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
-			align-items: center;
-			// background-color: var(--t3);
-			max-width: 1600px;
-			width: clamp(300px, 85%, 1500px);
-			border-radius: 2em;
-			background-color: var(--t3);
-			border-radius: 2em;
-			margin: 4em 0;
-			padding: 4em;
-			.image {
-				width: 15em;
-				height: 15em;
-				background-size: contain;
-				border-radius: 100%;
-			}
-			// height: 300vh;
-			#calendly-cal {
-				.calendly-inline-widget {
-					width: 100vw;
-				}
-				// padding: 1em;
-			}
-			.contact-text {
-				width: 80%;
+			justify-content: center;
+			// align-items: center;
+			width: clamp(300px, 45%, 600px);
+			.input-container {
 				display: flex;
-				// flex-direction: column;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
-				align-items: center;
-
-				.topa {
-					width: 60%;
-					text-align: center;
-				}
-				.topb,
-				p {
-					width: 100%;
-					text-align: center;
-				}
-				p {
-					padding: 3em 0 1.7em 0;
-				}
-				img {
-					width: 40%;
-					height: auto;
-					margin: 1em 0;
-				}
-				h2 {
-					color: var(--three);
-				}
-				p {
-					color: #565656;
-				}
-			}
-		}
-
-		.error {
-			font-weight: 600;
-			color: red;
-		}
-		.subtext {
-			display: block;
-			color: #565656;
-			font-weight: 400;
-		}
-		// .calendly-cal {
-		// 	width: 50%;
-		// }
-		// form {
-		// 	margin-bottom: 4em;
-		// 	height: 100%;
-		// 	// width: clamp(300px, 75%, 800px);
-		// 	display: flex;
-		// 	flex-direction: column;
-		// 	align-items: center;
-		// 	justify-content: center;
-		// 	.input-container {
-		// 		width: fit-content;
-		// 		display: flex;
-		// 		flex-direction: column;
-		// 		justify-content: space-evenly;
-		// 		width: 100%;
-		// 		margin: 0.8em;
-
-		// 		// padding: 3em;
-		// 		// margin: 2em 0;
-		// 		input,
-		// 		textarea,
-		// 		select {
-		// 			border-radius: 0.5em;
-		// 			border: 1px solid #565656;
-		// 			width: clamp(300px, 60%, 400px);
-		// 			margin: 0.6em 0;
-		// 			padding: 1em;
-		// 		}
-
-		// 		textarea {
-		// 			// min-height: 150px;
-		// 			width: 100%;
-		// 		}
-		// 	}
-		// }
-	}
-
-	@include u.breakpoint-down(extra-medium) {
-		h2 {
-			padding: 0;
-		}
-
-		.booking-form {
-			.contact-container {
 				flex-direction: column;
-				padding: 0;
-				margin-top: 1em;
-				#contact-info {
-					flex-direction: column;
-					li {
-						width: 100%;
-					}
+				margin-bottom: 2em;
+				textarea {
+					height: 7em;
 				}
-				.contact-text {
-					padding-top: 2em;
-					width: 80%;
-					flex-direction: column;
+				input {
+					padding: 1em;
+				}
+				input:focus,
+				textarea:focus {
+					outline: none;
+					border: 2px solid #2684ff;
+				}
 
-					p,
-					h2.linebreak {
-						text-align: center;
-						width: 100%;
-						font-size: 1.3em;
-					}
-					p {
-						padding: 2em 0;
-					}
+				input,
+				textarea {
+					border: 1px solid #ccc;
+					border-radius: 5px;
+				}
+
+				p.error {
+					padding-top: 1em;
+					margin-bottom: 0;
+					color: red;
+					font-weight: 500;
 				}
 			}
+			input[type="submit"] {
+				width: fit-content;
+				align-self: center;
+				background: linear-gradient(
+					80deg,
+					rgba(2, 0, 36, 1) 0%,
+					rgba(82, 72, 159, 1) 0%,
+					rgba(194, 102, 167, 1) 150%
+				);
+
+				color: ivory;
+				padding: 1em 2em;
+				border-radius: 2em;
+				border: none;
+				transition: 0.3s ease-in;
+				box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			input[type="submit"]:disabled {
+				background: #eee;
+				transition: none;
+				&:hover {
+					transform: none;
+				}
+			}
+		}
+	}
+	@include u.breakpoint-down(medium) {
+		.booking-form {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 2em;
+			.contact-text,
+			form {
+				width: 100%;
+			}
+		}
+		.input-container {
+			margin-bottom: 1em;
+		}
+
+		.contact-text {
+			margin-bottom: 2em;
 		}
 	}
 }

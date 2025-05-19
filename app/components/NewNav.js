@@ -64,20 +64,18 @@ function NewNav() {
 						<li>
 							<a href="/kap">Ketamine</a>
 						</li>
+
 						<li>
-							<a href="/#fees">Fees</a>
-						</li>
-						<li>
-							<a href="/insurance">Insurance</a>
+							<a href="/insurance">Fees & Insurance</a>
 						</li>
 					</ul>
 				</li>
 
 				<li>
-					<a href="/#home-bio">About</a>
+					<a href="/about">About</a>
 				</li>
 				<li className="dropdown">
-					<a disabled>Resources</a>
+					<a disabled>Resources </a>
 					<button onClick={() => setResourcesSubmenu(!resourcesSubmenu)}>
 						{resourcesSubmenu ? "x" : "▽"}
 					</button>
@@ -87,12 +85,6 @@ function NewNav() {
 						</li>
 						<li>
 							<a href="/faq">FAQs</a>
-						</li>
-						<li>
-							<a href="/assessments">Assesments</a>
-						</li>
-						<li>
-							<a href="/resources">Free Resources</a>
 						</li>
 					</ul>
 				</li>

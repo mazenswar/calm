@@ -1,4 +1,18 @@
+@use "../util" as u;
+
 #privacy-policy {
+	background: linear-gradient(
+		180deg,
+		rgba(252, 243, 232, 1) 0%,
+		rgba(231, 200, 231, 1) 100%
+	);
+	.pp-container {
+		width: clamp(300px, 80%, 1200px);
+		@include u.breakpoint-down(medium) {
+			padding: 2em;
+			width: 100%;
+		}
+	}
 	h1,
 	h2,
 	h3 {

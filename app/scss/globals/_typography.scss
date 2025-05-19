@@ -134,6 +134,9 @@ a:active {
 	color: inherit;
 	padding-bottom: 0.3vw;
 	transition: 0.5s;
+	color: var(--five);
+	font-size: inherit;
+	text-decoration: underline;
 	&:hover {
 		color: #62b4ae;
 	}
@@ -224,8 +227,7 @@ a:active {
 	padding: 1em 2em;
 }
 
-.link-button,
-input[type="submit"] {
+.link-button {
 	background: linear-gradient(
 		80deg,
 		rgba(2, 0, 36, 1) 0%,

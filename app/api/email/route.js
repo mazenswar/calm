@@ -7,6 +7,7 @@ const CONTACT_MESSAGE_FIELDS = {
 	phoneNumber: "Phone Number",
 	message: "Message",
 	state: "State",
+	reason: "Reason",
 };
 
 const generateEmailContent = (data) => {
@@ -27,12 +28,13 @@ const generateEmailContent = (data) => {
 
 export const POST = async (request) => {
 	const formData = await request.formData();
+	const reason = formData.get("reason");
 	const name = formData.get("name");
 	const email = formData.get("email");
 	const message = formData.get("message");
 	const phoneNumber = formData.get("phoneNumber");
 	const state = formData.get("state");
-	const data = { name, email, message, phoneNumber, state };
+	const data = { reason, name, email, message, phoneNumber, state };
 	try {
 		await transporter.sendMail({
 			...mailOptions,

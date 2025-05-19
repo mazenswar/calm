@@ -8,6 +8,7 @@ import Head from "next/head";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
+import ContactButton from "./components/ContactButton";
 export const metadata = {
 	title: "Center for Anxiety and Life Management (Calm Therapy)",
 	description:
@@ -22,10 +23,8 @@ export default function RootLayout({ children }) {
 			<body>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 
-				{/* <Nav /> */}
 				<NewNav />
-				<Calendly />
-
+				<ContactButton />
 				{children}
 				<Footer />
 			</body>

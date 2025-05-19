@@ -1,35 +1,46 @@
 import React from "react";
-
-import Banner from "../components/Banner";
-import gg from "./assets/images/sunset1.jpg";
-import KAPSection from "./KAPSection";
+import Keta from "./Keta";
 
 ///////////
 
 export const metadata = {
-	title: "Ketamine-Assisted Psychotherapy",
-	description: "information about ketamine-assisted psychotherapy",
-	keywords: "journey, ketamine-assisted psychotherapy, therapy, online therapy",
+	title:
+		"Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy - A Gentle Path to Emotional Healing",
+	description:
+		"Learn how ketamine-assisted psychotherapy (KAP) at CALM Therapy can support emotional healing, anxiety relief, and self-discovery. We offer intentional, trauma-informed KAP for adults seeking transformation and long-term change.",
+	openGraph: {
+		title:
+			"Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy - A Gentle Path to Emotional Healing",
+		description:
+			"Explore KAP at CALM Therapy: evidence-based, spiritually grounded ketamine-assisted psychotherapy for individuals navigating anxiety, OCD, and emotional stuckness.",
+		url: "https://calmtherapy.center/kap",
+		type: "website",
+		images: [
+			{
+				url: "https://calmtherapy.center/social/ss.png",
+				width: 1200,
+				height: 630,
+				alt: "CALM Therapy social preview image",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy",
+		description:
+			"CALM Therapy offers integrative ketamine-assisted psychotherapy (KAP) to support emotional healing and deeper self-understanding.",
+		images: ["https://calmtherapy.center/social/ss.png"],
+	},
 	alternates: {
 		canonical: "https://calmtherapy.center/kap",
 	},
-	openGraph: {
-		title: "Ketamine-Assisted Psychotherapy",
-		description: "information about ketamine-assisted psychotherapy",
-		url: "https://calmtherapy.center/kap",
-		siteName: "CALM Therapy",
-		locale: "en_US",
-		type: "website",
-	},
 };
-
 //////////////
 
 function KAP() {
 	return (
 		<main id="kap-page">
-			<Banner img={gg} text="Ketamine-Assisted Psychotherapy (KAP)" />
-			<KAPSection />
+			<Keta />
 		</main>
 	);
 }

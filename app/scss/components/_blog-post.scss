@@ -1,0 +1,59 @@
+@use "../util" as u;
+@use "sass:math" as m;
+
+#blog-post {
+	background: linear-gradient(
+		180deg,
+		rgba(252, 243, 232, 1) 50%,
+		rgba(231, 200, 231, 1) 100%
+	);
+	color: #4d4d4d;
+	strong,
+	h1,
+	h2,
+	h3 {
+		color: var(--three);
+	}
+	.back-link {
+		align-self: flex-start;
+		padding-bottom: 2em;
+		transition: 0.8s ease-in;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.article-container {
+			width: clamp(300px, 90%, 1000px);
+			figure {
+				margin: 5em;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				img {
+					max-width: 50%;
+				}
+			}
+		}
+	}
+
+	/////////////////////////////
+	/// ////////////////////////
+	/// ////////////////////////
+	@include u.breakpoint-down(small) {
+		section {
+			.article-container {
+				figure {
+					margin: 2em;
+					img {
+						max-width: 90%;
+					}
+				}
+			}
+		}
+	}
+}

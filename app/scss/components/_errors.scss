@@ -1,13 +1,30 @@
 #not-found {
-	color: var(--three);
+	.error-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.center-title {
+			padding: 1em 0;
+		}
+	}
+}
 
+#success,
+#not-found {
+	color: var(--three);
+	height: 60vh;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	.error-section {
+	background: linear-gradient(
+		180deg,
+		rgba(252, 243, 232, 1) 0%,
+		rgba(231, 200, 231, 1) 100%
+	);
+	section {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}

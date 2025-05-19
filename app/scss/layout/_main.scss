@@ -11,7 +11,7 @@ main {
 	// padding: 5em 0;
 	width: clamp(200px, 100%, 3200px);
 	margin: 0 auto;
-	min-height: 60vh;
+	// min-height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -43,6 +43,26 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#contact-button {
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	padding: 0.8em 2em;
+	border-radius: 30px;
+	background: #4c2f6f;
+	background: linear-gradient(
+		178deg,
+		rgba(76, 47, 111, 1) 0%,
+		rgba(82, 72, 159, 1) 50%,
+		rgba(194, 102, 167, 1) 100%
+	);
+	border: 1px solid var(--seven);
+	// background-color: var(--three);
+	text-align: center;
+	color: ivory;
+	z-index: 100;
 }
 
 @include u.breakpoint-down(medium) {
