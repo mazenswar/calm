@@ -61,7 +61,7 @@ function PrivacyPolicy() {
 					is 100% secure.
 				</p>
 
-				<h2>Children's Privacy</h2>
+				<h2>Children{"'"}s Privacy</h2>
 				<p>
 					This website is not intended for individuals under the age of 13. We
 					do not knowingly collect personal information from children.
