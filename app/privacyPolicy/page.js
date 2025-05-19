@@ -8,9 +8,7 @@ function PrivacyPolicy() {
 				<h1 className="center-title">Privacy Policy</h1>
 				<p>Last updated: May 19th, 2025</p>
 				<p>
-					Center for Anxiety and Life Management PLLC ("CALM Therapy", "we",
-					"us", or our") respects your privacy. This Privacy Policy describes
-					how we handle information collected through our website,{" "}
+					{`Center for Anxiety and Life Management PLLC ("CALM Therapy", "we", "us", or "our") respects your privacy. This Privacy Policy describes how we handle information collected through our website, `}
 					<a
 						href="https://calmtherapy.center"
 						target="_blank"
