@@ -32,17 +32,79 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Fees & Insurance | CALM Therapy",
 		description:
-			"Explore our virtual therapy session rates and how to get reimbursed through your insurance. We’ll help you understand your out-of-network benefits.",
+			"Explore our virtual therapy session rates and how to get reimbursed through your insurance. We'll help you understand your out-of-network benefits.",
 		images: ["https://calmtherapy.center/social/ss.png"],
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+};
+
+const jsonLD = {
+	"@context": "https://schema.org",
+	"@type": "Service",
+	name: "Virtual Therapy Sessions",
+	provider: {
+		"@type": "Organization",
+		name: "Center for Anxiety and Life Management (CALM Therapy)",
+		url: "https://calmtherapy.center",
+		logo: "https://calmtherapy.center/calm_logo.png",
+	},
+	areaServed: [
+		{
+			"@type": "State",
+			name: "New Jersey",
+		},
+		{
+			"@type": "State",
+			name: "New York",
+		},
+		{
+			"@type": "State",
+			name: "Pennsylvania",
+		},
+	],
+	serviceType: "Online psychotherapy and mental health counseling",
+	availableChannel: {
+		"@type": "ServiceChannel",
+		serviceUrl: "https://calmtherapy.center/contact",
+		availableLanguage: ["English"],
+		serviceLocation: {
+			"@type": "VirtualLocation",
+		},
+	},
+	offers: {
+		"@type": "Offer",
+		priceCurrency: "USD",
+		priceSpecification: [
+			{
+				"@type": "UnitPriceSpecification",
+				name: "Initial intake (75 minutes)",
+				price: 420,
+			},
+			{
+				"@type": "UnitPriceSpecification",
+				name: "Ongoing therapy session (45 minutes)",
+				price: 250,
+			},
+		],
+		url: "https://calmtherapy.center/insurance",
 	},
 };
 
 function Insurance() {
 	return (
-		<main id="insurance-page">
-			<Fees />
-			<InsuranceSections />
-		</main>
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
+			/>
+			<main id="insurance-page">
+				<Fees />
+				<InsuranceSections />
+			</main>
+		</>
 	);
 }
 

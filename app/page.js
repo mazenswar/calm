@@ -5,6 +5,13 @@ export const metadata = {
 	title: "Center for Anxiety and Life Management (CALM Therapy)",
 	description:
 		"Offering virtual therapy for adults navigating anxiety, OCD, perfectionism, and spiritual inquiry. Our integrative approach combines evidence-based psychology with Eastern wisdom traditions. Licensed in NJ, NY, and PA.",
+	alternates: {
+		canonical: "https://calmtherapy.center",
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
 	openGraph: {
 		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:

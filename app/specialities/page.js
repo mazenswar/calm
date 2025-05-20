@@ -12,6 +12,14 @@ export const metadata = {
 		url: "https://calmtherapy.center/specialities",
 		siteName: "CALM Therapy",
 		type: "website",
+		images: [
+			{
+				url: "https://calmtherapy.center/social/ss.png",
+				width: 1200,
+				height: 630,
+				alt: "CALM Therapy branding and specialities overview",
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -22,6 +30,10 @@ export const metadata = {
 	},
 	alternates: {
 		canonical: "https://calmtherapy.center/specialities",
+	},
+	robots: {
+		index: true,
+		follow: true,
 	},
 };
 
