@@ -1,4 +1,7 @@
+# Robots.txt for CALM Therapy — full site is crawlable except backend API routes
+
 User-Agent: *
 Allow: /
+Disallow: /api/
 
 Sitemap: https://calmtherapy.center/sitemap.xml
