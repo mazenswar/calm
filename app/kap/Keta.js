@@ -7,12 +7,16 @@ function Keta() {
 	return (
 		<main id="keta">
 			<section className="keta-header">
-				<Image
-					src={ketaBrain.src}
-					alt="illustration of brain meditating"
-					width={550}
-					height={800}
-				/>
+				<div className="img-container">
+					<Image
+						src={ketaBrain.src}
+						alt="illustration of brain meditating"
+						width={320}
+						height={480}
+						priority
+						sizes="(max-width: 768px) 250px, 320px"
+					/>
+				</div>
 				<div className="text">
 					<h1>Ketamine-Assisted Psychotherapy (KAP)</h1>
 					<h3>

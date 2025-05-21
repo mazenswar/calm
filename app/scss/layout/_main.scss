@@ -65,8 +65,16 @@ section {
 	z-index: 100;
 }
 
-@include u.breakpoint-down(medium) {
+.img-container {
+	width: clamp(300px, 25%, 1000px);
+	margin: 0 auto;
+}
+
+@include u.breakpoint-down(small) {
 	.banner-container {
 		height: 30vh;
+	}
+	.img-container {
+		max-width: 250px;
 	}
 }

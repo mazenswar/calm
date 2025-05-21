@@ -1,11 +1,13 @@
+import "../scss/components/_errors.scss";
+
 export default function SuccessPage() {
 	return (
 		<main className="success-page">
 			<div className="container">
 				<h1 className="success-title">Thank you for reaching out</h1>
 				<p className="success-text">
-					We’ve received your message and will get back to you within 1 business
-					day.
+					We{"'"}ve received your message and will get back to you within 1
+					business day.
 				</p>
 				<p className="success-text">
 					In the meantime, feel free to explore more about our{" "}

@@ -1,6 +1,6 @@
 import React from "react";
 import Spec from "./Spec";
-
+import "../scss/components/_specialities.scss";
 export const metadata = {
 	title: "Specialities | CALM Therapy",
 	description:

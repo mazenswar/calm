@@ -1,5 +1,4 @@
 import React from "react";
-import VideoEmbed from "./VideoEmbed";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
@@ -8,8 +7,17 @@ import Image from "next/image";
 function CTA() {
 	return (
 		<section id="cta">
-			{/* <VideoEmbed /> */}
-			<Image src={tt.src} alt="tanya headshot" width={500} height={500} />
+			<div className="img-container">
+				<Image
+					priority
+					src={tt.src}
+					alt="tanya headshot"
+					width={480}
+					height={360}
+					style={{ width: "100%", height: "auto", borderRadius: "50%" }}
+					sizes="(max-width: 768px) 280px, 480px"
+				/>
+			</div>
 			<div className="text">
 				<div className="name">
 					<h1 className="center-title">Dr. Tanya Singh</h1>

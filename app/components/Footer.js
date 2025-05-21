@@ -4,10 +4,10 @@ import linkedinLogo from "./assets/images/LI-In-Bug.png";
 import instagramLogo from "./assets/images/Instagram.png";
 import Image from "next/image";
 import jb from "./assets/images/jckap.png";
-
 import PsychologyToday from "./PsychologyToday";
 import Zencare from "./Zencare";
 import Diversity from "./Diversity";
+import "../scss/components/_footer.scss";
 function Footer() {
 	return (
 		<footer>
@@ -61,8 +61,13 @@ function Footer() {
 
 function Journey() {
 	return (
-		<a href="https://www.journeyclinical.com/" target="_blank" id="journey">
-			<Image src={jb} alt="journey-logo" />
+		<a
+			href="https://www.journeyclinical.com/"
+			target="_blank"
+			id="journey"
+			className="img-container"
+		>
+			<Image src={jb} alt="journey-logo" width={200} height={200} />
 		</a>
 	);
 }

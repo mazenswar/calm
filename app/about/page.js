@@ -8,6 +8,7 @@ import aboutThree from "./assets/images/section-3.png";
 import aboutFour from "./assets/images/section-4-alt.png";
 import aboutFive from "./assets/images/section-5.png";
 import aboutSix from "./assets/images/section-6-alt.png";
+import "../scss/components/_about.scss";
 
 export const metadata = {
 	title: "About | CALM Therapy (Center for Anxiety and Life Management)",
@@ -50,11 +51,17 @@ function About() {
 			<section className="about-header">
 				<div className="header-content-container">
 					<div className="intro-card">
-						<div
-							role="img"
-							className="headshot"
-							style={{ backgroundImage: `url('${tanyaImgTwo.src}')` }}
-						></div>
+						<div className="img-container">
+							<Image
+								src={tanyaImgTwo.src}
+								alt="tanya headshot"
+								width={360}
+								height={360}
+								sizes="(max-width: 768px) 250px, 360px"
+								style={{ width: "100%", height: "auto" }}
+								priority
+							/>
+						</div>
 
 						<div className="intro-text">
 							<h1>Tanya Singh, PhD</h1>
@@ -96,12 +103,16 @@ function About() {
 			{/* SECTION 3: Paragraphs with Alternating Sections */}
 			<section className="about-sections">
 				<div className="section-block">
-					<Image
-						src={aboutOne.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={aboutOne.src}
+							alt="An Integrative Approach to Therapy illustration"
+							width={360}
+							height={360}
+							sizes="(max-width: 768px) 250px, 360px"
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</div>
 					<div className="text">
 						<h3>An Integrative Approach to Therapy</h3>
 						<p>
@@ -116,12 +127,17 @@ function About() {
 				</div>
 
 				<div className="section-block alt">
-					<Image
-						src={aboutTwo.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={aboutTwo.src}
+							alt="Rooted in Science and Experience illustration"
+							width={360}
+							height={360}
+							sizes="(max-width: 768px) 250px, 360px"
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</div>
+
 					<div className="text">
 						<h3>Rooted in Science and Experience</h3>
 						<p>
@@ -139,12 +155,17 @@ function About() {
 				</div>
 
 				<div className="section-block">
-					<Image
-						src={aboutThree.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={aboutThree.src}
+							alt="Ketamine-Assisted Psychotherapy (KAP) illustration"
+							width={360}
+							height={480}
+							sizes="(max-width: 768px) 250px, 360px"
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</div>
+
 					<div className="text">
 						<h3>Ketamine-Assisted Psychotherapy (KAP)</h3>
 						<p>
@@ -163,12 +184,16 @@ function About() {
 				</div>
 
 				<div className="section-block alt">
-					<Image
-						src={aboutFour.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={aboutFour.src}
+							alt="therapy style illustration"
+							width={360}
+							height={360}
+							sizes="(max-width: 768px) 250px, 360px"
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</div>
 					<div className="text">
 						<h3>A Style That Meets You Where You Are</h3>
 						<p>
@@ -182,12 +207,16 @@ function About() {
 				</div>
 
 				<div className="section-block checklist">
-					<Image
-						src={aboutFive.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={aboutFive.src}
+							alt="therapy fit illustration"
+							width={360}
+							height={360}
+							sizes="(max-width: 768px) 250px, 360px"
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</div>
 					<div className="text">
 						<h3>Are We a Good Fit?</h3>
 						<h4>You might be a good fit to work with me if:</h4>
@@ -212,12 +241,16 @@ function About() {
 					</div>
 				</div>
 				<div className="section-block alt cta">
-					<Image
-						src={aboutSix.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={aboutSix.src}
+							alt="call to action illustration"
+							width={360}
+							height={360}
+							sizes="(max-width: 768px) 250px, 360px"
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</div>
 					<div className="text">
 						<h2 className="linebreak">
 							Ready to Start?{"\n\n"} If you feel drawn to this kind of work, I

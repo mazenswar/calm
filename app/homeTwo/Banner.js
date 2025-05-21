@@ -5,12 +5,17 @@ import brainImgTwo from "./assets/brain-2.png";
 function Banner() {
 	return (
 		<section id="banner">
-			<Image
-				src={brainImgTwo.src}
-				alt="balance science and spirituality"
-				width={800}
-				height={600}
-			/>
+			<div className="img-container">
+				<Image
+					priority
+					src={brainImgTwo.src}
+					alt="balance science and spirituality"
+					width={480}
+					height={360}
+					sizes="(max-width: 768px) 300px, 480px"
+					style={{ width: "100%", height: "auto" }}
+				/>
+			</div>
 
 			<div className="text">
 				<h2 className="tagline">

@@ -5,11 +5,14 @@ import diversity from "./assets/images/diversity.jpg";
 function Diversity() {
 	return (
 		<section id="diversity">
-			<div
-				className="image"
-				style={{ backgroundImage: `url('${diversity.src}')` }}
-				role="image"
-			></div>
+			<div className="img-container">
+				<Image
+					src={diversity.src}
+					width={360}
+					height={360}
+					style={{ width: "100%", height: "auto", borderRadius: "100%" }}
+				/>
+			</div>
 			<h2>
 				Committed to inclusion and respect for people of all genders, races,
 				ethnicities, and identities.

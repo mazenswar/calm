@@ -12,13 +12,18 @@ function LandingHeader() {
 	return (
 		<section className="landing-header">
 			<div className="floating-wrapper">
-				<Image
-					className="landing-illustration floating"
-					src={bb1.src}
-					alt="brain"
-					width={600}
-					height={600}
-				/>
+				<div className="img-container">
+					<Image
+						priority
+						className="landing-illustration floating"
+						src={bb1.src}
+						alt="brain"
+						width={360}
+						height={360}
+						sizes="(max-width: 768px) 300px, 360px"
+						style={{ width: "100%", height: "auto" }}
+					/>
+				</div>
 				<div className="shadow"></div>
 			</div>
 

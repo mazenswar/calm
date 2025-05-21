@@ -27,18 +27,14 @@
 			flex-direction: column;
 			justify-content: flex-end;
 			align-items: center;
-			gap: 2em;
+			width: 90%;
+
 			// padding: 3em 0;
-
-			.headshot {
-				width: 15em;
-				height: 15em;
-				border-radius: 50%;
-				background-size: cover;
-				background-position: left;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			.img-container {
+				img {
+					border-radius: 50%;
+				}
 			}
-
 			.intro-text {
 				h1,
 				h3 {
@@ -195,16 +191,22 @@
 			.section-block,
 			.section-block.alt {
 				flex-direction: column;
-				img {
-					width: 15em;
-					height: auto;
-					margin-bottom: 2em;
-				}
 				.text {
 					width: 100%;
 					// text-align: ;
 				}
 			}
+		}
+	}
+	/////////////////////////////////////////
+	@include u.breakpoint-down(small) {
+		.about-sections {
+			.img-container {
+				max-width: 250px;
+			}
+		}
+		.img-container {
+			max-width: 250px;
 		}
 	}
 

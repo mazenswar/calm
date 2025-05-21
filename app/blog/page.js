@@ -1,5 +1,6 @@
 import React from "react";
 import MediumArticles from "./MediumArticles";
+import "../scss/components/_blog.scss";
 
 export const metadata = {
 	title: "Blog | CALM Therapy",

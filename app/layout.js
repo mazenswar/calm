@@ -1,14 +1,22 @@
 import "./scss/style.scss";
-import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import Calendly from "./components/Calendly";
-import CalendlyLink from "./components/CalendlyLink";
-import Head from "next/head";
-import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
 import ContactButton from "./components/ContactButton";
+import { Raleway, Tajawal } from "next/font/google";
+
+const raleway = Raleway({
+	subsets: ["latin"],
+	weight: ["400", "700"],
+	display: "swap",
+});
+const tajawal = Tajawal({
+	subsets: ["latin"],
+	weight: ["200", "300", "400", "500", "700", "800"],
+	display: "swap",
+});
+
 export const metadata = {
 	title: "Center for Anxiety and Life Management (Calm Therapy)",
 	description:
@@ -20,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
+			<body className={`${raleway.className} ${tajawal.className}`}>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 
 				<NewNav />

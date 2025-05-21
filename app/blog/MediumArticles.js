@@ -1,42 +1,55 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import brainImg from "./assets/images/blog.png";
+import Image from "next/image";
 
-const MediumArticles = () => {
-	const [articles, setArticles] = useState([]);
-	useEffect(() => {
-		fetch(
-			"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014"
-		)
-			.then((res) => res.json())
-			.then((data) => setArticles(data.items));
-	}, []);
-	function makeArticles() {
-		return articles.map((a) => {
-			const id = a.guid.split("/").pop();
-			return (
-				<Link href={`/blog/${id}`} key={a.title} className="article-link">
-					<h2>{a.title}</h2>
-					<span>Published {new Date(a.pubDate).toLocaleDateString()}</span>
-				</Link>
-			);
-		});
+async function getMediumArticles() {
+	const res = await fetch(
+		"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014",
+		{ next: { revalidate: 604800 } } // 7 days in seconds
+	);
+	if (!res.ok) {
+		console.error("Failed to fetch Medium articles");
+		return [];
 	}
+	const data = await res.json();
+	return data.items || [];
+}
+
+export default async function MediumArticles() {
+	const articles = await getMediumArticles();
 
 	return (
 		<main id="blog">
 			<section>
+				<div className="img-container">
+					<Image
+						src={brainImg.src}
+						alt="brain illustration"
+						width={360}
+						height={360}
+						sizes="(max-width: 768px) 250px, 360px"
+						style={{ width: "100%", height: "auto" }}
+						priority
+					/>
+				</div>
 				<div className="medium-container">
 					<h1 className="center-title">Blogs</h1>
-					{makeArticles()}
+					{articles.map((a) => {
+						const id = a.guid.split("/").pop();
+						return (
+							<Link href={`/blog/${id}`} key={a.guid} className="article-link">
+								<p className="article-title">{a.title}</p>
+								<span>
+									Published {new Date(a.pubDate).toLocaleDateString()}
+								</span>
+							</Link>
+						);
+					})}
 					<div role="link" className="article-link soon">
-						<h2>More Blogs Coming Soon!</h2>
+						<p>More Blogs Coming Soon!</p>
 					</div>
 				</div>
 			</section>
 		</main>
 	);
-};
-
-export default MediumArticles;
+}

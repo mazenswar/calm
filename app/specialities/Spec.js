@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-
 import depressionImg from "./assets/images/depp.png";
 import selfImg from "./assets/images/self.png";
 import addImg from "./assets/images/mmm.png";
@@ -12,25 +11,32 @@ function Spec() {
 		<main id="spec">
 			<section className="intro">
 				<h1>How I Can Support You</h1>
-				<h3 className="linebreak">
+				<p className="linebreak">
 					I understand that seeking therapy is a courageous and personal step.
 					You may be navigating anxiety, feeling stuck, questioning your
-					identity, or simply trying to make sense of your inner world.{"\n\n"}I
-					offer a compassionate and grounded space where we can explore your
+					identity, or simply trying to make sense of your inner world.
+				</p>
+				<p>
+					I offer a compassionate and grounded space where we can explore your
 					experience together, using a blend of evidence-based therapy, deep
 					emotional work, and, when it{"'"}s helpful, spiritual insight.
-				</h3>
+				</p>
 			</section>
 
 			<section className="specc-section">
 				<h2>Here are some of the areas I specialize in:</h2>
 				<div className="anxiety specc-container">
-					<Image
-						src={selfImg.src}
-						alt="depression illustration"
-						width={800}
-						height={800}
-					/>
+					<div className="img-container">
+						<Image
+							src={selfImg.src}
+							alt="depression illustration"
+							width={360}
+							height={540}
+							priority
+							style={{ width: "100%", height: "auto" }}
+							sizes="(max-width: 768px) 100vw, 360px"
+						/>
+					</div>
 					<div className="text-container">
 						<h3>Anxiety & Related Conditions</h3>
 						<div className="specc" id="gad">
@@ -87,12 +93,16 @@ function Spec() {
 					</div>
 				</div>
 				<div className="mood specc-container">
-					<Image
-						src={depressionImg.src}
-						alt="depression illustration"
-						width={500}
-						height={800}
-					/>
+					<div className="img-container">
+						<Image
+							src={depressionImg.src}
+							alt="depression illustration"
+							width={360}
+							height={540}
+							style={{ width: "100%", height: "auto" }}
+							sizes="(max-width: 768px) 100vw, 360px"
+						/>
+					</div>
 					<div className="text-container">
 						<h3>Mood & Self-Perception</h3>
 						<div className="specc" id="depression">
@@ -125,12 +135,16 @@ function Spec() {
 					</div>
 				</div>
 				<div className="life-transitions specc-container">
-					<Image
-						src={brain00.src}
-						alt="depression illustration"
-						width={800}
-						height={800}
-					/>
+					<div className="img-container">
+						<Image
+							src={brain00.src}
+							alt="depression illustration"
+							width={360}
+							height={360}
+							style={{ width: "100%", height: "auto" }}
+							sizes="(max-width: 768px) 100vw, 360px"
+						/>
+					</div>
 					<div className="text-container">
 						<h3>Life Transitions & Stress</h3>
 						<div className="specc" id="lt">
@@ -155,12 +169,16 @@ function Spec() {
 					</div>
 				</div>
 				<div className="add specc-container">
-					<Image
-						src={addImg.src}
-						alt="depression illustration"
-						width={800}
-						height={800}
-					/>
+					<div className="img-container">
+						<Image
+							src={addImg.src}
+							alt="depression illustration"
+							width={360}
+							height={540}
+							style={{ width: "100%", height: "auto" }}
+							sizes="(max-width: 768px) 100vw, 360px"
+						/>
+					</div>
 					<div className="text-container">
 						<h3>Additional Integrative Offerings</h3>
 
@@ -197,11 +215,3 @@ function Spec() {
 }
 
 export default Spec;
-
-// Additional Integrative Offerings
-
-// Ketamine-Assisted Psychotherapy (KAP)
-// For clients experiencing treatment-resistant anxiety, OCD, or depression, I offer Ketamine-Assisted Psychotherapy in collaboration with Journey Clinical. KAP can open a window into new perspectives, soften rigid patterns, and support deep emotional healing. I guide clients through preparation, dosing, and integration with care and intention.
-
-// Spiritual Exploration & Existential Inquiry
-// Many of my clients don’t identify with a specific spiritual path, but they sense there’s something deeper calling to them. Therapy can be a place to explore those longings without judgment. While I do not impose any spiritual framework, I hold space for inquiry, awe, and the mystery of what it means to be human.

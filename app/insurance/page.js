@@ -1,7 +1,7 @@
-import Link from "next/link";
 import React from "react";
 import Fees from "./Fees";
 import InsuranceSections from "./InsuranceSections";
+import "../scss/components/_insurance.scss";
 
 export const metadata = {
 	title:

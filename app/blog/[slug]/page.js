@@ -1,30 +1,30 @@
 import Link from "next/link";
-import Parser from "rss-parser";
-
-const parser = new Parser();
+import fs from "fs";
+import path from "path";
+import "../../scss/components/_blog-post.scss";
 
 export async function generateMetadata({ params }) {
-	const feed = await parser.parseURL("https://medium.com/feed/@tsingh_3014");
-
-	const post = feed.items.find((item) => {
-		const guid = item.guid;
-		const slug = guid.split("/").pop();
-		return slug === params.slug;
-	});
-
-	if (!post) {
+	const filePath = path.join(
+		process.cwd(),
+		"public",
+		"blogData",
+		`${params.slug}.json`
+	);
+	if (!fs.existsSync(filePath)) {
 		return {
 			title: "Blog Post | CALM Therapy",
 		};
 	}
 
-	// Fallback: convert the content HTML to plain text
-	const htmlContent = post["content:encoded"];
+	const fileContents = fs.readFileSync(filePath, "utf-8");
+	const post = JSON.parse(fileContents);
+
+	const htmlContent = post["content:encoded"] || post.content || "";
 	const plainText = htmlContent
-		.replace(/<[^>]*>/g, "") // remove all HTML tags
-		.replace(/\s+/g, " ") // collapse extra whitespace
+		.replace(/<[^>]*>/g, "")
+		.replace(/\s+/g, " ")
 		.trim()
-		.slice(0, 160); // truncate for meta description
+		.slice(0, 160);
 
 	return {
 		title: `${post.title} | CALM Therapy`,
@@ -46,15 +46,18 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-	const feed = await parser.parseURL("https://medium.com/feed/@tsingh_3014");
-	const post = feed.items.find((item) => {
-		const guid = item.guid;
-		console.log(item);
-		const slug = guid.split("/").pop(); // get the last segment
-		return slug === params.slug;
-	});
+	const filePath = path.join(
+		process.cwd(),
+		"public",
+		"blogData",
+		`${params.slug}.json`
+	);
+	if (!fs.existsSync(filePath)) {
+		return <p>Post not found.</p>;
+	}
 
-	if (!post) return <p>Post not found.</p>;
+	const fileContents = fs.readFileSync(filePath, "utf-8");
+	const post = JSON.parse(fileContents);
 
 	return (
 		<main id="blog-post">
@@ -66,7 +69,9 @@ export default async function BlogPostPage({ params }) {
 					<h1 className="center-title">{post.title}</h1>
 					<div
 						id="medium-article"
-						dangerouslySetInnerHTML={{ __html: post["content:encoded"] }}
+						dangerouslySetInnerHTML={{
+							__html: post["content:encoded"] || post.content,
+						}}
 					></div>
 				</div>
 			</section>

@@ -1,22 +1,20 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faCalendar,
-	faEnvelope,
-	faPhone,
-} from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import bookingImg from "./assets/images/bookingbrain.png";
 
 function ContactText() {
 	return (
 		<div className="contact-text">
-			<Image
-				src={bookingImg.src}
-				alt="contact us illustration"
-				width={800}
-				height={800}
-			/>
+			<div className="img-container">
+				<Image
+					src={bookingImg.src}
+					alt="contact us illustration"
+					width={360}
+					height={360}
+					style={{ width: "100%", height: "auto" }}
+					priority
+				/>
+			</div>
 			<h1 className="center-title">Get in Touch</h1>
 			<h2 className="linebreak topb">
 				Whether you{"'"}re ready to book a consultation, have a question about

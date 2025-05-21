@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import horLogo from "./assets/images/hor-logo.png";
-import verLogo from "./assets/images/CALM logo_E4.png";
 import Image from "next/image";
 import useResizeWatcher from "../hooks/useResizeWatcher";
+import "../scss/components/_new-nav.scss";
 
 function NewNav() {
 	const { width } = useResizeWatcher();

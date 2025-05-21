@@ -160,7 +160,10 @@ nav {
 			position: absolute;
 			left: 0;
 			top: var(--nav-height);
-			height: 0;
+			max-height: 0 !important;
+			visibility: hidden;
+			opacity: 0;
+			transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
 			overflow: hidden;
 			width: 100%;
 			display: flex;
@@ -183,31 +186,42 @@ nav {
 				width: 100%;
 				display: flex;
 				justify-content: center;
+				align-items: center;
 				position: relative;
 				flex-wrap: wrap;
 				margin: 0;
 
 				button {
-					position: absolute;
-					left: 60%;
+					padding-bottom: 0.5em;
 					background-color: inherit;
 					border: none;
 					// color: ivory;
 					// padding: 0 1em;
 				}
 				.submenu {
-					display: none;
+					// display: none;
 					// background-color: rgb(69, 67, 67, 0.5);
-					padding: 1.5em 0;
 					// overflow: none;
+					padding: 1.5em 0;
+					max-height: 0 !important;
+					width: 0;
+					overflow: hidden;
+					transition: max-height 0.2s ease-in-out;
+					visibility: hidden;
+					opacity: 0;
 				}
 				.submenu.active {
-					display: block;
+					// display: block;
 					background-color: var(--t2);
 					a {
 						color: var(--three);
 					}
-					width: 100vh;
+					margin-top: 0.5em;
+					// width: 100vh;
+					max-height: 900px !important; // big enough to contain your content
+					width: 100vw;
+					visibility: visible;
+					opacity: 1;
 				}
 				// &:hover {
 				// 	.submenu {
@@ -221,7 +235,9 @@ nav {
 			}
 		}
 		.nav-links.active {
-			height: fit-content;
+			max-height: 900px !important;
+			visibility: visible;
+			opacity: 1;
 			padding-top: 1em;
 			border-bottom: 0.3em solid var(--three);
 			border-radius: 0 0 1em 1em;

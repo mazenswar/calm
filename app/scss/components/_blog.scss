@@ -1,14 +1,19 @@
 @use "../util" as u;
 
 #blog {
-	// background-color: red;
+	background-color: ivory;
+	.img-container {
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 1em;
+	}
 	section {
 		position: relative;
 		max-width: 1200px;
 		margin: 0 auto;
 		p {
 			font-size: 1.2em;
-
+			color: #4d4d4d;
 			// padding: 0 2em;
 		}
 		h1.center-title {
@@ -96,7 +101,8 @@
 		.article-container {
 			padding: 1em;
 		}
-		#medium-article {
+		.img-container {
+			max-width: 250px;
 		}
 	}
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import ContactText from "./ContactText";
+import "../scss/components/_contact.scss";
 
 export const metadata = {
 	title: "Book a Free Consultation | CALM Therapy",

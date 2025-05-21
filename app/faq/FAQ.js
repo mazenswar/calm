@@ -51,12 +51,17 @@ function FAQ() {
 		<main id="faq">
 			{/* <Banner img={connect} /> */}
 			<section id="faq-section">
-				<Image
-					src={faqImg.src}
-					alt="faq illustration"
-					width={800}
-					height={800}
-				/>
+				<div className="img-container">
+					<Image
+						src={faqImg.src}
+						alt="faq illustration"
+						width={360}
+						height={360}
+						sizes="(max-width: 768px) 300px, 480px"
+						style={{ width: "100%", height: "auto" }}
+						priority
+					/>
+				</div>
 				<h1 className="center-title">Common Questions</h1>
 				<div className="text">
 					{questions.map((ele) => {

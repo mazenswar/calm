@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "../scss/components/_errors.scss";
 
 export default function SuccessPage() {
 	return (

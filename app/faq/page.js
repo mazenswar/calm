@@ -1,5 +1,6 @@
 import React from "react";
 import FAQ from "./FAQ";
+import "../scss/components/_faq.scss";
 
 export const metadata = {
 	title: "Common Questions",

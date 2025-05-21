@@ -19,12 +19,7 @@
 		div {
 			display: flex;
 			flex-direction: column;
-			max-width: 60%;
-		}
-		img {
-			width: 20%;
-			height: auto;
-			// transform: scaleX(-1);
+			// max-width: 60%;
 		}
 	}
 	.useful-links {
@@ -253,16 +248,28 @@
 
 @include u.breakpoint-down(small) {
 	#kap-page {
+		.img-container {
+			width: 90%;
+			max-width: 280px;
+			display: block;
+			margin: 0 auto;
+			max-height: 100%;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+			}
+		}
 		#keta {
 			ul {
 				padding: 1em;
 			}
 			.keta-header {
 				flex-direction: column;
-				img {
-					width: 50%;
-					margin-bottom: 2em;
-				}
 				.text {
 					max-width: 100%;
 				}

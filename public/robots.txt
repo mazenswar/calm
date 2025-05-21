@@ -2,6 +2,6 @@
 
 User-Agent: *
 Allow: /
-Disallow: /api/
+Disallow: /lib/
 
 Sitemap: https://calmtherapy.center/sitemap.xml

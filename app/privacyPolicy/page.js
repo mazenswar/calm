@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import "../scss/components/_privacy-policy.scss";
 
 function PrivacyPolicy() {
 	return (
