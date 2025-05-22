@@ -86,9 +86,9 @@ function Keta() {
 						</a>
 					</Link>
 					, a platform of licensed prescribers who evaluate your eligibility for
-					KAP and manage the medical aspects of treatment. If approved, they
-					prescribe sublingual ketamine lozenges, which are delivered to your
-					home pharmacy.
+					KAP and manage the medical s of treatment. If approved, they prescribe
+					sublingual ketamine lozenges, which are delivered to your home
+					pharmacy.
 				</p>
 				<ol>
 					<li>Medical Consultation and Screening</li>
@@ -197,8 +197,13 @@ function Keta() {
 						lasts approximately 1.5 to 2.5 hours.
 					</li>
 				</ul>
+
 				<p>
-					Please contact me directly for detailed information about my fees.
+					Please check our{" "}
+					<Link className="link" href="/insurance">
+						Fees & Insurance
+					</Link>{" "}
+					page for more information
 				</p>
 			</section>
 			<section className="keta-box">

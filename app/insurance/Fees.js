@@ -6,7 +6,15 @@ function Fees() {
 	return (
 		<section id="fees">
 			<div className="intro">
-				<Image src={invImg.src} alt="illustration" width={500} height={500} />
+				<div className="img-container">
+					<Image
+						src={invImg.src}
+						alt="illustration"
+						width={360}
+						height={360}
+						priority
+					/>
+				</div>
 				<div className="text">
 					<h3>Therapy is an Investment in You</h3>
 					<p>

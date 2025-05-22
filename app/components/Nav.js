@@ -1,35 +1,29 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
-import dynamic from "next/dynamic";
 import ScheduleButton from "./ScheduleButton";
 import Image from "next/image";
 
 import horLogo from "./assets/images/hor-logo.png";
-import verLogo from "./assets/images/CALM logo_E4.png";
+
 import useResizeWatcher from "../hooks/useResizeWatcher";
 
 export default function Nav() {
 	const [menuClicked, setMenuClicked] = useState(false);
-	const ref = useRef(null);
-	const [logo, setLogo] = useState(horLogo);
+
 	const { width } = useResizeWatcher();
 
 	useEffect(() => {
-		width < 650 ? setLogo(verLogo) : setLogo(horLogo);
-		const children =
-			document.getElementsByClassName("navigation")[0].children.length;
-		const height = ref.current.clientHeight + "px";
 		document.documentElement.style.setProperty("--children", children);
 		document.documentElement.style.setProperty("--nav-height", height);
 	}, [width]);
 
 	return (
-		<nav ref={ref}>
+		<nav>
 			<div role="heading" aria-level="1" className="header">
 				<a href="/">
-					<Image className="logo" src={logo} alt="logo" />
+					<Image className="logo" src={horLogo} alt="logo" />
 				</a>
 			</div>
 			<ul className={menuClicked ? "navigation active" : "navigation"}>

@@ -155,7 +155,7 @@ function About() {
 				</div>
 
 				<div className="section-block">
-					<div className="img-container">
+					<div className="img-container tall">
 						<Image
 							src={aboutThree.src}
 							alt="Ketamine-Assisted Psychotherapy (KAP) illustration"

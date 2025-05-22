@@ -10,6 +10,7 @@ function Diversity() {
 					src={diversity.src}
 					width={360}
 					height={360}
+					alt="diversity illustration"
 					style={{ width: "100%", height: "auto", borderRadius: "100%" }}
 				/>
 			</div>

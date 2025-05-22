@@ -16,11 +16,6 @@
 			rgba(252, 243, 232, 1) 0%,
 			rgba(231, 200, 231, 1) 100%
 		);
-		img {
-			width: clamp(300px, 25%, 900px);
-			height: auto;
-			margin: 0 auto;
-		}
 		.text {
 			display: flex;
 			flex-wrap: wrap;

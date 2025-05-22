@@ -12,7 +12,7 @@ function CTA() {
 					priority
 					src={tt.src}
 					alt="tanya headshot"
-					width={480}
+					width={360}
 					height={360}
 					style={{ width: "100%", height: "auto", borderRadius: "50%" }}
 					sizes="(max-width: 768px) 280px, 480px"

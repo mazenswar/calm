@@ -57,8 +57,6 @@ function FAQ() {
 						alt="faq illustration"
 						width={360}
 						height={360}
-						sizes="(max-width: 768px) 300px, 480px"
-						style={{ width: "100%", height: "auto" }}
 						priority
 					/>
 				</div>

@@ -5,7 +5,7 @@ import brainImgTwo from "./assets/brain-2.png";
 function Banner() {
 	return (
 		<section id="banner">
-			<div className="img-container">
+			<div className="img-container tall">
 				<Image
 					priority
 					src={brainImgTwo.src}

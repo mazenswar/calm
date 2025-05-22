@@ -1,275 +1,248 @@
 @use "../util" as u;
 @use "sass:math" as m;
 
-///////////////////// General
-
-nav {
+.new-nav {
+	ul {
+		list-style: none;
+	}
+	background-color: red;
 	position: sticky;
 	top: 0;
+	width: 100%;
 	background-color: white;
-	display: flex;
-	justify-content: space-evenly;
-	width: 100vw;
-	align-items: center;
-	text-align: center;
 	border-bottom: 0.5em solid #aaaaaa;
 	z-index: 100;
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-	.logo-container {
-		width: 25%;
-		padding: 2em;
+
+	.nav-container {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		img {
-			width: 100%;
-			height: fit-content;
-		}
-	}
-
-	.nav-links {
-		list-style: none;
-		display: flex;
-		justify-content: space-evenly;
-		// width: 40%;
-		// background-color: red;
-		a {
-			font-size: 1.2em;
-			color: var(--three);
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			&:visited,
-			&:active {
-				color: var(--three);
-			}
-		}
-		.submenu {
-			z-index: 100;
-			a {
-				font-size: 1.2em;
-				color: var(--three);
-				&:visited,
-				&:active {
-					color: var(--three);
-				}
-			}
-		}
-	}
-}
-///////////////////// Desktop
-@include u.breakpoint(large) {
-	nav {
-		button {
-			// // position: absolute;
-			// // left: 60%;
-			// background-color: inherit;
-			// border: none;
-			// color: var(--three);
-			// // padding: 0 1em;
-			display: none;
-		}
-		#ham-menu {
-			display: none;
-		}
-		li {
-			padding: 1em;
-			cursor: default;
-		}
-		.dropdown {
-			position: relative;
-			&:hover {
-				.submenu {
-					border-radius: 1em;
-					padding: 1em;
-					display: flex;
-					flex-direction: column;
-					justify-content: space-evenly;
-					align-items: center;
-					background: linear-gradient(
-						180deg,
-						rgba(252, 243, 232, 1) 50%,
-						rgba(231, 200, 231, 1) 100%
-					);
-					color: var(--three);
-					border: 1px solid var(--three);
-					display: block;
-					position: absolute;
-					top: 2.2em;
-					left: -1em;
-				}
-			}
-		}
-		.submenu {
-			list-style: none;
-			display: none;
-		}
-	}
-}
-//////////////////////////////////////////// MOBILE
-
-@include u.breakpoint-down(medium) {
-	nav {
 		justify-content: space-between;
-		padding: 1em 2em;
-		////////////////////// Ham Menu
-		.menu-icon-container {
-			display: inline-block;
-			cursor: pointer;
+		padding: 1em 10em;
+	}
+	.logo {
+		width: 60%;
+		margin-right: 2em;
+		.img-container {
+			width: 90%;
+			min-width: 200px;
+			max-width: 360px;
+			margin: 0;
 		}
-		#ham-menu {
-			.bar1,
-			.bar2,
-			.bar3 {
-				width: 35px;
-				height: 5px;
-				background-color: var(--four);
-				margin: 6px 0;
-				transition: 0.4s;
-			}
+	}
 
-			.change .bar1 {
-				transform: translate(0, 11px) rotate(-45deg);
-			}
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		cursor: pointer;
 
-			.change .bar2 {
+		span.bar {
+			display: block;
+			width: 30px;
+			height: 3px;
+			margin: 4px 0;
+			background-color: var(--four);
+			transition: transform 0.3s ease, opacity 0.3s ease;
+			transform-origin: center center;
+		}
+
+		&.open {
+			span.bar:nth-child(1) {
+				transform: translateY(11px) rotate(45deg);
+			}
+			span.bar:nth-child(2) {
 				opacity: 0;
 			}
+			span.bar:nth-child(3) {
+				transform: translateY(-11px) rotate(-45deg);
+			}
+		}
+	}
 
-			.change .bar3 {
-				transform: translate(0, -11px) rotate(45deg);
+	.nav-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		font-size: 1.1em;
+		gap: 2em;
+		button {
+			font: inherit;
+		}
+
+		.nav-item {
+			position: relative;
+
+			.nav-link,
+			.has-submenu {
+				font-size: 1.2em;
+				font-weight: 400;
+				color: var(--three);
+				text-decoration: none;
+				background: none;
+				border: none;
+				cursor: pointer;
+			}
+
+			.has-submenu {
+				display: flex;
+				align-items: center;
+			}
+
+			.submenu {
+				font-size: 1.2em;
+				min-width: 150px;
+				width: fit-content;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: var(--six);
+
+				border: 1px solid var(--three);
+				border-radius: 1em;
+				margin-top: 0.5em;
+				padding: 1em;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-10px);
+				transition: opacity 0.3s ease, transform 0.3s ease;
+				z-index: 1000;
+
+				li + li {
+					margin-top: 1.5em;
+
+					text-align: center;
+				}
+
+				.submenu-link {
+					font-size: 1em;
+					color: var(--three);
+					text-decoration: none;
+
+					&:visited,
+					&:active {
+						color: var(--three);
+					}
+				}
+
+				&.open {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
 			}
 		}
-		/// ///////////////////////////////
-		///
-		.logo-container {
-			padding: 0.5em;
-			width: 50%;
-			img {
-				width: 100%;
-			}
+	}
+	@include u.breakpoint-down(extra-medium) {
+		.nav-container {
+			padding: 1em 2em;
 		}
-		width: 100%;
-		position: relative;
-		.nav-links {
-			list-style: none;
-			position: absolute;
-			left: 0;
-			top: var(--nav-height);
-			max-height: 0 !important;
-			visibility: hidden;
-			opacity: 0;
-			transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
-			overflow: hidden;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			// justify-content: center;
+	}
+	@include u.breakpoint-down(medium) {
+		.nav-container {
+			flex-direction: row;
 			align-items: center;
+			justify-content: space-between;
+			position: relative;
+			overflow: visible;
+			z-index: 0;
+
+			.img-container {
+				margin: 0;
+			}
+		}
+
+		.hamburger {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.nav-list {
+			flex-direction: column;
+			width: 100%;
 			background: linear-gradient(
 				180deg,
 				rgba(252, 243, 232, 1) 50%,
 				rgba(231, 200, 231, 1) 100%
 			);
-
-			ul {
-				list-style: none;
-			}
-			li {
-				padding: 1em 0;
-			}
-			.dropdown {
-				width: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				position: relative;
-				flex-wrap: wrap;
-				margin: 0;
-
-				button {
-					padding-bottom: 0.5em;
-					background-color: inherit;
-					border: none;
-					// color: ivory;
-					// padding: 0 1em;
-				}
-				.submenu {
-					// display: none;
-					// background-color: rgb(69, 67, 67, 0.5);
-					// overflow: none;
-					padding: 1.5em 0;
-					max-height: 0 !important;
-					width: 0;
-					overflow: hidden;
-					transition: max-height 0.2s ease-in-out;
-					visibility: hidden;
-					opacity: 0;
-				}
-				.submenu.active {
-					// display: block;
-					background-color: var(--t2);
-					a {
-						color: var(--three);
-					}
-					margin-top: 0.5em;
-					// width: 100vh;
-					max-height: 900px !important; // big enough to contain your content
-					width: 100vw;
-					visibility: visible;
-					opacity: 1;
-				}
-				// &:hover {
-				// 	.submenu {
-				// 		display: block;
-				// 		background-color: green;
-				// 		position: relative;
-				// 		width: 100%;
-				// 		border-radius: 0;
-				// 	}
-				// }
-			}
-		}
-		.nav-links.active {
-			max-height: 900px !important;
-			visibility: visible;
-			opacity: 1;
-			padding-top: 1em;
 			border-bottom: 0.3em solid var(--three);
 			border-radius: 0 0 1em 1em;
-			a {
-				color: var(--three);
+			overflow: hidden;
+			max-height: 0;
+			opacity: 0;
+			visibility: hidden;
+			transition: max-height 0.4s ease, opacity 0.4s ease;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+			&.open {
+				max-height: 1000px;
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.nav-item {
+				width: 100%;
+				text-align: center;
+				padding: 1em 0;
+				button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					font: inherit;
+				}
+				.has-submenu {
+					&::after {
+						content: "▾"; // down-arrow indicator
+						display: inline-block;
+						margin-left: 0.5em; // space before the arrow
+						font-size: 1em; // match your link size
+						color: var(--three); // same color as your links
+						position: absolute;
+						right: 30%;
+					}
+					&.open::after {
+						content: "▴"; // knob/up-arrow when open
+					}
+				}
+				.submenu {
+					position: static;
+					max-height: 0;
+					overflow: hidden;
+					opacity: 0;
+					visibility: hidden;
+					transition: max-height 0.4s ease, opacity 0.4s ease;
+					// background-color: var(--t2);
+					border: none;
+					border-radius: 0;
+					padding: 0;
+
+					&.open {
+						max-height: 600px;
+						width: 100%;
+						opacity: 1;
+						visibility: visible;
+					}
+
+					.submenu-link {
+						display: block;
+						padding: 0.5em 0;
+						color: var(--three);
+						&:visited,
+						&:active {
+							color: var(--three);
+						}
+					}
+				}
 			}
 		}
 	}
 }
-// .mobile-links {
-//   list-style: none;
-//   position: absolute;
-//   left: 0;
-//   top: var(--nav-height);
-//   width: 100%;
-//   background-color: red;
-//   display: flex;
-//   flex-direction: column;
-//   // justify-content: center;
-//   align-items: center;
-//   li {
-//     padding: 1em;
-//   }
-//   .dropdown {
-//     &:hover {
-//       .submenu {
-//         display: block;
-//         background-color: green;
-//         position: relative;
-//         width: 100%;
-//         border-radius: 0;
-//       }
-//     }
-//   }
-// }

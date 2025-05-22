@@ -40,12 +40,14 @@ function InsuranceSections() {
 			<section className="insurance-section">
 				<h2 className="purpl3">Why Choose an Out-of-Network Therapist?</h2>
 				<div className="ofn-banner">
-					<Image
-						src={ofnImage.src}
-						alt="illustration"
-						width={500}
-						height={500}
-					/>
+					<div className="img-container">
+						<Image
+							src={ofnImage.src}
+							alt="illustration"
+							width={480}
+							height={320}
+						/>
+					</div>
 					<p>
 						Therapy is most effective when you work with someone who truly
 						understands your needs. In-network options can be limited, and you
@@ -60,11 +62,21 @@ function InsuranceSections() {
 						<p>
 							While some in-network providers treat anxiety and OCD, these
 							conditions often require specialized training to be addressed
-							effectively. Our practice focuses on anxiety-related disorders,
-							OCD, and perfectionism, utilizing evidence-based approaches that
-							require advanced expertise. Additionally, we offer
-							ketamine-assisted therapy for treatment-resistant conditions, a
-							service not commonly available in insurance networks.
+							effectively. Our practice focuses on anxiety-related disorders,{" "}
+							<Link href="/specialities#ocd" className="link">
+								OCD
+							</Link>
+							, and{" "}
+							<Link href="/specialities#perfectionism" className="link">
+								perfectionism
+							</Link>
+							, utilizing evidence-based approaches that require advanced
+							expertise. Additionally, we offer{" "}
+							<Link href="kap" className="link">
+								ketamine-assisted therapy
+							</Link>{" "}
+							for treatment-resistant conditions, a service not commonly
+							available in insurance networks.
 						</p>
 					</div>
 					<div className="sub">
@@ -138,12 +150,14 @@ function InsuranceSections() {
 				</div>
 			</section>
 			<section className="insurance-section cta">
-				<Image
-					src={insqImg.src}
-					alt="more questions illustration"
-					width={500}
-					height={500}
-				/>
+				<div className="img-container">
+					<Image
+						src={insqImg.src}
+						alt="more questions illustration"
+						width={360}
+						height={360}
+					/>
+				</div>
 				<h3 className="purple help center-title">
 					If you have any questions about out-of-network reimbursement, feel
 					free to <Link href={"/contact"}>reach out</Link>. We are happy to help
