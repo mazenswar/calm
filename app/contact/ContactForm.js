@@ -22,7 +22,7 @@ const contactOptions = [
 const reasonTexts = {
 	consult: {
 		title: "Book a Free 15-Minute Consultation",
-		text: "At this time, we're only able to provide virtual therapy to clients located in New York, New Jersey, and Pennsylvania.If that's you, we'd love to hear from you. Fill out the form and we'll get back to you within 24 hours.",
+		text: "Reaching out is a big step, and we know it's not always easy. You're not committing to anything by contacting us. This is just a first step.\n\nAt this time, we're only able to provide virtual therapy to clients located in New York, New Jersey, and Pennsylvania.If that's you, we'd love to hear from you. Fill out the form and we'll get back to you within 24 hours.",
 		textArea:
 			"Please share a bit about what brings you to therapy at this time",
 	},
@@ -117,6 +117,14 @@ function ContactForm() {
 		const formData = new FormData(e.target);
 		try {
 			await sendContactForm(formData);
+			//////////// Google Tag Trigger //////////////////////
+			if (typeof window !== "undefined") {
+				window.dataLayer = window.dataLayer || [];
+				window.dataLayer.push({
+					event: "contact_form_submitted",
+				});
+			}
+			//////////// Google Tag Trigger //////////////////////
 			router.push("/success");
 		} catch (e) {
 			console.log(e);
@@ -148,7 +156,7 @@ function ContactForm() {
 
 			<div className="microcopy">
 				<h2>{reasonTexts[reason.value].title}</h2>
-				<p>{reasonTexts[reason.value].text}</p>
+				<p className="linebreak">{reasonTexts[reason.value].text}</p>
 			</div>
 
 			<div className="input-container">

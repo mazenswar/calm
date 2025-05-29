@@ -17,11 +17,15 @@ function Footer() {
 				<Image src={logo} alt="logo" width={200} />
 				<div className="contact-info">
 					<span>Center for Anxiety and Life Management</span>
+					<p>
+						Serving thoughtful adults across New York, New Jersey, and
+						Pennsylvania through virtual, integrative therapy.
+					</p>
 					<a href="tel: 9145704196">
 						<span>(914) 570-4196</span>
 					</a>
-					<a href="mailto: tsingh@calmtherapy.center">
-						<span>tsingh@calmtherapy.center</span>
+					<a href="mailto: info@calmtherapy.center">
+						<span>info@calmtherapy.center</span>
 					</a>
 					<div className="social-links">
 						<a

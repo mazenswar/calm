@@ -1,10 +1,10 @@
 import "./scss/style.scss";
 import Footer from "./components/Footer";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
 import ContactButton from "./components/ContactButton";
 import { Raleway, Tajawal } from "next/font/google";
+import GTM from "./components/GTM";
 
 const raleway = Raleway({
 	subsets: ["latin"],
@@ -32,11 +32,11 @@ export default function RootLayout({ children }) {
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 
 				<NewNav />
+				<GTM />
 				<ContactButton />
 				{children}
 				<Footer />
 			</body>
-			<GoogleAnalytics gaId="G-FF7QZWYSJL" />
 		</html>
 	);
 }

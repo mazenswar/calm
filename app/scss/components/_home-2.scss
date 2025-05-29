@@ -212,6 +212,28 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			.hero-cta {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 2em 0;
+				.link {
+					font-size: 1.3em;
+					text-decoration: none;
+					margin: 1em;
+					background: var(--three);
+					color: ivory;
+					padding: 1.5em;
+					border-radius: 15px;
+
+					transition: 0.5s ease-in;
+					&:hover {
+						// color: var(--five);
+						text-decoration: underline;
+					}
+				}
+			}
 		}
 	}
 	h1 {
@@ -450,6 +472,11 @@
 				max-width: 100%;
 				.icons-container {
 					flex-direction: column;
+				}
+				.hero-cta {
+					text-align: center;
+					max-width: 300px;
+					margin: 0 auto;
 				}
 			}
 			.floating {

@@ -27,7 +27,7 @@
 			flex-direction: column;
 			justify-content: flex-end;
 			align-items: center;
-			width: 90%;
+			width: 50%;
 
 			// padding: 3em 0;
 
@@ -48,7 +48,7 @@
 
 		.welcome-message {
 			// max-width: 800px;
-			width: clamp(300px, 60%, 900px);
+			width: clamp(300px, 70%, 1000px);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -114,41 +114,46 @@
 			text-align: center;
 		}
 		.section-block {
-			padding: 4em 2em;
 			background-color: ivory;
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-evenly;
-			align-items: center;
-			.text {
-				width: 40%;
-				.link {
-					font-size: inherit;
-					text-decoration: underline;
-					color: var(--five);
+			.content {
+				// width: clamp(300px, 100%, 1200px);
+				max-width: 1400px;
+				margin: 0 auto;
+				padding: 4em 2em;
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-evenly;
+				align-items: center;
+				.text {
+					width: 60%;
+					.link {
+						font-size: inherit;
+						text-decoration: underline;
+						color: var(--five);
+					}
 				}
-			}
-			img {
-				height: 20em;
-				width: auto;
-			}
-			h3 {
-				color: var(--three);
-				margin-bottom: 1em;
-				font-size: 1.8em;
-			}
-			h2 {
-				color: var(--three);
-				margin-bottom: 1em;
-				font-size: 1.9em;
-			}
+				img {
+					height: 20em;
+					width: auto;
+				}
+				h3 {
+					color: var(--three);
+					margin-bottom: 1em;
+					font-size: 1.8em;
+				}
+				h2 {
+					color: var(--three);
+					margin-bottom: 1em;
+					font-size: 1.9em;
+				}
 
-			p,
-			li {
-				font-size: 1.3em;
+				p,
+				li {
+					font-size: 1.3em;
 
-				color: #4d4d4d;
-				line-height: 1.6;
+					color: #4d4d4d;
+					line-height: 1.6;
+				}
 			}
 		}
 
@@ -191,19 +196,31 @@
 		.about-sections {
 			.section-block,
 			.section-block.alt {
-				flex-direction: column;
-				.text {
-					width: 100%;
-					// text-align: ;
+				.content {
+					flex-direction: column;
+					.text {
+						width: 100%;
+						// text-align: ;
+					}
 				}
 			}
 		}
 	}
 	/////////////////////////////////////////
 	@include u.breakpoint-down(small) {
+		.about-header {
+			.intro-card {
+				width: 100%;
+			}
+		}
 		.about-sections {
-			.img-container {
-				max-width: 250px;
+			.section-block {
+				.content {
+					text-align: center;
+					.img-container {
+						max-width: 250px;
+					}
+				}
 			}
 		}
 		.img-container {

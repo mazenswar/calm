@@ -7,6 +7,7 @@ import {
 	faUserCheck,
 	faVideo,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 function LandingHeader() {
 	return (
@@ -58,6 +59,14 @@ function LandingHeader() {
 						/>
 						<span>Licensed in NJ, NY, PA</span>
 					</div>
+				</div>
+				<div className="hero-cta">
+					<Link href="/contact" className="cta-button link">
+						Schedule a Free Consultation
+					</Link>
+					<p className="cta-subtext">
+						Secure, confidential, and no pressure to commit, just a first step.
+					</p>
 				</div>
 			</div>
 		</section>

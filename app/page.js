@@ -1,6 +1,6 @@
 import React from "react";
-
 import HomeTwo from "./homeTwo/HomeTwo";
+
 export const metadata = {
 	title: "Center for Anxiety and Life Management (CALM Therapy)",
 	description:
@@ -37,6 +37,7 @@ export const metadata = {
 		images: ["https://calmtherapy.center/social/ss.png"],
 	},
 };
+
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
@@ -60,7 +61,33 @@ const jsonLd = {
 		"https://www.psychologytoday.com/us/therapists/tanya-singh-edison-nj/1338674",
 		"https://zencare.co/provider/therapist/tanya-singh",
 	],
+	areaServed: [
+		{
+			"@type": "State",
+			name: "New York",
+		},
+		{
+			"@type": "State",
+			name: "New Jersey",
+		},
+		{
+			"@type": "State",
+			name: "Pennsylvania",
+		},
+	],
+	availableLanguage: ["English"],
+	contactPoint: {
+		"@type": "ContactPoint",
+		contactType: "customer service",
+		email: "info@calmtherapy.center",
+	},
 };
+
+//////////////
+//////////////
+//////////////
+//////////////
+//////////////
 function Main() {
 	return (
 		<>
@@ -68,6 +95,7 @@ function Main() {
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 			/>
+
 			<HomeTwo />
 		</>
 	);
