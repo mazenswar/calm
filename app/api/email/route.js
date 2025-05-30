@@ -38,7 +38,7 @@ export const POST = async (request) => {
 	try {
 		await transporter.sendMail({
 			...mailOptions,
-			subject: `New Message from ${name}`,
+			subject: `CALM Website Form Submitted for (${reason})`,
 			...generateEmailContent(data),
 		});
 		return NextResponse.json({ message: "Email sent successfully" });
