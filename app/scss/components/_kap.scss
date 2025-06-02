@@ -21,6 +21,12 @@
 			flex-direction: column;
 			// max-width: 60%;
 		}
+		.img-container {
+			width: clamp(200px, 30%, 1000px);
+		}
+		.text {
+			width: 60%;
+		}
 	}
 	.useful-links {
 		a {
@@ -271,6 +277,8 @@
 			.keta-header {
 				flex-direction: column;
 				.text {
+					margin-top: 1em;
+					width: 100%;
 					max-width: 100%;
 				}
 			}
