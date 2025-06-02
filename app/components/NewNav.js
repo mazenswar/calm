@@ -4,6 +4,10 @@ import Image from "next/image";
 import horLogo from "./assets/images/hor-logo.png";
 import "../scss/components/_new-nav.scss";
 
+// Utility: detect if device supports hover
+const canHover =
+	typeof window !== "undefined" && window.matchMedia("(hover: hover)").matches;
+
 const navItems = [
 	{ label: "Home", href: "/" },
 	{
@@ -35,7 +39,9 @@ function NavItem({ item }) {
 					<button
 						type="button"
 						className={`nav-link has-submenu${open ? " open" : ""}`}
-						onClick={() => setOpen((prev) => !prev)} // ← click toggles
+						onClick={() => {
+							if (!canHover) setOpen((prev) => !prev);
+						}}
 					>
 						{item.label}
 					</button>

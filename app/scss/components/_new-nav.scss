@@ -104,7 +104,7 @@
 
 				border: 1px solid var(--three);
 				border-radius: 1em;
-				margin-top: 0.5em;
+				// margin-top: 0.5em;
 				padding: 1em;
 				opacity: 0;
 				visibility: hidden;
@@ -252,5 +252,13 @@
 		opacity: 1;
 		visibility: visible;
 		transform: translateY(0);
+		li {
+			a {
+				transition: 0.5s;
+				&:hover {
+					color: var(--five);
+				}
+			}
+		}
 	}
 }
