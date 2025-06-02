@@ -10,7 +10,7 @@ const navItems = [
 		label: "Services",
 		submenu: [
 			{ label: "Specialities", href: "/specialities" },
-			{ label: "Ketamine", href: "/kap" },
+			{ label: "KAP", href: "/kap" },
 			{ label: "Fees & Insurance", href: "/insurance" },
 		],
 	},

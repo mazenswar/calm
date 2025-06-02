@@ -246,3 +246,11 @@
 		}
 	}
 }
+
+@media (hover: hover) and (pointer: fine) {
+	.new-nav .nav-list .nav-item:hover .submenu {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+}

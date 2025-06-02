@@ -62,7 +62,7 @@ export const specialities = [
 			"Sometimes healing looks like boundaries, rest, or asking new questions about what you're doing and why. I work with clients to identify internal and external sources of stress and create space for recalibration.",
 	},
 	{
-		title: "Ketamine-Assisted Psychotherapy (KAP)",
+		title: "KAP",
 		id: "kap-spec",
 		summary:
 			"For clients experiencing treatment-resistant anxiety, OCD, or depression, I offer Ketamine-Assisted Psychotherapy in collaboration with Journey Clinical. KAP can open a window into new perspectives, soften rigid patterns, and support deep emotional healing. I guide clients through preparation, dosing, and integration with care and intention.",
