@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import depressionImg from "./assets/images/depp.png";
-import selfImg from "./assets/images/self.png";
-import addImg from "./assets/images/mmm.png";
-import brain00 from "./assets/images/brain-00.png";
+import depressionImg from "./assets/images/depp.webp";
+import selfImg from "./assets/images/self.webp";
+import addImg from "./assets/images/mmm.webp";
+import brain00 from "./assets/images/brain-00.webp";
 
 function Spec() {
 	return (

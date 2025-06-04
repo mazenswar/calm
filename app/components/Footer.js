@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "./assets/images/CALM logo_E4.png";
+import logo from "./assets/images/CALM logo_E4.webp";
 import linkedinLogo from "./assets/images/LI-In-Bug.png";
-import instagramLogo from "./assets/images/Instagram.png";
+import instagramLogo from "./assets/images/Instagram.webp";
 import Image from "next/image";
-import jb from "./assets/images/jckap.png";
+import jb from "./assets/images/jckap.webp";
 import PsychologyToday from "./PsychologyToday";
 import Zencare from "./Zencare";
 import Diversity from "./Diversity";

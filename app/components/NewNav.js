@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import horLogo from "./assets/images/hor-logo.png";
+import horLogo from "./assets/images/hor-logo.webp";
 import "../scss/components/_new-nav.scss";
 
 // Utility: detect if device supports hover

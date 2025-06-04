@@ -1,13 +1,22 @@
 import React from "react";
+import zencareLogo from "./assets/images/zencare.webp";
+import Image from "next/image";
+import Link from "next/link";
 
 function Zencare() {
 	return (
-		<div
+		<Link
 			id="zc"
-			dangerouslySetInnerHTML={{
-				__html: `<iframe title="Zencare Therapist Badge" style="width: 250px; height: 77px; border: none"  src="https://zencare.co/embed/trust-badge?z=eyJpZCI6MTQwMjcsImNvbG9yIjoid2hpdGUifQ%3D%3D"></iframe>`,
-			}}
-		></div>
+			href="https://zencare.co/provider/therapist/tanya-singh"
+			target="_blank"
+		>
+			<Image
+				src={zencareLogo.src}
+				alt="zencare logo"
+				width={320}
+				height={100}
+			/>
+		</Link>
 	);
 }
 

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import tanyaImgTwo from "./assets/images/ttt.png";
+import tanyaImgTwo from "./assets/images/tanya-about.webp";
 import Image from "next/image";
-import aboutOne from "./assets/images/about-section-1.png";
-import aboutTwo from "./assets/images/section-2.png";
-import aboutThree from "./assets/images/section-3.png";
-import aboutFour from "./assets/images/section-4-alt.png";
-import aboutFive from "./assets/images/section-5.png";
-import aboutSix from "./assets/images/section-6-alt.png";
+import aboutOne from "./assets/images/about-section-1.webp";
+import aboutTwo from "./assets/images/section-2.webp";
+import aboutThree from "./assets/images/section-3.webp";
+import aboutFour from "./assets/images/section-4-alt.webp";
+import aboutFive from "./assets/images/section-5.webp";
+import aboutSix from "./assets/images/section-6-alt.webp";
 import "../scss/components/_about.scss";
 
 export const metadata = {

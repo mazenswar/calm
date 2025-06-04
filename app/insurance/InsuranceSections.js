@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import ofnImage from "./assets/images/ofn.png";
+import ofnImage from "./assets/images/ofn.webp";
 import Image from "next/image";
-import insqImg from "./assets/images/insq.png";
+import insqImg from "./assets/images/insq.webp";
 
 function InsuranceSections() {
 	return (

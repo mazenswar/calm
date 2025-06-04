@@ -1,5 +1,5 @@
 import React from "react";
-import invImg from "./assets/images/inv.png";
+import invImg from "./assets/images/inv.webp";
 import Image from "next/image";
 
 function Fees() {

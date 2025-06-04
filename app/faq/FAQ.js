@@ -6,7 +6,7 @@ import { questions } from "../data/faq";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import faqImg from "./assets/images/faq.png";
+import faqImg from "./assets/images/faq.webp";
 
 const defaultState = {};
 questions.forEach((ele) => {

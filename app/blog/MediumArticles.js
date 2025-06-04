@@ -1,5 +1,5 @@
 import Link from "next/link";
-import brainImg from "./assets/images/blog.png";
+import brainImg from "./assets/images/blog.webp";
 import Image from "next/image";
 
 async function getMediumArticles() {

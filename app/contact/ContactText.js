@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import bookingImg from "./assets/images/bookingbrain.png";
+import bookingImg from "./assets/images/bookingbrain.webp";
 
 function ContactText() {
 	return (

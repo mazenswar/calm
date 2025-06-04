@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
-import bb1 from "./assets/bb1.png";
+import bb1 from "./assets/bb1.webp";
 import {
 	faLocationDot,
 	faUserCheck,

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import brainImgTwo from "./assets/brain-2.png";
+import brainImgTwo from "./assets/brain-2.webp";
 
 function Banner() {
 	return (

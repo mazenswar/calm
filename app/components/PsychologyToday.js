@@ -1,16 +1,23 @@
+import Image from "next/image";
 import React from "react";
+import ptLogo from "./assets/images/pt.webp";
+import Link from "next/link";
 
 function PsychologyToday() {
 	return (
-		<div
+		<Link
 			id="pt"
-			dangerouslySetInnerHTML={{
-				__html: `<!-- Professional verification provided by Psychology Today -->
-<a href="https://www.psychologytoday.com/profile/1338674" class="sx-verified-seal"></a>
-<script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="12" data-id="1338674" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="></script>
-<!-- End Verification -->`,
-			}}
-		></div>
+			className="img-container"
+			href="https://www.psychologytoday.com/us/therapists/tanya-singh-edison-nj/1338674"
+			target="_blank"
+		>
+			<Image
+				src={ptLogo.src}
+				alt="psychology today logo"
+				width={300}
+				height={100}
+			/>
+		</Link>
 	);
 }
 

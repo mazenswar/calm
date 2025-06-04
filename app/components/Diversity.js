@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import diversity from "./assets/images/diversity.jpg";
+import diversity from "./assets/images/diversity.webp";
 
 function Diversity() {
 	return (
