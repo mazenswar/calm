@@ -3,12 +3,14 @@ footer {
 	border-top: 10px solid #eee;
 	width: 100%;
 	#diversity {
+		background: linear-gradient(0deg, var(--three) 0%, var(--five) 100%);
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
 		.img-container {
-			max-width: 200px;
+			max-width: 250px;
+			margin: 0;
 		}
 		h2 {
 			width: 70%;
@@ -19,7 +21,7 @@ footer {
 	h2,
 	h3,
 	p {
-		color: var(--three);
+		color: ivory;
 	}
 	p {
 		text-align: center;
@@ -28,45 +30,28 @@ footer {
 		color: #565656;
 		display: block;
 	}
-	.top-banner {
+
+	.badges {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
-		width: 100%;
-		background: linear-gradient(
-			180deg,
-			rgba(2, 0, 36, 1) 0%,
-			rgba(82, 72, 159, 1) 0%,
-			rgba(194, 102, 167, 1) 150%
-		);
-		#pt,
-		#zc,
-		#journey {
-			width: 40%;
+		flex-wrap: wrap;
+		background: linear-gradient(0deg, var(--five) 0%, var(--three) 100%);
+		a {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin: 2em 2em;
+			width: clamp(250px, 15%, 800px);
 		}
 		#journey {
 			img {
-				width: 50%;
-				height: fit-content;
+				max-width: 200px;
 			}
 		}
-		.box {
-			padding: 1em;
-			width: 40%;
-			h4,
-			p {
-				color: ivory;
-				text-align: center;
-				margin: 0;
-			}
-			display: flex;
+		@include u.breakpoint-down(extra-medium) {
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 		}
 	}
 
@@ -79,14 +64,15 @@ footer {
 		align-items: center;
 		border-top: 0.5em solid var(--t1);
 	}
-	.top-banner,
+
 	.bottom-banner,
 	#diversity {
 		@include u.breakpoint-down(medium) {
-			flex-direction: column;
+			flex-direction: column-reverse;
 			justify-content: center;
 			align-items: center;
 			width: 100%;
+
 			.box {
 				width: 100%;
 				h2,
@@ -96,26 +82,26 @@ footer {
 					text-align: center;
 				}
 			}
-			#pt,
-			#zn,
-			#journey {
-				width: 100%;
-				margin: 1em 0;
-			}
 		}
 	}
 	.contact-info {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-content: center;
 		padding: 1em 0;
+
 		p {
 			padding-top: 1em;
+			color: #4d4d4d;
+			margin: 0;
+			margin-bottom: 2em;
 		}
 		a {
-			padding-top: 0.5em;
+			width: fit-content;
+			align-self: center;
+			margin: 0.5em;
 		}
 		.social-links {
 			display: flex;
@@ -145,11 +131,15 @@ footer {
 	.copyright {
 		width: 100%;
 		background-color: #eee;
+
 		padding: 5% 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		p {
+			color: var(--three);
+		}
 	}
 	a {
 		transition: 0.5s;
@@ -160,6 +150,10 @@ footer {
 	}
 	#diversity {
 		@include u.breakpoint-down(medium) {
+			flex-direction: column;
+			.img-container {
+				margin-bottom: 2em;
+			}
 			div {
 				margin-bottom: 3em;
 			}
@@ -167,11 +161,6 @@ footer {
 				text-align: center;
 				width: 100%;
 			}
-		}
-	}
-
-	.top-banner {
-		@include u.breakpoint-down(medium) {
 		}
 	}
 }

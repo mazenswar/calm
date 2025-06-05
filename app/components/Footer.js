@@ -3,16 +3,16 @@ import logo from "./assets/images/CALM logo_E4.webp";
 import linkedinLogo from "./assets/images/LI-In-Bug.png";
 import instagramLogo from "./assets/images/Instagram.webp";
 import Image from "next/image";
-import jb from "./assets/images/jckap.webp";
-import PsychologyToday from "./PsychologyToday";
-import Zencare from "./Zencare";
+
 import Diversity from "./Diversity";
 import "../scss/components/_footer.scss";
+import Link from "next/link";
+import Badges from "./Badges";
 function Footer() {
 	return (
 		<footer>
-			<TopBanner />
 			<Diversity />
+			<Badges />
 			<section className="bottom-banner">
 				<Image src={logo} alt="logo" width={200} />
 				<div className="contact-info">
@@ -21,14 +21,14 @@ function Footer() {
 						Serving thoughtful adults across New York, New Jersey, and
 						Pennsylvania through virtual, integrative therapy.
 					</p>
-					<a href="tel: 9145704196">
-						<span>(914) 570-4196</span>
-					</a>
-					<a href="mailto: info@calmtherapy.center">
-						<span>info@calmtherapy.center</span>
-					</a>
+					<Link className="link" href="tel: 9145704196">
+						(914) 570-4196
+					</Link>
+					<Link className="link" href="mailto: info@calmtherapy.center">
+						info@calmtherapy.center
+					</Link>
 					<div className="social-links">
-						<a
+						<Link
 							href="https://www.linkedin.com/company/center-for-anxiety-and-life-management-calm-therapy"
 							target="_blank"
 							className="linkedin-link"
@@ -38,8 +38,8 @@ function Footer() {
 								src={linkedinLogo}
 								alt="linkedin-logo"
 							/>
-						</a>
-						<a
+						</Link>
+						<Link
 							href="https://www.instagram.com/calmtherapy.center/"
 							target="_blank"
 							className="instagram-link"
@@ -49,39 +49,17 @@ function Footer() {
 								src={instagramLogo}
 								alt="instagram-logo"
 							/>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</section>
 			<section className="copyright">
 				<p>© 2025 Center for Anxiety and Life Management</p>
-				<a href="/privacyPolicy" className="link">
+				<Link href="/privacyPolicy" className="link">
 					Privacy Policy
-				</a>
+				</Link>
 			</section>
 		</footer>
-	);
-}
-
-function Journey() {
-	return (
-		<a
-			href="https://www.journeyclinical.com/"
-			target="_blank"
-			id="journey"
-			className="img-container"
-		>
-			<Image src={jb} alt="journey-logo" width={200} height={200} />
-		</a>
-	);
-}
-function TopBanner() {
-	return (
-		<section className="top-banner">
-			<Journey />
-			<PsychologyToday />
-			<Zencare />
-		</section>
 	);
 }
 
