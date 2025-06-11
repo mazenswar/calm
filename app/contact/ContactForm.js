@@ -69,13 +69,7 @@ function ContactForm() {
 	const [phoneNumber, setPhoneNumber] = useState("");
 	const [message, setMessage] = useState("");
 	const [state, setState] = useState({ value: "NY", label: "New York" });
-	const data = {
-		name,
-		email,
-		phoneNumber,
-		message,
-		state,
-	};
+
 	const [touched, setTouched] = useState({
 		name: false,
 		email: false,
@@ -86,14 +80,6 @@ function ContactForm() {
 		/^\(?([2-9][0-9]{2})\)?[-.●]?([2-9][0-9]{2})[-.●]?([0-9]{4})$/.test(
 			phoneNumber
 		);
-
-	function resetForm() {
-		setEmail("");
-		setName("");
-		setPhoneNumber("");
-		setState({ value: "NY", label: "New York" });
-		setMessage("");
-	}
 
 	function handleBlur({ target }) {
 		setTouched((prev) => setTouched({ ...prev, [target.name]: true }));
@@ -125,7 +111,11 @@ function ContactForm() {
 				});
 			}
 			//////////// Google Tag Trigger //////////////////////
-			router.push("/success");
+			if (reason.value === "consult") {
+				router.push("/next-steps");
+			} else {
+				router.push("/success");
+			}
 		} catch (e) {
 			console.log(e);
 			alert(

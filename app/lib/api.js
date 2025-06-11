@@ -5,10 +5,14 @@ export async function sendContactForm(data) {
 			body: data,
 		});
 
-		if (!response.ok) {
-			throw new Error(`response status: ${response.status}`);
+		const result = await response.json();
+
+		if (!response.ok || !result.success) {
+			console.error("Backend error:", result?.error || "Unknown error");
+			throw new Error(result?.error || "Email failed");
 		}
 	} catch (err) {
-		alert("Oops! Something went wrong. Please try again or give us a call");
+		console.error("Client-side error:", err);
+		alert("Oops! Something went wrong. Please try again or call us directly.");
 	}
 }
