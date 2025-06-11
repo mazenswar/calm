@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { sendContactForm } from "../lib/api";
 import Select from "../components/SelectNoSSR";
-import { useRouter } from "next/navigation";
 
 const options = [
 	{ value: "NY", label: "New York" },
@@ -57,9 +56,9 @@ function ErrorMessage({ condition }) {
 }
 
 /////////////////////////////////////////////
-function ContactForm() {
+function ContactForm({ setFormState }) {
 	// const [state, setState] = useState(initState);
-	const router = useRouter();
+
 	const [reason, setReason] = useState({
 		value: "consult",
 		label: "I'd like to book a consultation",
@@ -112,15 +111,13 @@ function ContactForm() {
 			}
 			//////////// Google Tag Trigger //////////////////////
 			if (reason.value === "consult") {
-				router.push("/next-steps");
+				setFormState("next-steps");
 			} else {
-				router.push("/success");
+				setFormState("success");
 			}
 		} catch (e) {
 			console.log(e);
-			alert(
-				"Oops, something went wrong. Please try again later or email us directly"
-			);
+			setFormState("error");
 		}
 	}
 

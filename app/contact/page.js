@@ -2,6 +2,7 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import ContactText from "./ContactText";
 import "../scss/components/_contact.scss";
+import ContactPage from "./ContactPage";
 
 export const metadata = {
 	title: "Book a Free Consultation | CALM Therapy",
@@ -28,14 +29,7 @@ export const metadata = {
 };
 
 function Contact() {
-	return (
-		<main id="contact">
-			<section className="booking-form">
-				<ContactText />
-				<ContactForm />
-			</section>
-		</main>
-	);
+	return <ContactPage />;
 }
 
 export default Contact;

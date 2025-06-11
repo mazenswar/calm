@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/components/_errors.scss";
-function NextSteps() {
+function NextStepsPage() {
 	return (
 		<main id="next-steps">
 			<section>
@@ -25,4 +25,4 @@ function NextSteps() {
 	);
 }
 
-export default NextSteps;
+export default NextStepsPage;
