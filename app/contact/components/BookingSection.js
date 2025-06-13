@@ -17,12 +17,14 @@ export default function BookingSection({ setFormState }) {
 						/>
 					</div>
 					<div className="text">
-						<h1>We're Happy You're Here</h1>
+						<h1>
+							We{"'"}re Happy You{"'"}re Here
+						</h1>
 
 						<p>
 							Our goal is to help you feel seen, heard, and supported. Whether
-							it's your first time reaching out or you're returning to care,
-							we're here to meet you exactly where you are.
+							it{"'"}s your first time reaching out or you{"'"}re returning to
+							care, we{"'"}re here to meet you exactly where you are.
 						</p>
 					</div>
 				</div>

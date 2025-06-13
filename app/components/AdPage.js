@@ -8,7 +8,9 @@ function AdPage({ children }) {
 		<main className="ad-page">
 			<section>
 				<div className="container">
-					<h1>We're Happy You're Here</h1>
+					<h1>
+						We{"'"}re Happy You{"'"}re Here
+					</h1>
 					{children}
 					<CTAButton text={"Get Started"} />
 					<div className="learn-more">
