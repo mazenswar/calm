@@ -51,46 +51,48 @@ function FAQ() {
 		<main id="faq">
 			{/* <Banner img={connect} /> */}
 			<section id="faq-section">
-				<div className="img-container">
-					<Image
-						src={faqImg.src}
-						alt="faq illustration"
-						width={360}
-						height={360}
-						priority
-					/>
-				</div>
-				<h1 className="center-title">Common Questions</h1>
-				<div className="text">
-					{questions.map((ele) => {
-						return (
-							<div
-								key={`faq-${ele.id}`}
-								id={ele.id}
-								className={
-									expanded[ele.q] ? "faq-container active" : "faq-container"
-								}
-							>
-								<h3>{ele.q}</h3>
-								<p
+				<div className="content">
+					<div className="img-container">
+						<Image
+							src={faqImg.src}
+							alt="faq illustration"
+							width={360}
+							height={360}
+							priority
+						/>
+					</div>
+					<h1 className="center-title">Common Questions</h1>
+					<div className="text">
+						{questions.map((ele) => {
+							return (
+								<div
+									key={`faq-${ele.id}`}
+									id={ele.id}
 									className={
-										expanded[ele.q]
-											? "content active linebreak"
-											: "content linebreak"
+										expanded[ele.q] ? "faq-container active" : "faq-container"
 									}
 								>
-									{ele.a}
-								</p>
-								<div className="icon" onClick={(e) => handleClick(ele.q)}>
-									<FontAwesomeIcon
-										icon={expanded[ele.q] ? faArrowUp : faArrowDown}
-										size="1x"
-										color="var(--three)"
-									/>
+									<h3>{ele.q}</h3>
+									<p
+										className={
+											expanded[ele.q]
+												? "content active linebreak"
+												: "content linebreak"
+										}
+									>
+										{ele.a}
+									</p>
+									<div className="icon" onClick={(e) => handleClick(ele.q)}>
+										<FontAwesomeIcon
+											icon={expanded[ele.q] ? faArrowUp : faArrowDown}
+											size="1x"
+											color="var(--three)"
+										/>
+									</div>
 								</div>
-							</div>
-						);
-					})}
+							);
+						})}
+					</div>
 				</div>
 			</section>
 		</main>

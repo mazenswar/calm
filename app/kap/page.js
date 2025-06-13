@@ -39,11 +39,7 @@ export const metadata = {
 //////////////
 
 function KAP() {
-	return (
-		<main id="kap-page">
-			<Keta />
-		</main>
-	);
+	return <Keta />;
 }
 
 export default KAP;

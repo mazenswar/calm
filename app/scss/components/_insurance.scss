@@ -1,6 +1,9 @@
 @use "../util" as u;
 @use "sass:math" as m;
 #insurance-page {
+	.content {
+		flex-direction: column;
+	}
 	a {
 		text-decoration: underline;
 		color: var(--five);
@@ -150,19 +153,23 @@
 				}
 			}
 			&.cta {
-				padding: 10em;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-evenly;
-				align-items: center;
-				h3 {
-					width: clamp(350px, 50%, 1000px);
-				}
+				.content {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+					.img-container {
+						max-width: 300px;
+					}
+					h3 {
+						width: clamp(350px, 50%, 1000px);
+					}
 
-				a {
-					text-decoration: underline;
-					color: var(--five);
-					font-size: inherit;
+					a {
+						text-decoration: underline;
+						color: var(--five);
+						font-size: inherit;
+					}
 				}
 			}
 		}
@@ -228,8 +235,10 @@
 					padding: 0;
 				}
 				&.cta {
-					flex-direction: column;
-					padding: 2em;
+					.content {
+						flex-direction: column;
+						padding: 2em;
+					}
 				}
 			}
 

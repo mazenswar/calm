@@ -1,0 +1,40 @@
+@use "../../scss/util" as u;
+
+#form-error,
+#next-steps {
+	min-height: 80vh;
+	.content {
+		background: linear-gradient(
+			180deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5em;
+		padding: 4em;
+		min-height: 40vh;
+		background-color: red;
+		border-radius: 3em;
+	}
+}
+
+@include u.breakpoint-down(small) {
+	#next-steps {
+		min-height: 65vh;
+
+		section {
+			padding: 0 1em;
+			text-align: center;
+		}
+	}
+	#form-error {
+		min-height: 65vh;
+		line-height: 2;
+		section {
+			padding: 0 1em;
+			text-align: center;
+		}
+	}
+}

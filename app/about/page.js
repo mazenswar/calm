@@ -49,58 +49,44 @@ function About() {
 			{/* SECTION 1: Header */}
 
 			<section className="about-header">
-				<div className="header-content-container">
-					<div className="intro-card">
-						<div className="img-container">
-							<Image
-								src={tanyaImgTwo.src}
-								alt="tanya headshot"
-								width={360}
-								height={360}
-								sizes="(max-width: 768px) 250px, 360px"
-								style={{ width: "100%", height: "auto" }}
-								priority
-							/>
-						</div>
+				<div className="content">
+					<div className="header-content-container">
+						<div className="intro-card">
+							<div className="img-container">
+								<Image
+									src={tanyaImgTwo.src}
+									alt="tanya headshot"
+									width={360}
+									height={360}
+									sizes="(max-width: 768px) 250px, 360px"
+									style={{ width: "100%", height: "auto" }}
+									priority
+								/>
+							</div>
 
-						<div className="intro-text">
-							<h1>Tanya Singh, PhD</h1>
-							<h3>Director & Co-Founder</h3>
-							<h3>Licensed Clinical Psychologist</h3>
+							<div className="intro-text">
+								<h1>Tanya Singh, PhD</h1>
+								<h3>Director & Co-Founder</h3>
+								<h3>Licensed Clinical Psychologist</h3>
+							</div>
 						</div>
-					</div>
-					<div className="welcome-message">
-						<h3>For the Thoughtful, the Searching, and the Stuck</h3>
-						<p>
-							I offer integrative therapy for adults navigating anxiety,
-							burnout, spiritual confusion, perfectionism, or depression. If you
-							{"'"}re feeling stuck, disconnected, or unsure how to move
-							forward, therapy can help you return to what{"'"}s most essential.
-							I work with clients across New Jersey, New York, and Pennsylvania
-							through online therapy that is both accessible and deeply
-							personal.
-						</p>
+						<div className="welcome-message">
+							<h3>For the Thoughtful, the Searching, and the Stuck</h3>
+							<p>
+								I offer integrative therapy for adults navigating anxiety,
+								burnout, spiritual confusion, perfectionism, or depression. If
+								you
+								{"'"}re feeling stuck, disconnected, or unsure how to move
+								forward, therapy can help you return to what{"'"}s most
+								essential. I work with clients across New Jersey, New York, and
+								Pennsylvania through online therapy that is both accessible and
+								deeply personal.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* SECTION 2: Visual Quote */}
-			{/* <section className="about-quote">
-				<div className="quote-text">
-					<h2>
-						I{"'"}m not here to fix you. I{"'"}m here to help you listen to
-						yourself in a way you may never have before.
-					</h2>
-				</div>
-				<Image
-					src={brainThree.src}
-					alt="illustration"
-					width={500}
-					height={500}
-				/>
-			</section> */}
-
-			{/* SECTION 3: Paragraphs with Alternating Sections */}
 			<section className="about-sections">
 				<div className="section-block">
 					<div className="content">

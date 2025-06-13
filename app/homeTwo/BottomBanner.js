@@ -5,8 +5,10 @@ import Specs from "./Specs";
 function BottomBanner() {
 	return (
 		<section className="fs-banner">
-			<Specs />
-			<Fees />
+			<div className="content">
+				<Specs />
+				<Fees />
+			</div>
 		</section>
 	);
 }

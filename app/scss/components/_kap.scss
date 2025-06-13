@@ -1,10 +1,14 @@
 @use "../util" as u;
 
 #keta {
+	.content {
+		flex-direction: column;
+	}
 	.keta-header {
 		width: clamp(350px, 90%, 1200px);
 		border-radius: 20px;
 		flex-direction: row-reverse;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
 		margin-top: 5em;
@@ -45,6 +49,9 @@
 		margin: 2em 0;
 		width: clamp(350px, 90%, 1200px);
 		border-radius: 20px;
+		ul {
+			margin-bottom: 2em;
+		}
 	}
 	.links-container {
 		display: flex;
@@ -86,201 +93,20 @@
 	}
 }
 
-#kap-page {
-	.banner-container {
-		h1 {
-			color: var(--three);
-			padding: 1em;
-			background-color: var(--t3);
-			border-radius: 1em;
-			width: clamp(300px, 80%, 700px);
-			text-align: center;
-		}
-	}
-}
-#kap {
-	h1 {
-		color: var(--three);
-	}
-	h2 {
-		color: var(--three);
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	a {
-		text-decoration: underline;
-		color: var(--three);
-	}
-	p,
-	li {
-		color: #4d4d4d;
-	}
-	li {
-		font-size: 1.1em;
-		margin: 1em 0;
-
-		b {
-			font-size: 1.1em;
-		}
-	}
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	background-color: var(--t2);
-	.kap-box {
-		width: clamp(450px, 70%, 800px);
-		height: 25vh;
-		// height: fit-content;
-		margin: 1em;
-		background-color: var(--t3);
-		margin: 1em;
-		padding: 2em;
-		border-radius: 2em;
-		// overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		transition: 0.8s ease;
-		.icon {
-			width: 100%;
-			padding: 1em;
-			cursor: pointer;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		span {
-			display: block;
-			padding: 1em;
-			margin-top: 1.5em;
-			border-radius: 1em;
-			width: fit-content;
-			text-align: center;
-			cursor: pointer;
-			background-color: var(--t2);
-		}
-		ul {
-			margin: 0;
-			padding: 0;
-		}
-		ol {
-			margin: 0;
-			padding: 0;
-			ul {
-				margin: 0;
-				padding: 0;
-			}
-		}
-		.content {
-			cursor: text;
-			// height: 0;
-			// transform: scale(0);
-			// overflow: hidden;
-			display: none;
-			opacity: 0;
-			transition: 0.4s ease;
-		}
-		&.active {
-			height: fit-content;
-			// max-height: 150vh;
-
-			// max-height: 100em;
-			// height: fit-content;
-			// max-height: 70vh;
-			.content {
-				display: block;
-				opacity: 1;
-				padding: 1em;
-				// height: sc;
-				// transform: scale(1);
-			}
-		}
-		p {
-			font-size: 1.1em;
-		}
-	}
-	ol {
-		li {
-			font-weight: 700;
-			color: #4d4d4d;
-		}
-		ul {
-			li {
-				font-weight: 300;
-			}
-		}
-	}
-	#five {
-		display: flex;
-		flex-direction: column;
-
-		// ul {
-		// 	list-style: none;
-		// 	margin: 0;
-		// 	padding: 0;
-		// 	display: flex;
-		// 	justify-content: space-evenly;
-		// 	li {
-		// 	}
-		// }
-	}
-	.cost-container {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		div {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin: 1em 0;
-			h4 {
-				color: var(--three);
-			}
-			h5 {
-				font-weight: 600;
-				color: #4d4d4d;
-			}
-		}
-
-		// .side-container {
-		// 	// background-color: red;
-		// 	display: ;
-		// }
-	}
-}
-
 @include u.breakpoint-down(small) {
-	#kap-page {
-		.img-container {
-			width: 90%;
-			max-width: 280px;
-			display: block;
-			margin: 0 auto;
-			max-height: 100%;
-			overflow: hidden;
-			img {
+	#keta {
+		.keta-header {
+			padding: 2em;
+			.img-container {
+				margin-bottom: 2em;
+			}
+			.text {
 				width: 100%;
-				height: auto;
-				display: block;
-				max-width: 100%;
-				max-height: 100%;
-				object-fit: contain;
 			}
 		}
-		#keta {
-			ul {
-				padding: 1em;
-			}
-			.keta-header {
-				flex-direction: column;
-				.text {
-					margin-top: 1em;
-					width: 100%;
-					max-width: 100%;
-				}
+		.keta-box {
+			ol {
+				padding-left: 0.2em;
 			}
 		}
 	}

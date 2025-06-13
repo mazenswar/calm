@@ -34,6 +34,7 @@
 			.img-container {
 				img {
 					border-radius: 50%;
+					margin-bottom: 2em;
 				}
 			}
 			.intro-text {
@@ -100,12 +101,6 @@
 				line-height: 1.5;
 			}
 		}
-
-		img {
-			// flex: 1;
-			max-width: 400px;
-			height: auto;
-		}
 	}
 
 	.about-sections {
@@ -114,16 +109,25 @@
 			text-align: center;
 		}
 		.section-block {
+			display: flex;
+			// flex-direction: row;
+			justify-content: center;
+			align-items: center;
 			background-color: ivory;
 			.content {
 				// width: clamp(300px, 100%, 1200px);
-				max-width: 1400px;
-				margin: 0 auto;
+				// max-width: 1400px;
+				// margin: 0 auto;
 				padding: 4em 2em;
-				display: flex;
+				// display: flex;
 				flex-direction: row-reverse;
-				justify-content: space-evenly;
-				align-items: center;
+				// justify-content: space-evenly;
+				// align-items: center;
+				.img-container {
+					img {
+						max-height: 400px;
+					}
+				}
 				.text {
 					width: 60%;
 					.link {
@@ -132,10 +136,7 @@
 						color: var(--five);
 					}
 				}
-				img {
-					height: 20em;
-					width: auto;
-				}
+
 				h3 {
 					color: var(--three);
 					margin-bottom: 1em;
@@ -159,7 +160,9 @@
 
 		.section-block.alt {
 			background-color: var(--seven);
-			flex-direction: row;
+			.content {
+				flex-direction: row;
+			}
 		}
 
 		.section-block.checklist {

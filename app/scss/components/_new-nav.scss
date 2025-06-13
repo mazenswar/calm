@@ -41,7 +41,9 @@
 			height: 3px;
 			margin: 4px 0;
 			background-color: var(--four);
-			transition: transform 0.3s ease, opacity 0.3s ease;
+			transition:
+				transform 0.3s ease,
+				opacity 0.3s ease;
 			transform-origin: center center;
 		}
 
@@ -109,7 +111,9 @@
 				opacity: 0;
 				visibility: hidden;
 				transform: translateY(-10px);
-				transition: opacity 0.3s ease, transform 0.3s ease;
+				transition:
+					opacity 0.3s ease,
+					transform 0.3s ease;
 				z-index: 1000;
 
 				li + li {
@@ -176,7 +180,9 @@
 			max-height: 0;
 			opacity: 0;
 			visibility: hidden;
-			transition: max-height 0.4s ease, opacity 0.4s ease;
+			transition:
+				max-height 0.4s ease,
+				opacity 0.4s ease;
 			position: absolute;
 			top: 100%;
 			left: 0;
@@ -219,13 +225,16 @@
 					overflow: hidden;
 					opacity: 0;
 					visibility: hidden;
-					transition: max-height 0.4s ease, opacity 0.4s ease;
+					transition:
+						max-height 0.4s ease,
+						opacity 0.4s ease;
 					// background-color: var(--t2);
 					border: none;
 					border-radius: 0;
 					padding: 0;
-
 					&.open {
+						gap: 1em;
+						padding: 1em 0;
 						max-height: 600px;
 						width: 100%;
 						opacity: 1;
@@ -234,7 +243,8 @@
 
 					.submenu-link {
 						display: block;
-						padding: 0.5em 0;
+						// padding: 0.5em 0;
+						// margin-top: 1em;
 						color: var(--three);
 						&:visited,
 						&:active {

@@ -6,7 +6,6 @@ const CONTACT_MESSAGE_FIELDS = {
 	phoneNumber: "Phone Number",
 	message: "Message",
 	state: "State",
-	reason: "Reason",
 };
 
 const generateEmailContent = (data) => {
@@ -61,7 +60,7 @@ const generateEmailContent = (data) => {
 export function contactFormSubmissionTemplate(data) {
 	return {
 		...mailOptions,
-		subject: `${data.reason} Form Submitted (CALM Website)`,
+		subject: `Consult Request (CALM Website)`,
 		...generateEmailContent(data),
 	};
 }

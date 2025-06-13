@@ -6,13 +6,13 @@ import { errorEmailTemplate } from "@/app/lib/errorEmailTemplate";
 
 export const POST = async (request) => {
 	const formData = await request.formData();
-	const reason = formData.get("reason");
+
 	const name = formData.get("name");
 	const email = formData.get("email");
 	const message = formData.get("message");
 	const phoneNumber = formData.get("phoneNumber");
 	const state = formData.get("state");
-	const data = { reason, name, email, message, phoneNumber, state };
+	const data = { name, email, message, phoneNumber, state };
 	try {
 		const contactFormSubmissionOptions = contactFormSubmissionTemplate(data);
 		await transporter.sendMail(contactFormSubmissionOptions);
@@ -26,19 +26,17 @@ export const POST = async (request) => {
 		});
 	}
 
-	if (reason === "consult") {
-		try {
-			const clientAutoResponseOptions = await clientAutoResponse({
-				email,
-				name,
-			});
-			await transporter.sendMail(clientAutoResponseOptions);
-		} catch (error) {
-			console.error("Error sending client auto-response:", error);
-			const errorEmailOptions = errorEmailTemplate(error);
-			await transporter.sendMail(errorEmailOptions);
-			// But don't return error here, let the flow continue
-		}
+	try {
+		const clientAutoResponseOptions = await clientAutoResponse({
+			email,
+			name,
+		});
+		await transporter.sendMail(clientAutoResponseOptions);
+	} catch (error) {
+		console.error("Error sending client auto-response:", error);
+		const errorEmailOptions = errorEmailTemplate(error);
+		await transporter.sendMail(errorEmailOptions);
+		// But don't return error here, let the flow continue
 	}
 
 	return NextResponse.json({ success: true, message: "Emails processed" });

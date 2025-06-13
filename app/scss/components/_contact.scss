@@ -7,11 +7,19 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
-		background: linear-gradient(
-			180deg,
-			rgba(252, 243, 232, 1) 0%,
-			rgba(231, 200, 231, 1) 100%
-		);
+		// background: linear-gradient(
+		// 	180deg,
+		// 	rgba(252, 243, 232, 1) 0%,
+		// 	rgba(231, 200, 231, 1) 100%
+		// );
+		background-color: var(--seven);
+		.content {
+			max-width: 1400px;
+			gap: 5em;
+		}
+		.img-container {
+			max-width: 300px;
+		}
 		.microcopy {
 			h2 {
 				color: var(--three);
@@ -24,7 +32,7 @@
 			color: #4d4d4d;
 		}
 		.contact-text {
-			width: clamp(300px, 45%, 1000px);
+			width: clamp(300px, 40%, 1000px);
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -42,18 +50,20 @@
 			}
 
 			color: #4d4d4d;
-
-			img {
-				width: 25%;
-				height: auto;
-			}
 		}
 		form {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			// align-items: center;
-			width: clamp(300px, 45%, 600px);
+			width: clamp(300px, 50%, 700px);
+			border-radius: 5em;
+			background: linear-gradient(
+				180deg,
+				rgba(231, 200, 231, 1) 0%,
+				rgba(252, 243, 232, 1) 100%
+			);
+			padding: 3em;
 			.input-container {
 				display: flex;
 				flex-direction: column;
@@ -117,9 +127,10 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			padding: 2em;
+			padding: 0;
 			.contact-text,
 			form {
+				border-radius: 0;
 				width: 100%;
 			}
 		}
@@ -133,6 +144,16 @@
 		.microcopy {
 			text-align: center;
 			margin: 2em 0;
+		}
+	}
+	@include u.breakpoint-down(small) {
+		.content {
+			.contact-text {
+				margin-bottom: 0;
+			}
+			.img-container {
+				max-width: 180px;
+			}
 		}
 	}
 }

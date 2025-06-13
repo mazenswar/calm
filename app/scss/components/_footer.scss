@@ -2,11 +2,15 @@
 footer {
 	border-top: 10px solid #eee;
 	width: 100%;
+	section {
+		justify-content: center;
+		align-items: center;
+	}
 	#diversity {
 		background: linear-gradient(0deg, var(--three) 0%, var(--five) 100%);
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		.img-container {
 			max-width: 250px;
@@ -32,26 +36,47 @@ footer {
 	}
 
 	.badges {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
 		background: linear-gradient(0deg, var(--five) 0%, var(--three) 100%);
-		a {
+		.content {
 			display: flex;
+			flex-direction: row;
 			justify-content: center;
 			align-items: center;
-			margin: 2em 2em;
-			width: clamp(250px, 15%, 800px);
-		}
-		#journey {
-			img {
-				max-width: 200px;
+			flex-wrap: wrap;
+			gap: 3em;
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: clamp(250px, 15%, 800px);
 			}
-		}
-		@include u.breakpoint-down(extra-medium) {
-			flex-direction: column;
+			#journey {
+				img {
+					max-width: 200px;
+				}
+			}
+			@include u.breakpoint-down(extra-medium) {
+				a {
+					width: 20%;
+				}
+				#journey {
+					width: 15%;
+				}
+			}
+			@include u.breakpoint-down(small) {
+				flex-direction: column;
+				.img-container {
+					// max-height: 100px;
+					width: auto;
+					max-width: 180px;
+					height: auto;
+				}
+				#journey {
+					width: auto;
+					max-width: 150px;
+				}
+			}
 		}
 	}
 
@@ -63,6 +88,19 @@ footer {
 		justify-content: space-evenly;
 		align-items: center;
 		border-top: 0.5em solid var(--t1);
+		.img-container {
+			max-width: 250px;
+		}
+		@include u.breakpoint-down(medium) {
+			.img-container {
+				max-width: 200px;
+			}
+		}
+		@include u.breakpoint-down(small) {
+			.img-container {
+				max-width: 150px;
+			}
+		}
 	}
 
 	.bottom-banner,
@@ -133,12 +171,14 @@ footer {
 		background-color: #eee;
 
 		padding: 5% 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		p {
-			color: var(--three);
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			p {
+				color: var(--three);
+			}
 		}
 	}
 	a {
@@ -152,6 +192,7 @@ footer {
 		@include u.breakpoint-down(medium) {
 			flex-direction: column;
 			.img-container {
+				max-width: 200px;
 				margin-bottom: 2em;
 			}
 			div {
@@ -160,6 +201,12 @@ footer {
 			h2 {
 				text-align: center;
 				width: 100%;
+			}
+		}
+		@include u.breakpoint-down(small) {
+			.img-container {
+				max-width: 150px;
+				margin-bottom: 2em;
 			}
 		}
 	}

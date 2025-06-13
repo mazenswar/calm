@@ -16,6 +16,9 @@
 			rgba(252, 243, 232, 1) 0%,
 			rgba(231, 200, 231, 1) 100%
 		);
+		.content {
+			flex-direction: column;
+		}
 		.text {
 			display: flex;
 			flex-wrap: wrap;
@@ -23,9 +26,10 @@
 			align-items: center;
 
 			.faq-container {
+				box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 				min-height: 25vh;
 
-				width: clamp(400px, 85%, 600px);
+				width: clamp(400px, 60%, 500px);
 				margin: 1em;
 				padding: 1em;
 				border-radius: 1em;
@@ -35,6 +39,7 @@
 				justify-content: center;
 				align-items: center;
 				background: var(--seven);
+
 				.icon {
 					cursor: pointer;
 					width: 100%;

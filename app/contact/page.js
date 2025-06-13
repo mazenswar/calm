@@ -1,35 +1,21 @@
-import React from "react";
-import ContactForm from "./ContactForm";
-import ContactText from "./ContactText";
-import "../scss/components/_contact.scss";
-import ContactPage from "./ContactPage";
+"use client";
+import React, { useState } from "react";
 
-export const metadata = {
-	title: "Book a Free Consultation | CALM Therapy",
-	description:
-		"Ready to take the next step? Book your complimentary 15-minute consultation and discover how CALM Therapy can support your well-being and personal growth. Serving adults virtually in NJ, NY, and PA.",
-	alternates: {
-		canonical: "https://calmtherapy.center/contact",
-	},
-	openGraph: {
-		title: "Book a Free Consultation | CALM Therapy",
-		description:
-			"Schedule a complimentary 15-minute consultation to see if we're a good fit. Serving adults virtually in NJ, NY, and PA.",
-		url: "https://calmtherapy.center/contact",
-		siteName: "CALM Therapy",
-		locale: "en_US",
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Book a Free Consultation | CALM Therapy",
-		description:
-			"Schedule a free 15-minute virtual consultation to explore how therapy can support your well-being.",
-	},
-};
+import FormPage from "./FormPage";
+import NextStepsPage from "./NextStepsPage";
+import "./styles/contact-page.scss";
+import "./styles/follow-up.scss";
+import ErrorPage from "./ErrorPage";
 
 function Contact() {
-	return <ContactPage />;
+	const [formState, setFormState] = useState("idle");
+	return (
+		<>
+			{formState === "idle" && <FormPage setFormState={setFormState} />}
+			{formState === "next-steps" && <NextStepsPage />}
+			{formState === "error" && <ErrorPage />}
+		</>
+	);
 }
 
 export default Contact;
