@@ -146,12 +146,8 @@ export function ConsultationEmail({ name }) {
 
 export async function clientAutoResponse({ email, name }) {
 	const html = await render(<ConsultationEmail name={name} />);
-	const autoResponseOptions = {
-		from: `CALM Therapy <${process.env.INFO_EMAIL}>`,
-		to: email,
-		bcc: process.env.INFO_EMAIL,
-		subject: "Thank you for contacting CALM Therapy",
-		text: `Hi ${name},
+	const from = `CALM Therapy <${process.env.INFO_EMAIL}>`;
+	const text = `Hi ${name},
 
 Thank you for reaching out to schedule a consultation. We know that starting this process can take a lot of thought, and we're honored that you're considering CALM Therapy to be part of your journey.
 
@@ -164,7 +160,13 @@ Your therapist will also be happy to answer any questions during the consultatio
 ${calendlyLinkUrl}
 
 Warmly,  
-The CALM Therapy Team`,
+The CALM Therapy Team`;
+	const autoResponseOptions = {
+		from,
+		to: email,
+		bcc: process.env.INFO_EMAIL,
+		subject: "Thank you for contacting CALM Therapy",
+		text,
 		html: html,
 	};
 

@@ -60,7 +60,7 @@ const generateEmailContent = (data) => {
 export function contactFormSubmissionTemplate(data) {
 	return {
 		...mailOptions,
-		subject: `Consult Request (CALM Website)`,
+		subject: "Consult Request (CALM Website)",
 		...generateEmailContent(data),
 	};
 }
