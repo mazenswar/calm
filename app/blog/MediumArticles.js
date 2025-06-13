@@ -5,7 +5,7 @@ import Image from "next/image";
 async function getMediumArticles() {
 	const res = await fetch(
 		"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014",
-		{ next: { revalidate: 604800 } } // 7 days in seconds
+		{ next: { revalidate: 86400 } } // 1 day in seconds
 	);
 	if (!res.ok) {
 		console.error("Failed to fetch Medium articles");
