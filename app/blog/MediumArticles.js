@@ -4,8 +4,7 @@ import Image from "next/image";
 
 async function getMediumArticles() {
 	const res = await fetch(
-		"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014",
-		{ next: { revalidate: 86400 } } // 1 day in seconds
+		"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tsingh_3014"
 	);
 	if (!res.ok) {
 		console.error("Failed to fetch Medium articles");
