@@ -1,6 +1,7 @@
 import Image from "next/image";
 import cImg from "../assets/contact.webp";
-import Form from "./Form";
+import CTAButton from "@/app/components/CTAButton";
+import Link from "next/link";
 
 export default function BookingSection({ setFormState }) {
 	return (
@@ -28,7 +29,22 @@ export default function BookingSection({ setFormState }) {
 						</p>
 					</div>
 				</div>
-				<Form setFormState={setFormState} />
+				<div className="cta-card text">
+					<p className="strong">We{"'"}re an out-of-network provider</p>
+					<p>
+						This allows us to focus on high-quality, personalized care without
+						the constraints of insurance. We offer transparent pricing and have
+						a limited number of sliding scale spots available based on financial
+						need. You{"'"}ll receive a receipt (called a superbill) after each
+						session to submit to your insurance for potential reimbursement. For
+						more infomation please visit our{" "}
+						<Link className="link" href="/insurance">
+							Fees & Insurance
+						</Link>{" "}
+						page
+					</p>
+					<CTAButton />
+				</div>
 			</div>
 		</section>
 	);

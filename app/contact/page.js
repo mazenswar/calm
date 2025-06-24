@@ -1,20 +1,17 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 
-import FormPage from "./FormPage";
-import NextStepsPage from "./NextStepsPage";
 import "./styles/contact-page.scss";
 import "./styles/follow-up.scss";
-import ErrorPage from "./ErrorPage";
+
+import BookingSection from "./components/BookingSection";
+import OtherContact from "./components/OtherContact";
 
 function Contact() {
-	const [formState, setFormState] = useState("idle");
 	return (
-		<>
-			{formState === "idle" && <FormPage setFormState={setFormState} />}
-			{formState === "next-steps" && <NextStepsPage />}
-			{formState === "error" && <ErrorPage />}
-		</>
+		<main id="contact">
+			<BookingSection />
+			<OtherContact />
+		</main>
 	);
 }
 

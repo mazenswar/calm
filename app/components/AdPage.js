@@ -2,6 +2,7 @@ import React from "react";
 import "../scss/components/_ad-pages.scss";
 import CTAButton from "./CTAButton";
 import Link from "next/link";
+import AdFeesText from "./AdFeesText";
 
 function AdPage({ children }) {
 	return (
@@ -12,6 +13,7 @@ function AdPage({ children }) {
 						We{"'"}re Happy You{"'"}re Here
 					</h1>
 					{children}
+					<AdFeesText />
 					<CTAButton text={"Get Started"} />
 					<div className="learn-more">
 						<h2>Want to Learn More?</h2>

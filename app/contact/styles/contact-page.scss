@@ -9,6 +9,7 @@ p,
 label,
 li {
 	color: #4d4d4d;
+	font-size: 1.2rem;
 }
 .hero {
 	background: linear-gradient(
@@ -23,6 +24,12 @@ li {
 	}
 }
 #booking-section {
+	background: linear-gradient(
+		180deg,
+		rgba(231, 200, 231, 1) 0%,
+		rgba(252, 243, 232, 1) 100%
+	);
+
 	.content {
 		gap: 10em;
 		max-width: 1400px;
@@ -128,6 +135,19 @@ li {
 				}
 			}
 		}
+		.cta-card {
+			width: clamp(300px, 40%, 800px);
+			text-align: center;
+			#cta-button {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			.strong {
+				font-weight: 500;
+				font-size: 1.4rem;
+				color: var(--three);
+			}
+		}
 	}
 }
 
@@ -143,11 +163,16 @@ li {
 }
 
 @include u.breakpoint-down(extra-medium) {
+	* {
+		text-align: center;
+	}
 	#booking-section {
 		padding: 1em;
 		.content {
+			flex-direction: column;
 			gap: 0;
 			.card {
+				width: 80%;
 				.img-container {
 					max-width: 200px;
 				}
@@ -159,6 +184,9 @@ li {
 @include u.breakpoint-down(extra-medium) {
 	#booking-section {
 		.content {
+			.cta-card {
+				width: 80%;
+			}
 			.form-wrapper {
 				border-radius: 3em;
 				form {
@@ -170,11 +198,16 @@ li {
 }
 
 @include u.breakpoint-down(small) {
+	.other-contact {
+		padding: 0;
+		margin: 0;
+		min-height: 30vh;
+	}
+
 	#booking-section {
 		padding: 0;
 		.content {
 			gap: 0;
-
 			.card {
 				width: 100%;
 				padding: 2em;
