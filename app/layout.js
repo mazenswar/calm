@@ -29,29 +29,35 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head>
-				{/* 1) DataLayer snippet after hydration */}
 				<Script
 					id="gtm-init"
 					strategy="afterInteractive"
 					dangerouslySetInnerHTML={{
 						__html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GTM_ID}');
-            `,
+(function(w,d,s,l,i){
+  w[l]=w[l]||[];
+  w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),
+      dl=l!='dataLayer'? '&l='+l : '';
+  j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
+       `,
 					}}
-				/>
-
-				{/* 2) Actual GTM loader, lazy onload */}
-				<Script
-					id="gtm-script"
-					src={`https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-					strategy="lazyOnload"
 				/>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 			</head>
 			<body className={`${raleway.className} ${tajawal.className}`}>
+				<noscript>
+					<iframe
+						src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+						height="0"
+						width="0"
+						style={{ display: "none", visibility: "hidden" }}
+					></iframe>
+				</noscript>
 				<NewNav />
 
 				<ContactButton />
