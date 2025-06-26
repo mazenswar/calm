@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
 import ContactButton from "./components/ContactButton";
 import { Raleway, Tajawal } from "next/font/google";
-import GTM from "./components/GTM";
+import Script from "next/script";
 
 const raleway = Raleway({
 	subsets: ["latin"],
@@ -28,11 +28,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${raleway.className} ${tajawal.className}`}>
-				<link rel="icon" href="/CALM_E2.png" sizes="any" />
+			<head>
+				{/* 1) DataLayer snippet after hydration */}
+				<Script
+					id="gtm-init"
+					strategy="afterInteractive"
+					dangerouslySetInnerHTML={{
+						__html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GTM_ID}');
+            `,
+					}}
+				/>
 
+				{/* 2) Actual GTM loader, lazy onload */}
+				<Script
+					id="gtm-script"
+					src={`https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+					strategy="lazyOnload"
+				/>
+				<link rel="icon" href="/CALM_E2.png" sizes="any" />
+			</head>
+			<body className={`${raleway.className} ${tajawal.className}`}>
 				<NewNav />
-				<GTM />
+
 				<ContactButton />
 				{children}
 				<Footer />
