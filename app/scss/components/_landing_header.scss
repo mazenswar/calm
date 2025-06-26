@@ -6,7 +6,7 @@
 #homeTwo {
 	// justify-content: center;
 	.img-container {
-		width: clamp(350px, 25%, 1200px);
+		width: clamp(350px, 35%, 1200px);
 	}
 	section {
 		padding: 10em 2em;
@@ -71,8 +71,8 @@
 		// padding: 4em 0.5em;
 		.content {
 			color: #4d4d4d;
-
-			// align-items: center;
+			align-items: center;
+			gap: 5em;
 		}
 		.text {
 			width: 65%;
@@ -130,7 +130,7 @@
 
 		.content {
 			// background: red;
-
+			gap: 3em;
 			.text {
 				width: 70%;
 				.icons-container {
@@ -148,6 +148,7 @@
 		.landing-header {
 			.content {
 				flex-direction: column-reverse;
+				gap: 2em;
 			}
 		}
 	}
