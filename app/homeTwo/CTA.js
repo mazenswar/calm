@@ -10,7 +10,6 @@ function CTA() {
 			<div className="content">
 				<div className="img-container">
 					<Image
-						priority
 						src={tt.src}
 						alt="tanya headshot"
 						width={360}

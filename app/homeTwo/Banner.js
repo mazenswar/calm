@@ -17,7 +17,6 @@ function Banner() {
 				</div>
 				<div className="img-container tall">
 					<Image
-						priority
 						src={brainImgTwo.src}
 						alt="balance science and spirituality"
 						width={480}
