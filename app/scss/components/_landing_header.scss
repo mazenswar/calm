@@ -15,10 +15,10 @@
 	// color: #585858;
 
 	.floating-wrapper {
-		// width: 100%;
+		width: 40%;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		position: relative;
 		// width: fit-content;
 		// margin: 0 auto;
@@ -131,6 +131,10 @@
 		.content {
 			// background: red;
 			gap: 3em;
+			.floating-wrapper {
+				width: 30%;
+				align-items: center;
+			}
 			.text {
 				width: 70%;
 				.icons-container {
@@ -149,6 +153,12 @@
 			.content {
 				flex-direction: column-reverse;
 				gap: 2em;
+				.floating-wrapper {
+					width: 100%;
+				}
+				.text {
+					width: 100%;
+				}
 			}
 		}
 	}
