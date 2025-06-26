@@ -49,7 +49,7 @@
 		}
 		.img-container {
 			width: 100%;
-			max-width: 400px;
+			max-width: 450px;
 			img {
 				width: 100%;
 				height: auto;
@@ -266,11 +266,6 @@
 
 @include u.breakpoint-down(extra-medium) {
 	#homeTwo {
-		.landing-illustration {
-			width: 45%;
-			margin-bottom: 0;
-		}
-
 		.fs-banner {
 			width: 100%;
 			flex-direction: column;

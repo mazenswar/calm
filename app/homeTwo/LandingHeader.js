@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
-import bb1 from "./assets/bb1.webp";
+import bb1 from "./assets/bb1(small).webp";
 import {
 	faLocationDot,
 	faUserCheck,
@@ -55,10 +55,9 @@ function LandingHeader() {
 							className="landing-illustration floating"
 							src={bb1.src}
 							alt="brain"
-							width={360}
-							height={360}
-							sizes="(max-width: 768px) 300px, 360px"
-							style={{ width: "100%", height: "auto" }}
+							width={450}
+							height={450}
+							sizes="(max-width: 768px) 300px, 450px"
 						/>
 					</div>
 					<div className="shadow"></div>
