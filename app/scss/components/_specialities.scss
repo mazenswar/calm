@@ -14,6 +14,7 @@
 	}
 	h4 {
 		color: var(--four);
+		margin: 0;
 	}
 	p {
 		font-size: 1.15em;
@@ -190,7 +191,7 @@
 					border: none;
 					background-color: transparent;
 					color: #4d4d4d;
-					font-weight: 600;
+
 					width: 100%;
 					text-align: center;
 					cursor: pointer;

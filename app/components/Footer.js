@@ -59,7 +59,18 @@ function Footer() {
 			</section>
 			<section className="copyright">
 				<div className="content">
-					<p>© 2025 Center for Anxiety and Life Management</p>
+					<small>
+						© 2025 CALM Therapy · Site by
+						<Link
+							href="https://mazenswar.dev"
+							target="_blank"
+							rel="noopener"
+							className="link designer-link"
+						>
+							Mazen Alswar
+						</Link>
+					</small>
+
 					<Link href="/privacyPolicy" className="link">
 						Privacy Policy
 					</Link>

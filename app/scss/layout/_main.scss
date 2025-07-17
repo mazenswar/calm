@@ -45,24 +45,102 @@ section {
 	align-items: center;
 }
 
-#contact-button {
+/* Floating “Book a Consult” button */
+.fab-consult {
 	position: fixed;
-	bottom: 1em;
-	right: 1em;
-	padding: 0.8em 2em;
-	border-radius: 30px;
-	background: #4c2f6f;
+	bottom: 1rem;
+	right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: linear-gradient(
 		178deg,
 		rgba(76, 47, 111, 1) 0%,
 		rgba(82, 72, 159, 1) 50%,
 		rgba(194, 102, 167, 1) 100%
 	);
-	border: 1px solid var(--seven);
-	// background-color: var(--three);
-	text-align: center;
 	color: ivory;
+	svg {
+		stroke: ivory;
+	} /* ensure icon inherits accent color */
+	// border: 1px solid var(--seven);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
 	z-index: 100;
+
+	/* icon */
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	/* full text (desktop/tablet) */
+	.btn-text {
+		display: block;
+		// margin-left: 0.5rem;
+
+		// letter-spacing: 0.2px;
+	}
+
+	/* visually‑hidden helper */
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		border: 0;
+	}
+}
+
+/* Tablet & desktop (≥ medium) */
+@include u.breakpoint(medium) {
+	.fab-consult {
+		width: auto;
+		height: auto;
+		padding: 0.7rem 1.25rem;
+		border-radius: 9999px;
+		transition: 0.4s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		svg {
+			display: none;
+			// margin-right: 0.5rem;
+			// display: block; /* prevents baseline gap under icon */
+		}
+
+		.btn-text {
+			// background-color: red;
+			display: flex; /* treat label as its own flex box */
+			width: 100%;
+			justify-content: center;
+			align-items: center; /* vertical‑center glyphs */
+			color: ivory;
+			font-size: 1em;
+		}
+	}
+}
+/* Mobile overrides */
+@include u.breakpoint-down(small) {
+	.fab-consult {
+		bottom: 1rem;
+		right: 1rem;
+		width: 48px;
+		height: 48px;
+		padding: 0; /* circle size handles spacing */
+		border-radius: 50%;
+
+		svg {
+			width: 22px;
+			height: 22px;
+		}
+
+		.btn-text {
+			display: none; /* keep icon‑only on mobile */
+		}
+	}
 }
 
 .img-container {

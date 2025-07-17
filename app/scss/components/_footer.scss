@@ -203,11 +203,23 @@ footer {
 				width: 100%;
 			}
 		}
+
 		@include u.breakpoint-down(small) {
 			.img-container {
 				max-width: 150px;
 				margin-bottom: 2em;
 			}
 		}
+	}
+	small {
+		padding: 1rem;
+	}
+	.designer-link,
+	.designer-link:active,
+	.designer-link:visited {
+		margin: 0.4rem;
+		color: var(--three);
+		font-size: 1rem;
+		// background-color: red;
 	}
 }

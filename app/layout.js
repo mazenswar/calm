@@ -3,18 +3,29 @@ import Footer from "./components/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
 import ContactButton from "./components/ContactButton";
-import { Raleway, Tajawal } from "next/font/google";
+import { Inter, Roboto, Lexend } from "next/font/google";
+
 import Script from "next/script";
 
-const raleway = Raleway({
+const inter = Inter({
 	subsets: ["latin"],
-	weight: ["400", "700"],
+	weight: ["400", "600"], // add 500/700 if needed
 	display: "swap",
+	variable: "--font-inter",
 });
-const tajawal = Tajawal({
+
+const roboto = Roboto({
 	subsets: ["latin"],
-	weight: ["200", "300", "400", "500", "700", "800"],
+	weight: ["300", "400", "700"], // add 500/700 if needed
 	display: "swap",
+	variable: "--font-roboto",
+});
+
+const lexend = Lexend({
+	subsets: ["latin"],
+	weight: ["300", "400", "700"], // add 500/700 if needed
+	display: "swap",
+	variable: "--font-lexend",
 });
 
 export const metadata = {
@@ -27,7 +38,7 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="en" className={lexend.variable}>
 			<head>
 				<Script
 					id="gtm-init"
@@ -51,7 +62,7 @@ setTimeout(function(){
 				/>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 			</head>
-			<body className={`${raleway.className} ${tajawal.className}`}>
+			<body>
 				<noscript>
 					<iframe
 						src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
