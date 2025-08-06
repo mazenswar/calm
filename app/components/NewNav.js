@@ -72,7 +72,12 @@ export default function NewNav() {
 			<div className="nav-container">
 				<div className="logo">
 					<a href="/" className="img-container">
-						<Image src={horLogo} alt="CALM logo" width={400} height={100} />
+						<Image
+							src={horLogo}
+							alt="CALM Therapy logo"
+							width={400}
+							height={100}
+						/>
 					</a>
 				</div>
 

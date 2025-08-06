@@ -16,11 +16,11 @@ function Footer() {
 			<section className="bottom-banner">
 				<div className="content">
 					<div className="img-container">
-						<Image src={logo} alt="logo" width={200} />
+						<Image src={logo} alt="CALM Therapy logo" width={200} />
 					</div>
 					<div className="contact-info">
-						<span>Center for Anxiety and Life Management</span>
-						<p>
+						<span>Center for Anxiety and Life Management (CALM Therapy)</span>
+						<p style={{ maxWidth: "600px" }}>
 							Serving thoughtful adults across New York, New Jersey, and
 							Pennsylvania through virtual, integrative therapy.
 						</p>
