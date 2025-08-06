@@ -14,8 +14,16 @@
 			font-weight: 500;
 		}
 	}
+	h1,
+	h2,
+	p {
+		margin: 0;
+	}
 	.content {
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
 		// padding: 0;
 	}
 	.hero {
