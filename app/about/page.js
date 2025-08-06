@@ -8,7 +8,7 @@ import aboutThree from "./assets/images/section-3.webp";
 import aboutFour from "./assets/images/section-4-alt.webp";
 import aboutFive from "./assets/images/section-5.webp";
 import aboutSix from "./assets/images/section-6-alt.webp";
-import "../scss/components/_about.scss";
+import "./about.scss";
 
 export const metadata = {
 	title: "About | CALM Therapy (Center for Anxiety and Life Management)",

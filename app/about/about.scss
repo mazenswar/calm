@@ -1,4 +1,4 @@
-@use "../util" as u;
+@use "../scss/util" as u;
 @use "sass:math" as m;
 
 #about {
@@ -209,7 +209,19 @@
 	/////////////////////////////////////////
 	@include u.breakpoint-down(small) {
 		.about-header {
+			padding: 0;
+			.header-content-container {
+				border-radius: 0;
+			}
 			.intro-card {
+				width: 100%;
+			}
+			.welcome-message {
+				width: 100%;
+				text-align: center;
+				font-size: 1rem;
+			}
+			p {
 				width: 100%;
 			}
 		}
