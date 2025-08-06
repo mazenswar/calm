@@ -22,7 +22,7 @@ function Bio() {
 						PhD psychologist integrating exposure, somatic, and mindfulness
 						approaches to help high-achieving adults calm intrusive thoughts,
 						reduce anxiety, and reconnect with meaning. Licensed in NY, NJ, and
-						PA; 10+ years supporting clients through evidence-based, culturally
+						PA; 7+ years supporting clients through evidence-based, culturally
 						attuned care.
 					</p>
 				</div>
