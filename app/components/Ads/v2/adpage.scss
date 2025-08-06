@@ -26,8 +26,8 @@
 		gap: 2em;
 		// padding: 0;
 	}
-	.hero {
-		padding-top: 8em;
+	.ad__hero {
+		padding-top: 2em;
 		@include u.breakpoint-down(small) {
 			padding-top: 4em;
 			#cta-button {
@@ -95,17 +95,17 @@
 }
 /* Landscape phones with limited height */
 @media (orientation: landscape) and (max-height: 430px) {
-	#adpage .hero {
+	#adpage .ad__hero {
 		padding-top: 2em; /* was 8em */
 	}
-	#adpage .hero h1 {
+	#adpage .ad__hero h1 {
 		font-size: 1.4rem; /* shrink headline */
 		line-height: 1.25;
 	}
-	#adpage .hero p {
+	#adpage .ad__hero p {
 		font-size: 0.85rem; /* sub-line tweak */
 	}
-	#adpage .hero #cta-button {
+	#adpage .ad__hero #cta-button {
 		margin-top: 0;
 		padding: 0;
 	}

@@ -22,7 +22,7 @@ function Hero({ dem }) {
 	const { title, sub } = copy[dem] || copy.women;
 
 	return (
-		<section className="hero">
+		<section className="ad__hero">
 			<div className="content">
 				<h1>{title}</h1>
 				<p>{sub}</p>
