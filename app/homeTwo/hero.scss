@@ -5,6 +5,10 @@
 
 .hero {
 	padding: 3em 2em;
+	.content {
+		display: flex;
+		flex-direction: row;
+	}
 	h2 {
 		color: var(--three);
 		font-size: 3em;
@@ -22,13 +26,9 @@
 		justify-content: center;
 		align-items: flex-start;
 		position: relative;
-		// width: fit-content;
-		// margin: 0 auto;
 	}
 
 	.floating {
-		// width: 25em;
-		// height: auto;
 		animation: float 4s ease-in-out infinite;
 		display: block;
 		margin: 0 auto;
@@ -59,10 +59,8 @@
 			transparent 80%
 		);
 		border-radius: 50%;
-		// z-index: -1; // behind the image
 	}
 
-	// color: var(--two);
 	min-height: 70vh;
 	display: flex;
 	justify-content: center;
@@ -73,7 +71,6 @@
 		rgba(252, 243, 232, 1) 0%,
 		rgba(231, 200, 231, 1) 100%
 	);
-	// padding: 4em 0.5em;
 	.content {
 		color: #4d4d4d;
 		align-items: center;
@@ -95,24 +92,18 @@
 }
 /////////////////////////// END DESKTOP
 
-////////////////////////////// TABLET AND MOBILE
+/////////////////////// TABLET //////////////////
 
 @include u.breakpoint-down(extra-medium) {
 	.hero {
 		.content {
-			.floating-wrapper {
-				width: clamp(160px, 35%, 800px);
-			}
-		}
-		.content {
-			// background: red;
 			gap: 3em;
 			#cta-button {
 				padding-top: 0;
 				margin-top: 0;
 			}
 			.floating-wrapper {
-				width: 50%;
+				width: clamp(160px, 35%, 800px);
 				align-items: center;
 			}
 			.text {
@@ -121,6 +112,8 @@
 		}
 	}
 }
+
+/////////////////////// MEDIUM //////////////////
 
 @include u.breakpoint-down(medium) {
 	#homeTwo {
@@ -138,12 +131,11 @@
 		}
 	}
 }
+
+/////////////////////// SMALL //////////////////
+
 @include u.breakpoint-down(small) {
 	#homeTwo {
-		// .img-container {
-		// 	width: 100%;
-		// 	min-height: 300px;
-		// }
 		.floating-wrapper {
 			.shadow {
 				width: 65%;
