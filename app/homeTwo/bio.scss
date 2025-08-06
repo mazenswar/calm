@@ -55,6 +55,20 @@
 	}
 }
 
+@include u.breakpoint-down(extra-medium) {
+	#homeTwo {
+		#bio {
+			.content {
+				flex-direction: column;
+				gap: 1em;
+				h1 {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
 @include u.breakpoint-down(small) {
 	#homeTwo {
 		#bio {
