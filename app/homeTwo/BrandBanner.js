@@ -1,19 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import brainImgTwo from "./assets/brain-2.webp";
-
-function Banner() {
+import "./brand__banner.scss";
+function BrandBanner() {
 	return (
-		<section id="banner">
+		<section id="brand__banner">
 			<div className="content">
 				<div className="text">
 					<h2 className="tagline">
 						Therapy rooted in science, soul, and the sacred mess of being human.
 					</h2>
-					<h4>
+					<p>
 						Together, we{"'"}ll find your way forward with grounded therapy that
 						respects both your pain and your potential.
-					</h4>
+					</p>
 				</div>
 				<div className="img-container tall">
 					<Image
@@ -30,4 +30,4 @@ function Banner() {
 	);
 }
 
-export default Banner;
+export default BrandBanner;

@@ -1,17 +1,20 @@
 import React from "react";
-import BottomBanner from "./BottomBanner";
-import CTA from "./CTA";
-import Banner from "./Banner";
-import LandingHeader from "./LandingHeader";
-import "../scss/components/_home-2.scss";
+
+import BrandBanner from "./BrandBanner";
+
+import Specs from "./Specs";
+import Bio from "./Bio";
+import Fees from "./Fees";
+import Hero from "./Hero";
 
 function HomeTwo() {
 	return (
 		<main id="homeTwo">
-			<LandingHeader />
-			<CTA />
-			<Banner />
-			<BottomBanner />
+			<Hero />
+			<Bio />
+			<Fees />
+			<Specs />
+			<BrandBanner />
 		</main>
 	);
 }

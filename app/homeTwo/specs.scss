@@ -1,0 +1,58 @@
+@use "../scss/util" as u;
+.specs {
+	width: 100%;
+	background: linear-gradient(
+		180deg,
+		rgba(231, 200, 231, 1) 0%,
+		rgba(252, 243, 232, 1) 100%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.content {
+		h2 {
+			font-size: 3em;
+			color: var(--three);
+		}
+		padding: 6em 2em;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
+		.container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 2em;
+
+			a {
+				background-color: var(--seven);
+				padding: 1em;
+				border-radius: 10px;
+				box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+				p {
+					margin: 0;
+				}
+				transition: 0.4s;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+
+@include u.breakpoint-down(extra-medium) {
+	.specs {
+		.content {
+			h2 {
+				font-size: 2.5em;
+			}
+			padding: 2em;
+		}
+	}
+}

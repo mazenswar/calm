@@ -23,7 +23,8 @@ section {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 
 	@include u.breakpoint-down(medium) {
 		padding: 2em;
@@ -207,4 +208,9 @@ section {
 			height: auto;
 		}
 	}
+}
+
+.fab-consult.hidden {
+	opacity: 0;
+	pointer-events: none;
 }

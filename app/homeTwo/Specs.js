@@ -1,5 +1,6 @@
 import React from "react";
 import { specialities } from "../data/services";
+import "./specs.scss";
 function Specs() {
 	return (
 		<div className="specs">

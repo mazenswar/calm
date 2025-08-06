@@ -1,0 +1,81 @@
+@use "../scss/util" as u;
+
+#bio {
+	background: linear-gradient(
+		0deg,
+		rgba(252, 243, 232, 1) 0%,
+		rgba(231, 200, 231, 1) 100%
+	);
+
+	h1 {
+		font-size: 3em;
+		color: var(--two);
+		margin: 0.2em 0;
+	}
+	span,
+	p {
+		font-size: 1.5em;
+		color: #4d4d4d;
+	}
+	.content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 6em;
+		padding: 1em;
+		.text {
+			width: 100%;
+			max-width: 800px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2em;
+		}
+		a {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			background-color: var(--seven);
+			color: #4d4d4d;
+			margin-top: 2em;
+			padding: 1em;
+			// border: 1px solid #4d4d4d;
+
+			border-radius: 10px;
+			width: clamp(280px, 40%, 500px);
+			text-align: center;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+@include u.breakpoint-down(small) {
+	#homeTwo {
+		#bio {
+			padding: 0 0.5em;
+			.content {
+				h1 {
+					font-size: 2.5em;
+				}
+				p {
+					font-size: 1.2em;
+				}
+				gap: 1em;
+				width: 100%;
+				margin: 0;
+				.text {
+					width: 100%;
+					.center-title {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}

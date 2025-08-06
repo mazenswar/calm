@@ -1,18 +1,20 @@
-@use "../util" as u;
+@use "../scss/util" as u;
 @use "sass:math" as m;
 
 ////////////////////////// DESKTOP
 
-#homeTwo {
-	// justify-content: center;
+.hero {
+	padding: 3em 2em;
+	h2 {
+		color: var(--three);
+		font-size: 3em;
+	}
+	p {
+		font-size: 1.3em;
+	}
 	.img-container {
 		width: clamp(350px, 35%, 1200px);
 	}
-	section {
-		padding: 10em 2em;
-	}
-
-	// color: #585858;
 
 	.floating-wrapper {
 		width: 40%;
@@ -60,57 +62,34 @@
 		// z-index: -1; // behind the image
 	}
 
-	.landing-header {
-		// color: var(--two);
-		background: #fcf3e8;
-		background: linear-gradient(
-			180deg,
-			rgba(252, 243, 232, 1) 0%,
-			rgba(231, 200, 231, 1) 100%
-		);
-		// padding: 4em 0.5em;
-		.content {
-			color: #4d4d4d;
-			align-items: center;
-			gap: 5em;
-		}
-		.text {
-			width: 65%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-	}
-
-	.icons-container {
-		display: flex;
-		justify-content: space-evenly;
+	// color: var(--two);
+	min-height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fcf3e8;
+	background: linear-gradient(
+		180deg,
+		rgba(252, 243, 232, 1) 0%,
+		rgba(231, 200, 231, 1) 100%
+	);
+	// padding: 4em 0.5em;
+	.content {
+		color: #4d4d4d;
 		align-items: center;
-		// background-color: var(--four);
-		// background: #4c2f6f;
-		// background: linear-gradient(
-		// 	178deg,
-		// 	rgba(76, 47, 111, 1) 0%,
-		// 	rgba(82, 72, 159, 1) 50%,
-		// 	rgba(194, 102, 167, 1) 100%
-		// );
-		border-radius: 2em;
-		margin: 3em 0 0 0;
-		padding: 1em;
-		.icon {
-			// background-color: red;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
-			padding: 1em;
-			span {
-				margin-top: 2em;
-				text-align: center;
-				color: #4d4d4d;
-				font-weight: 5 00;
-			}
+		gap: 5em;
+	}
+	.text {
+		width: 65%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		gap: 1em;
+		.sub {
+			color: var(--three);
+			width: 100%;
 		}
 	}
 }
@@ -119,29 +98,25 @@
 ////////////////////////////// TABLET AND MOBILE
 
 @include u.breakpoint-down(extra-medium) {
-	#homeTwo {
-		// .landing-illustration {
-		// 	width: 100%;
-		// 	margin-bottom: 0;
-		// }
-		// .shadow {
-		// 	width: 45%;
-		// }
-
+	.hero {
+		.content {
+			.floating-wrapper {
+				width: clamp(160px, 35%, 800px);
+			}
+		}
 		.content {
 			// background: red;
 			gap: 3em;
+			#cta-button {
+				padding-top: 0;
+				margin-top: 0;
+			}
 			.floating-wrapper {
-				width: 30%;
+				width: 50%;
 				align-items: center;
 			}
 			.text {
 				width: 70%;
-				.icons-container {
-					// flex-direction: column;
-					width: fit-content;
-					margin: 2em auto;
-				}
 			}
 		}
 	}
@@ -149,13 +124,13 @@
 
 @include u.breakpoint-down(medium) {
 	#homeTwo {
-		.landing-header {
+		.hero {
+			padding: 1.5em;
+			padding-top: 3em;
 			.content {
+				padding: 1em;
 				flex-direction: column-reverse;
-				gap: 2em;
-				.floating-wrapper {
-					width: 100%;
-				}
+				gap: 1em;
 				.text {
 					width: 100%;
 				}
@@ -170,7 +145,6 @@
 		// 	min-height: 300px;
 		// }
 		.floating-wrapper {
-			width: 100%;
 			.shadow {
 				width: 65%;
 			}
@@ -178,7 +152,8 @@
 		section {
 			padding: 5em 1em;
 		}
-		.landing-header {
+		.hero {
+			padding-top: 1em;
 			.content {
 				.img-container {
 					width: 100%;
@@ -186,8 +161,14 @@
 				.text {
 					width: 100%;
 					max-width: 100%;
-					.icons-container {
-						flex-direction: column;
+					h2 {
+						font-size: 2rem;
+					}
+					h3 {
+						font-size: 1.3rem;
+					}
+					h4 {
+						font-size: 1rem;
 					}
 				}
 			}

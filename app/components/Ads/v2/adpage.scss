@@ -1,0 +1,104 @@
+@use "../../../scss//util" as u;
+
+#adpage {
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: var(--three);
+	}
+	p {
+		color: #4d4d4d;
+		strong {
+			// color: red;
+			font-weight: 500;
+		}
+	}
+	.content {
+		flex-direction: column;
+		// padding: 0;
+	}
+	.hero {
+		padding-top: 8em;
+		@include u.breakpoint-down(small) {
+			padding-top: 4em;
+			#cta-button {
+				a {
+					margin-bottom: 2em;
+				}
+			}
+		}
+	}
+	.fees {
+		margin-top: -2em; // pulls section upward to tighten layout
+	}
+	.bio {
+		.content {
+			flex-direction: row;
+			gap: 4em;
+			.bio-text {
+				h2 {
+					width: 100%;
+				}
+				max-width: 50%;
+			}
+		}
+		.img-container {
+			// slight overlap with previous section
+			max-width: 250px;
+			border-radius: 50%;
+		}
+		@include u.breakpoint-down(small) {
+			.content {
+				flex-direction: column;
+				.bio-text {
+					max-width: 100%;
+					h2 {
+						width: 100%;
+					}
+					text-align: center;
+				}
+			}
+		}
+	}
+	section {
+		// min-height: 55vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// padding-bottom: 0;
+		background: linear-gradient(
+			0deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+		// #cta-button {
+		// 	margin: 0;
+		// 	padding: 0;
+		// }
+	}
+	section.alt {
+		background: linear-gradient(
+			0deg,
+			rgba(231, 200, 231, 1) 0%,
+			rgba(252, 243, 232, 1) 100%
+		);
+	}
+}
+/* Landscape phones with limited height */
+@media (orientation: landscape) and (max-height: 430px) {
+	#adpage .hero {
+		padding-top: 2em; /* was 8em */
+	}
+	#adpage .hero h1 {
+		font-size: 1.4rem; /* shrink headline */
+		line-height: 1.25;
+	}
+	#adpage .hero p {
+		font-size: 0.85rem; /* sub-line tweak */
+	}
+	#adpage .hero #cta-button {
+		margin-top: 0;
+		padding: 0;
+	}
+}

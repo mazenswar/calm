@@ -15,7 +15,7 @@ const navItems = [
 		submenu: [
 			{ label: "Specialities", href: "/specialities" },
 			{ label: "KAP", href: "/kap" },
-			{ label: "Fees & Insurance", href: "/insurance" },
+			{ label: "Fees & Insurance", href: "/fees-and-insurance" },
 		],
 	},
 	{ label: "About", href: "/about" },

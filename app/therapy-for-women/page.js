@@ -1,10 +1,5 @@
-import AdPage from "../components/AdPage";
-import WomenText from "./WomenText";
+import Adpage from "../components/Ads/v2/Adpage";
 
 export default function WomenPage() {
-	return (
-		<AdPage>
-			<WomenText />
-		</AdPage>
-	);
+	return <Adpage dem="women" />;
 }

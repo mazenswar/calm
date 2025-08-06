@@ -1,8 +1,24 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function ContactButton() {
+	const [hide, setHide] = useState(false);
+
+	// Hide floating button when hero CTA is visible
+	useEffect(() => {
+		const target = document.getElementById("cta-button");
+		if (!target) return;
+
+		const obs = new IntersectionObserver(
+			([entry]) => setHide(entry.isIntersecting),
+			{ threshold: 0.2 }
+		);
+
+		obs.observe(target);
+		return () => obs.disconnect();
+	}, []);
+
 	function handleGTagTrigger() {
 		if (typeof window !== "undefined") {
 			window.dataLayer = window.dataLayer || [];
@@ -15,7 +31,7 @@ function ContactButton() {
 			onClick={handleGTagTrigger}
 			href="https://calendly.com/tsingh-calmtherapy/15min"
 			id="contact-button"
-			className="fab-consult"
+			className={`fab-consult ${hide ? "hidden" : ""}`}
 			aria-label="Book a consult"
 			target="_blank"
 			rel="noopener"
