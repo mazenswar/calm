@@ -18,6 +18,8 @@ function CTAButton({ text = "Schedule a Free Consultation" }) {
 				href={"https://calendly.com/tsingh-calmtherapy/15min"}
 				className="cta-button link"
 				onClick={handleGTagTrigger}
+				target="_blank"
+				rel="noopener"
 			>
 				{text}
 			</Link>
