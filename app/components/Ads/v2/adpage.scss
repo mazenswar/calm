@@ -6,6 +6,7 @@
 	h3,
 	h4 {
 		color: var(--three);
+		text-align: center;
 	}
 	#cta-button {
 		p {
@@ -39,9 +40,21 @@
 	}
 	.ad__hero {
 		padding-top: 6em;
+		.content {
+			flex-direction: row-reverse;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		}
 		@include u.breakpoint-down(small) {
 			padding-top: 4em;
-
+			.content {
+				flex-direction: column-reverse;
+				img {
+					width: 65%;
+					height: auto;
+				}
+			}
 			#cta-button {
 				a {
 					margin-bottom: 2em;

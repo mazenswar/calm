@@ -209,91 +209,6 @@ function Keta() {
 
 			<section className="keta-box alt">
 				<div className="content">
-					<h2>What to Expect: The KAP Process</h2>
-					<ol className="kap-steps">
-						<li>
-							<div className="step">
-								<h3>Regular Therapy First</h3>
-								<p>
-									Before beginning KAP, you{"'"}ll need to be engaged in weekly
-									therapy with me for at least 12 weeks. This gives us time to
-									build trust, understand your goals, and create a strong
-									foundation.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="step">
-								<h3>Medical Screening and Prescription</h3>
-								<p>
-									I work with Journey Clinical, a platform of licensed
-									prescribers who assess your medical and psychiatric history.
-									If appropriate, they{"'"}ll prescribe sublingual ketamine
-									lozenges, which are shipped to your home.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="step">
-								<h3>Preparation Sessions</h3>
-								<p>
-									We{"'"}ll meet for 5 to 6 preparation sessions focused on:
-								</p>
-								<ul>
-									<li>Clarifying your intentions and goals</li>
-									<li>Understanding the effects of ketamine</li>
-									<li>Developing safety and grounding practices</li>
-									<li>Creating a personalized framework for integration</li>
-								</ul>
-								<p>
-									Each prep session is 45 minutes, and we won{"'"}t move forward
-									until you feel ready.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="step">
-								<h3>Dosing Sessions</h3>
-								<p>
-									These are usually held virtually. You{"'"}ll self-administer
-									the lozenge at home while I support you over a secure video
-									call.
-								</p>
-								<ul>
-									<li>Set up a quiet, private space with calming music</li>
-									<li>A chaperone must be present in your home for safety</li>
-								</ul>
-								<p>
-									If you{"'"}re located nearby, we may offer up to two in-person
-									dosing sessions to begin, based on availability and fit.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="step">
-								<h3>Integration Sessions</h3>
-								<p>
-									After each dosing session, we{"'"}ll meet to help you make
-									sense of what emerged. We{"'"}ll reflect on imagery, emotions,
-									and insights, and explore how to apply them to your life.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div className="step">
-								<h3>Ongoing Medical Follow-Up</h3>
-								<p>
-									Journey Clinical follows up at least quarterly to monitor your
-									progress and manage refills.
-								</p>
-							</div>
-						</li>
-					</ol>
-				</div>
-			</section>
-
-			<section className="keta-box">
-				<div className="content">
 					<div className="subsection">
 						<h2>Cost of Treatment</h2>
 
@@ -355,7 +270,7 @@ function Keta() {
 				</div>
 			</section>
 
-			<section className="keta-box alt">
+			<section className="keta-box">
 				<div className="content">
 					<h2>Safety and Ethical Considerations</h2>
 
@@ -392,7 +307,7 @@ function Keta() {
 				</div>
 			</section>
 
-			<section className="keta-box keta-links">
+			<section className="keta-box alt keta-links">
 				<div className="content">
 					<h2>Further Reading & Resources</h2>
 					<ul>
