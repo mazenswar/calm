@@ -31,7 +31,9 @@ function Hero({ dem }) {
 					<p className="linebreak">{sub}</p>
 					<CTAButton />
 				</div>
-				<Image src={heroImg.src} alt="logo" width={300} height={300} />
+				<div className="ad__hero-image-wrapper">
+					<Image src={heroImg.src} alt="logo" width={300} height={300} />
+				</div>
 			</div>
 		</section>
 	);
