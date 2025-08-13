@@ -2,8 +2,12 @@
 import Link from "next/link";
 import React from "react";
 import "../scss/components/_cta-button.scss";
-
-function CTAButton({ text = "Schedule a Free Consultation" }) {
+const SUBTXT =
+	"Secure, confidential, and no pressure to commit, just a first step.";
+function CTAButton({
+	text = "Schedule a Free Consultation",
+	subtext = SUBTXT,
+}) {
 	function handleGTagTrigger() {
 		if (typeof window !== "undefined") {
 			window.dataLayer = window.dataLayer || [];
@@ -23,9 +27,7 @@ function CTAButton({ text = "Schedule a Free Consultation" }) {
 			>
 				{text}
 			</Link>
-			<p className="cta-subtext">
-				Secure, confidential, and no pressure to commit, just a first step.
-			</p>
+			<p className="cta-subtext">{subtext}</p>
 		</div>
 	);
 }

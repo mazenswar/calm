@@ -5,7 +5,12 @@
 	ul {
 		list-style: none;
 	}
-	background-color: red;
+	.nav-arrow {
+		pointer-events: none;
+		margin-left: 0.5rem;
+		font-size: 0.7em;
+	}
+
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -75,6 +80,11 @@
 		.nav-item {
 			position: relative;
 
+			.nav-link.has-submenu {
+				pointer-events: auto;
+				position: relative;
+				z-index: 2; // Make sure it's on top
+			}
 			.nav-link,
 			.has-submenu {
 				font-size: 1.2em;
@@ -102,9 +112,11 @@
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				background: var(--six);
+				//// wooops
+				background: var(--seven);
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-				border: 1px solid var(--three);
+				border: 1px solid #eee;
 				border-radius: 1em;
 				// margin-top: 0.5em;
 				padding: 1em;
@@ -154,7 +166,10 @@
 			position: relative;
 			overflow: visible;
 			z-index: 0;
-
+			.nav-arrow {
+				display: none;
+				z-index: -999;
+			}
 			.img-container {
 				margin: 0;
 			}
@@ -213,7 +228,7 @@
 						font-size: 1em; // match your link size
 						color: var(--three); // same color as your links
 						position: absolute;
-						right: 30%;
+						right: 40%;
 					}
 					&.open::after {
 						content: "▴"; // knob/up-arrow when open
@@ -262,6 +277,7 @@
 		opacity: 1;
 		visibility: visible;
 		transform: translateY(0);
+
 		li {
 			a {
 				transition: 0.5s;

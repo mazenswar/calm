@@ -43,7 +43,7 @@ function NavItem({ item }) {
 							if (!canHover) setOpen((prev) => !prev);
 						}}
 					>
-						{item.label}
+						{item.label} <span className="nav-arrow">▾</span>
 					</button>
 					<ul className={`submenu${open ? " open" : ""}`}>
 						{item.submenu.map((sub) => (

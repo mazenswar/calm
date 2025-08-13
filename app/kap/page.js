@@ -1,6 +1,6 @@
 import React from "react";
 import Keta from "./Keta";
-import "../scss/components/_kap.scss";
+import "./_kap.scss";
 
 ///////////
 

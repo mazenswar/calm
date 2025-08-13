@@ -41,6 +41,7 @@
 		padding-top: 6em;
 		@include u.breakpoint-down(small) {
 			padding-top: 4em;
+
 			#cta-button {
 				a {
 					margin-bottom: 2em;
@@ -121,5 +122,16 @@
 	#adpage .ad__hero #cta-button {
 		margin-top: 0;
 		padding: 0;
+	}
+}
+
+@include u.breakpoint-down(small) {
+	#adpage {
+		p {
+			font-size: 1.2rem;
+		}
+		h1 {
+			font-size: 1.8rem;
+		}
 	}
 }

@@ -1,0 +1,189 @@
+@use "../scss/util" as u;
+
+.content {
+	flex-direction: column;
+	width: 100%;
+
+	.img-container {
+		width: clamp(200px, 25%, 1000px);
+		margin-bottom: 2em;
+	}
+	.text {
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.subsection {
+		margin: 1.5rem 0;
+	}
+}
+
+#keta {
+	// Header Section
+
+	.content {
+		flex-direction: row-reverse;
+		width: 100%;
+	}
+	.keta-box.alt {
+		background: linear-gradient(
+			180deg,
+			rgba(231, 200, 231, 1) 0%,
+			rgba(252, 243, 232, 1) 100%
+		);
+	}
+	.keta-header {
+		width: 100%;
+		.content {
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 2em;
+		}
+
+		background: linear-gradient(
+			180deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+		// padding: 2em;
+	}
+	// Keta Box
+	.keta-box {
+		width: 100%;
+		.content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		* {
+			line-height: 1.5;
+		}
+		background: linear-gradient(
+			180deg,
+			rgba(252, 243, 232, 1) 0%,
+			rgba(231, 200, 231, 1) 100%
+		);
+
+		padding: 2em;
+
+		ul {
+			margin-bottom: 2em;
+			li {
+				margin: 2rem 0;
+				line-height: 1.5;
+			}
+		}
+	}
+	.keta-links {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding: 5rem 0;
+		ul {
+			li {
+				margin: 1rem 0;
+			}
+		}
+	}
+	// Typography
+	h1,
+	h2 {
+		color: var(--three);
+		// margin-bottom: 0.5em;
+		width: 100%;
+		text-align: center;
+		font-size: 2em;
+	}
+	h3 {
+		color: var(--three);
+		font-size: 1.7rem;
+		width: 100%;
+		// text-align: center;
+	}
+	i {
+		color: var(--three);
+		font-size: 1.5rem;
+	}
+	p,
+	li {
+		color: #4d4d4d;
+		font-size: 1.4rem;
+	}
+	p {
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
+	strong {
+		color: var(--three);
+	}
+	ol {
+		margin: 0;
+		li {
+			color: var(--three);
+			margin: 2rem 0;
+		}
+		ul {
+			li {
+				color: #4d4d4d;
+				margin: 1rem;
+			}
+		}
+	}
+}
+
+@include u.breakpoint-down(extra-medium) {
+	#keta {
+		.keta-header {
+			.content {
+				flex-direction: column;
+				.text {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@include u.breakpoint-down(small) {
+	#keta {
+		h2 {
+			font-size: 1.7rem;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+		li {
+			margin: 2rem 0;
+			font-size: 1.1rem;
+		}
+		ul,
+		ol {
+			padding: 0;
+			margin: 0;
+			padding-left: 2rem;
+		}
+
+		.keta-header {
+			padding: 2em;
+			.content {
+				flex-direction: column;
+				.img-container {
+					margin-bottom: 2em;
+				}
+			}
+		}
+		.keta-box {
+			ol {
+				padding-left: 1rem;
+			}
+		}
+	}
+}

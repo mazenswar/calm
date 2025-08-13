@@ -13,7 +13,7 @@ export async function GET() {
 			priority: 0.5,
 		},
 		{
-			url: "https://calmtherapy.center/insurance",
+			url: "https://calmtherapy.center/fees-and-insurance",
 			lastModified: new Date().toISOString(),
 			changeFrequency: "monthly",
 			priority: 0.5,
@@ -39,14 +39,20 @@ export async function GET() {
 		{
 			url: "https://calmtherapy.center/contact",
 			lastModified: new Date().toISOString(),
-			changeFrequency: "weekly",
+			changeFrequency: "monthly",
 			priority: 0.8,
 		},
 		{
 			url: "https://calmtherapy.center/about",
 			lastModified: new Date().toISOString(),
-			changeFrequency: "weekly",
+			changeFrequency: "monthly",
 			priority: 0.3,
+		},
+		{
+			url: "https://calmtherapy.center/ketamine-assisted-psychotherapy",
+			lastModified: new Date().toISOString(),
+			changeFrequency: "monthly",
+			priority: 0.4,
 		},
 	];
 

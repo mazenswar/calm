@@ -1,0 +1,73 @@
+@use "../scss/util/" as u;
+
+#ketamine__seo__page {
+	background: linear-gradient(
+		180deg,
+		rgba(252, 243, 232, 1) 0%,
+		rgba(231, 200, 231, 1) 50%,
+		rgba(252, 243, 232, 1) 100%
+	);
+	#cta-button {
+		margin: 3rem 0;
+	}
+	section {
+		ol {
+			margin: 0;
+			padding: 0;
+		}
+		h1,
+		h2,
+		h3 {
+			color: var(--three);
+		}
+		p,
+		li {
+			color: #4d4d4d;
+			font-size: 1.3rem;
+			margin: 0;
+		}
+		.content {
+			flex-direction: column;
+			padding: 3rem 0;
+			max-width: 800px;
+			* {
+				text-align: center;
+				line-height: 1.5;
+			}
+			li {
+				display: flex;
+				flex-direction: column;
+				justify-items: center;
+				align-items: flex-start;
+				gap: 0.5rem;
+				text-align: left;
+				color: var(--four);
+				margin: 2rem 0;
+				p {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+@include u.breakpoint-down(small) {
+	#ketamine__seo__page {
+		.content {
+			p {
+				font-size: 1.1rem;
+			}
+		}
+		section {
+			.content {
+				li {
+					font-size: 1.1rem;
+					align-items: center;
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

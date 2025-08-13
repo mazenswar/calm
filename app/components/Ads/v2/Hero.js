@@ -14,8 +14,8 @@ function Hero({ dem }) {
 			sub: "Inclusive, evidence-based support · Online sessions · NY · NJ · PA",
 		},
 		clinical: {
-			title: "Evidence-Based Help for Stress & OCD",
-			sub: "ERP, CBT & integrative methods · Online · Licensed NY · NJ · PA",
+			title: "Healing Anxiety & Intrusive Thoughts with Care That Goes Deeper",
+			sub: "We specialize in helping adults navigate anxiety, OCD, and intrusive thoughts using a thoughtful blend of evidence-based approaches like ERP and CBT alongside holistic, integrative methods tailored to your unique experience \n\n Online · Licensed NY · NJ · PA",
 		},
 	};
 
@@ -25,7 +25,7 @@ function Hero({ dem }) {
 		<section className="ad__hero">
 			<div className="content">
 				<h1>{title}</h1>
-				<p>{sub}</p>
+				<p className="linebreak">{sub}</p>
 				<CTAButton />
 			</div>
 		</section>

@@ -6,8 +6,8 @@ import Link from "next/link";
 function Keta() {
 	return (
 		<main id="keta">
-			<div className="content">
-				<section className="keta-header">
+			<section className="keta-header">
+				<div className="content">
 					<div className="img-container">
 						<Image
 							src={ketaBrain.src}
@@ -20,301 +20,426 @@ function Keta() {
 					</div>
 					<div className="text">
 						<h1>Ketamine-Assisted Psychotherapy (KAP)</h1>
-						<h3>
-							Integrating science, presence, and inner exploration for healing
-						</h3>
+						<i>A gentle, supported path for inner healing</i>
 						<p>
-							Ketamine-Assisted Psychotherapy offers a unique opportunity to
-							reach parts of the self that may feel inaccessible through talk
-							therapy or traditional treatments. When used in a safe and
-							intentional setting, ketamine can loosen rigid thought patterns,
-							soften internal defenses, and create space for deeper
-							self-understanding.
+							Some parts of ourselves are hard to reach through words alone. For
+							people feeling stuck in depression, anxiety, OCD, or emotional
+							patterns that don{"'"}t respond to talk therapy, KAP offers a
+							different way in.
 						</p>
 						<p>
-							In our work together, KAP is never used as a quick fix. It is a
-							carefully held therapeutic process that includes preparation,
-							dosing, and integration.
+							At CALM Therapy, Ketamine-Assisted Psychotherapy is not a shortcut
+							or a trend. It{"'"}s a careful, grounded process that we offer
+							only after trust and stability have been built through regular
+							therapy. For clients who are ready, ketamine can help loosen
+							deeply embedded defenses, create moments of emotional clarity, and
+							open the door to meaningful transformation.
 						</p>
 					</div>
-				</section>
-				<section className="keta-box">
-					<h2>What Is Ketamine and Why Is It Used?</h2>
+				</div>
+			</section>
+
+			<section className="keta-box alt">
+				<div className="content">
+					<h2>What to Expect: The KAP Process</h2>
+
 					<p>
-						Ketamine is a dissociative anesthetic that has been used safely in
-						medical settings for decades. In recent years, research has shown
-						that, when used in sub-anesthetic doses and paired with
-						psychotherapy, ketamine may provide relief for symptoms of
-						depression, anxiety, OCD, PTSD, and other mental health concerns
-						that have not responded to traditional treatments.
+						Before we begin any work with ketamine, we ask all clients to engage
+						in weekly therapy for at least 6 weeks. These sessions allow us to
+						build a strong foundation of trust and assess whether KAP is the
+						right fit for your needs and goals. If we decide to move forward, we
+						will begin a separate KAP-specific process that includes
+						preparation, dosing, and integration.
 					</p>
-					<p>
-						Ketamine is thought to work by increasing neuroplasticity,
-						disrupting the default mode network in the brain, and facilitating
-						access to previously unconscious thoughts, emotions, and patterns.
-						These shifts can support a more open, flexible state of mind, where
-						healing insights and emotional breakthroughs are more likely to
-						occur.
-					</p>
-				</section>
-				<section className="keta-box">
-					<h2>Is KAP Right for You?</h2>
-					<h3>KAP may be appropriate if you:</h3>
-					<ul>
-						<li>
-							Are struggling with treatment-resistant depression, anxiety, or
-							OCD.
-						</li>
-						<li>Feel stuck in longstanding emotional or cognitive patterns</li>
-						<li>
-							Are open to altered states of consciousness as a therapeutic tool
-						</li>
-						<li>
-							Want to deepen your healing process in a safe, supported, and
-							structured way
-						</li>
-					</ul>
-					<p>
-						While ketamine can open the door to change, the true transformation
-						comes from how you integrate what arises. KAP is not for everyone,
-						and we will assess together whether this is the right path for you.
-					</p>
-				</section>
-				<section className="keta-box">
-					<h2>How It Works: The KAP Process</h2>
-					<p>
-						I partner with{" "}
-						<Link
-							legacyBehavior
-							href="https://www.journeyclinical.com/patients"
-						>
-							<a className="link" target="_blank" rel="noopener noreferrer">
-								Journey Clinical
-							</a>
-						</Link>
-						, a platform of licensed prescribers who evaluate your eligibility
-						for KAP and manage the medical s of treatment. If approved, they
-						prescribe sublingual ketamine lozenges, which are delivered to your
-						home pharmacy.
-					</p>
+
 					<ol>
-						<li>Medical Consultation and Screening</li>
-						<ul>
-							<li>
-								Initial Consultation: Conducted by Journey Clinical to assess
-								your medical and psychiatric history.
-							</li>
-							<li>
-								Prescription: If deemed appropriate, sublingual ketamine
-								lozenges are prescribed and shipped to your home pharmacy.
-							</li>
-						</ul>
-						<li>Preparation Sessions</li>
-						<p>
-							Before any ketamine dosing, we will meet for 5-6 preparation
-							sessions to:
-						</p>
-						<ul>
-							<li>Build trust and establish a strong therapeutic alliance</li>
-							<li>Explore your intentions and goals</li>
-							<li>Clarify any fears, questions, or expectations</li>
-							<li>
-								Develop grounding and coping tools so you feel safe and
-								supported during dosing
-							</li>
-							<li>
-								Duration: Each prep session is 45-mins (like a typical therapy
-								session).
-							</li>
-						</ul>
-						<li>Dosing Sessions</li>
-						<ul>
-							<li>
-								Format: Currently, I offer KAP exclusively via telehealth.
-							</li>
-							<li>
-								Duration: Each dosing session lasts approximately 1.5 to 2.5
-								hours.
-							</li>
-							<li>
-								Setting: You will self-administer the ketamine lozenge in my
-								presence via a secure video call. You{"'"}ll be at your home in
-								a comfortable, reclining position, possibly with an eye mask and
-								calming music.
-							</li>
-							<li>
-								Support: I will be present throughout the session to hold space
-								and provide support as needed.
-							</li>
-						</ul>
-						<p>
-							Safety Note: For remote sessions, a trusted support person
-							(chaperone) must be present in your home. They should be available
-							to check in as needed but are not actively involved in the
-							session.
-						</p>
-						<li>Integration Sessions</li>
-						<p>
-							The integration is one of the most important part of your
-							journeys. These sessions are about making sense of your
-							experience. After each dosing session, we meet for one or more
-							integration sessions to:
-						</p>
-						<ul>
-							<li>
-								Explore themes, images, emotions, or bodily sensations that
-								emerged
-							</li>
-							<li>Process insights and apply them to your daily life</li>
-							<li>
-								Ground the experience through mindfulness or somatic practices
-							</li>
-						</ul>
-						<li>Ongoing Medical Follow-Ups</li>
-						<p>
-							Journey Clinical schedules regular follow-ups (at least once per
-							quarter) to monitor outcomes and prescribe ketamine lozenge
-							refills as appropriate.
-						</p>
+						<li>
+							<h3>Medical Screening</h3>
+							<p>
+								We partner with{" "}
+								<Link
+									href="https://www.journeyclinical.com/patients"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="link"
+								>
+									Journey Clinical
+								</Link>
+								, a platform of licensed prescribers who handle all medical
+								aspects of KAP. If appropriate, they prescribe sublingual
+								ketamine lozenges, which are shipped to your home.
+							</p>
+							<ul>
+								<li>
+									Initial consultation with Journey Clinical to review your
+									medical and psychiatric history
+								</li>
+								<li>
+									If approved, ketamine lozenges are prescribed and delivered
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<h3>KAP Preparation Sessions</h3>
+							<p>
+								Once approved medically, we meet for 5-6 sessions to prepare
+								specifically for your ketamine experiences.
+							</p>
+							<ul>
+								<li>Clarify your goals, hopes, and intentions</li>
+								<li>Discuss concerns, expectations, and practical details</li>
+								<li>
+									Establish grounding and coping tools to support you during
+									sessions
+								</li>
+								<li>
+									Strengthen your ability to navigate altered states with safety
+									and curiosity
+								</li>
+								<li>
+									Each prep session is 45 minutes (like a regular therapy
+									session)
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<h3>Dosing Sessions</h3>
+							<p>
+								Dosing sessions are currently offered virtually. You will take
+								your prescribed ketamine lozenge at home, while we meet together
+								on a secure video call.
+							</p>
+							<ul>
+								<li>Each session lasts about 1.5 to 2.5 hours</li>
+								<li>
+									You will be in a comfortable, quiet setting with optional eye
+									mask and music
+								</li>
+								<li>
+									I will be present throughout to offer support and hold
+									therapeutic space
+								</li>
+							</ul>
+							<p>
+								<strong>Note:</strong> A trusted support person must be
+								physically present in your home during the session for safety.
+								They are not involved in the session but must be available to
+								check in as needed.
+							</p>
+							<p>
+								If distance and availability allow, we may be able to offer up
+								to two in-person dosing sessions at your home at the beginning
+								of your KAP journey. This option will be discussed on a
+								case-by-case basis.
+							</p>
+						</li>
+
+						<li>
+							<h3>Integration Sessions</h3>
+							<p>
+								Integration is where the real transformation happens. After each
+								dosing session, we meet to explore what arose and support the
+								movement of insights into your daily life.
+							</p>
+							<ul>
+								<li>Make sense of visual, emotional, or bodily experiences</li>
+								<li>Reflect on themes, breakthroughs, or challenges</li>
+								<li>Apply the experience to your healing process</li>
+								<li>
+									Use mindfulness, somatic work, or creativity to ground the
+									experience
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<h3>Ongoing Medical Follow-Ups</h3>
+							<p>
+								Journey Clinical handles all follow-up evaluations and
+								prescription refills. They check in with you regularly (at least
+								quarterly) to monitor your progress and adjust care as needed.
+							</p>
+						</li>
 					</ol>
-				</section>
-				<section className="keta-box">
-					<h2>Cost of Treatment</h2>
+				</div>
+			</section>
 
-					<h3>Journey Clinical Costs:</h3>
+			<section className="keta-box">
+				<div className="content">
+					<h2>Is KAP Right for You?</h2>
 
-					<ul>
-						<li>Initial Medical Consultation: $250.</li>
-						<li>Ketamine Medication: $97 (enough for 2 sessions)</li>
-						<li>
-							Follow-Up Medical Consultations: $150 (at least once per quarter)
-						</li>
-						<li>
-							Ketamine Medication Refills: $263 (enough for up to 6 sessions)
-						</li>
-					</ul>
-					<strong>Note: </strong>
-					<p>Medical consultation costs may be covered by insurance.</p>
-				</section>
-				<section className="keta-box">
-					<h2>Psychotherapy Costs:</h2>
+					<p>
+						Ketamine-Assisted Psychotherapy isn{"'"}t a fit for everyone, but it
+						may be a powerful option if you feel stuck and traditional
+						approaches haven{"'"}t helped. It{"'"}s most effective for people
+						who are ready to explore their inner world in a deep, supported way.
+					</p>
+
+					<h3>You might consider KAP if you:</h3>
 					<ul>
 						<li>
-							Preparation and Integration Sessions: Billed at my standard hourly
-							rate.
+							Are struggling with depression, anxiety, or OCD that hasn{"'"}t
+							improved with other treatments
 						</li>
 						<li>
-							Dosing Sessions: Billed at my standard hourly rate; each session
-							lasts approximately 1.5 to 2.5 hours.
+							Feel caught in long-standing emotional patterns that are hard to
+							shift
+						</li>
+						<li>
+							Are open to using altered states of consciousness as part of the
+							healing process
+						</li>
+						<li>
+							Want to go beyond talk therapy and explore root causes in a safe,
+							structured setting
 						</li>
 					</ul>
 
 					<p>
-						Please check our{" "}
-						<Link className="link" href="/insurance">
-							Fees & Insurance
-						</Link>{" "}
-						page for more information
+						We{"'"}ll take time to explore whether this path is right for you.
+						Before beginning, we assess clinical appropriateness and make sure
+						you
+						{"'"}re set up with the support, structure, and clarity you need to
+						benefit from the process.
 					</p>
-				</section>
-				<section className="keta-box">
+				</div>
+			</section>
+
+			<section className="keta-box alt">
+				<div className="content">
+					<h2>What to Expect: The KAP Process</h2>
+					<ol className="kap-steps">
+						<li>
+							<div className="step">
+								<h3>Regular Therapy First</h3>
+								<p>
+									Before beginning KAP, you{"'"}ll need to be engaged in weekly
+									therapy with me for at least 12 weeks. This gives us time to
+									build trust, understand your goals, and create a strong
+									foundation.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div className="step">
+								<h3>Medical Screening and Prescription</h3>
+								<p>
+									I work with Journey Clinical, a platform of licensed
+									prescribers who assess your medical and psychiatric history.
+									If appropriate, they{"'"}ll prescribe sublingual ketamine
+									lozenges, which are shipped to your home.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div className="step">
+								<h3>Preparation Sessions</h3>
+								<p>
+									We{"'"}ll meet for 5 to 6 preparation sessions focused on:
+								</p>
+								<ul>
+									<li>Clarifying your intentions and goals</li>
+									<li>Understanding the effects of ketamine</li>
+									<li>Developing safety and grounding practices</li>
+									<li>Creating a personalized framework for integration</li>
+								</ul>
+								<p>
+									Each prep session is 45 minutes, and we won{"'"}t move forward
+									until you feel ready.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div className="step">
+								<h3>Dosing Sessions</h3>
+								<p>
+									These are usually held virtually. You{"'"}ll self-administer
+									the lozenge at home while I support you over a secure video
+									call.
+								</p>
+								<ul>
+									<li>Set up a quiet, private space with calming music</li>
+									<li>A chaperone must be present in your home for safety</li>
+								</ul>
+								<p>
+									If you{"'"}re located nearby, we may offer up to two in-person
+									dosing sessions to begin, based on availability and fit.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div className="step">
+								<h3>Integration Sessions</h3>
+								<p>
+									After each dosing session, we{"'"}ll meet to help you make
+									sense of what emerged. We{"'"}ll reflect on imagery, emotions,
+									and insights, and explore how to apply them to your life.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div className="step">
+								<h3>Ongoing Medical Follow-Up</h3>
+								<p>
+									Journey Clinical follows up at least quarterly to monitor your
+									progress and manage refills.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+			<section className="keta-box">
+				<div className="content">
+					<div className="subsection">
+						<h2>Cost of Treatment</h2>
+
+						<p>
+							Ketamine-Assisted Psychotherapy involves both medical and
+							therapeutic services. We{"'"}ve outlined the costs below so you
+							can plan accordingly. Please note that medical costs are handled
+							through Journey Clinical, while therapy sessions are billed
+							directly through our practice.
+						</p>
+					</div>
+					<div className="subsection">
+						<h3>Journey Clinical (Medical Costs)</h3>
+						<ul>
+							<li>
+								Initial medical consultation: <strong>$250</strong>
+							</li>
+							<li>
+								Ketamine lozenges (starter dose for 2 sessions):{" "}
+								<strong>$97</strong>
+							</li>
+							<li>
+								Follow-up medical evaluations: <strong>$150</strong> (required
+								at least once per quarter)
+							</li>
+							<li>
+								Refills (up to 6 doses): <strong>$263</strong>
+							</li>
+						</ul>
+						<p>
+							<strong>Note:</strong> Some medical costs may be reimbursed by
+							insurance. Journey Clinical can provide documentation for
+							submission if applicable.
+						</p>
+					</div>
+					<div className="subsection">
+						<h3>Therapy (Our Practice)</h3>
+						<ul>
+							<li>
+								Preparation sessions (5-6 total): billed at our standard hourly
+								rate
+							</li>
+							<li>
+								Dosing sessions: billed hourly (each session is 1.5 to 2.5
+								hours)
+							</li>
+							<li>Integration sessions: billed at our standard hourly rate</li>
+						</ul>
+
+						<p>
+							Please visit our{" "}
+							<Link className="link" href="/fees-and-insurance">
+								Fees & Insurance
+							</Link>{" "}
+							page for details on session rates and out-of-network reimbursement
+							options.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section className="keta-box alt">
+				<div className="content">
 					<h2>Safety and Ethical Considerations</h2>
+
 					<ul>
 						<li>
-							Remote-Only Offering: I currently offer KAP exclusively via
-							telehealth. While some clinicians provide in-person KAP, my
-							practice is fully remote.
+							<strong>Remote-first model:</strong> All KAP sessions are
+							currently conducted via secure telehealth. While some providers
+							offer in-person sessions, our practice is fully virtual for now.
 						</li>
 						<li>
-							Chaperone Requirement: For remote sessions, a trusted support
-							person must be present in your home to ensure safety.
+							<strong>Optional in-person dosing (limited):</strong> For clients
+							who strongly prefer to begin with in-person dosing, we may be able
+							to offer up to two house-call sessions. This option depends on
+							your location, timing, and clinical fit. If available, additional
+							travel fees may apply.
 						</li>
 						<li>
-							Medical Oversight: All medical aspects of KAP are managed by
-							Journey Clinical.
+							<strong>Chaperone support:</strong> For remote dosing, a trusted
+							support person must be present in your home during the session.
+							They do not need to participate, but should be nearby in case of
+							any safety concerns.
 						</li>
 						<li>
-							Ethical Practice: I adhere to all professional guidelines to
-							ensure a safe and ethical therapeutic environment.
+							<strong>Medical oversight:</strong> All medical decisions,
+							including screening, prescribing, and follow-up, are handled by
+							licensed prescribers at Journey Clinical.
+						</li>
+						<li>
+							<strong>Ethical foundation:</strong> I follow all professional and
+							legal guidelines for the safe, ethical, and compassionate delivery
+							of psychedelic-assisted therapy.
 						</li>
 					</ul>
-				</section>
-				<section className="keta-box">
-					<h2>Helpful Resources</h2>
-					<div className="links-container">
-						<Link
-							legacyBehavior
-							href="https://www.journeyclinical.com/patients"
-						>
-							<a className="link" target="_blank" rel="noopener noreferrer">
-								Journey Clinical - For Patients
-							</a>
-						</Link>
-						<Link legacyBehavior href="https://www.journeyclinical.com/kap-101">
-							<a className="link" target="_blank" rel="noopener noreferrer">
-								KAP 101 - Journey Clinical
-							</a>
-						</Link>
-						<Link
-							legacyBehavior
-							href="https://journeyclinical.zendesk.com/hc/en-us/articles/20577809289364-Cost-of-KAP-Treatment"
-						>
-							<a className="link" target="_blank" rel="noopener noreferrer">
-								Cost of KAP Treatment - Journey Clinical
-							</a>
-						</Link>
-					</div>
-				</section>
-				<section className="keta-box useful-links">
-					<h2>Other Helpful Readings and Podcasts</h2>
-					<Link
-						legacyBehavior
-						href="https://maps.org/news/bulletin/paradigms-of-ketamine-treatment-spring-2019/"
-					>
-						<a className="link" target="_blank" rel="noopener noreferrer">
-							Paradigms of Ketamine Treatment by Raquel Bennett, Psy.D. for MAPS
-						</a>
-					</Link>
-					<Link
-						legacyBehavior
-						href="https://www.tandfonline.com/doi/full/10.1080/02791072.2019.1587556"
-					>
-						<a className="link" target="_blank" rel="noopener noreferrer">
-							Ketamine Assisted Psychotherapy (KAP): Patient Demographics,
-							Clinical Data and Outcomes in Three Large Practices Administering
-							Ketamine with Psychotherapy- research study by Jennifer Dore et
-							al, 2018
-						</a>
-					</Link>
-					<Link
-						legacyBehavior
-						href="https://www.townsendletter.com/article/438-ketamine-for-depression-and-mood-disorders/"
-					>
-						<a className="link" target="_blank" rel="noopener noreferrer">
-							Ketamine for Depression and Mood Disorders by Erica Zelfand, ND
-							for Townsend Letter
-						</a>
-					</Link>
-					<Link
-						legacyBehavior
-						href="https://goop.com/wellness/health/ketamine-facilitated-psychotherapy/"
-					>
-						<a className="link" target="_blank" rel="noopener noreferrer">
-							Ketamine-Facilitated Psychotherapy for Trauma, Anxiety, and
-							Depression by goop
-						</a>
-					</Link>
-					<Link
-						legacyBehavior
-						href="https://www.spreaker.com/user/11347814/ketamine-assited-psychotherapy-with-jona"
-					>
-						<a className="link" target="_blank" rel="noopener noreferrer">
-							Ketamine Assisted Psychotherapy with Jonathan Sabbagh of Journey
-							Clinical - Psychology Talk Podcast
-						</a>
-					</Link>
-				</section>
-			</div>
+				</div>
+			</section>
+
+			<section className="keta-box keta-links">
+				<div className="content">
+					<h2>Further Reading & Resources</h2>
+					<ul>
+						<li>
+							<Link
+								href="https://www.journeyclinical.com/patients"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="link"
+							>
+								Journey Clinical - KAP for Patients
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="https://www.journeyclinical.com/resources"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="link"
+							>
+								Journey Clinical - KAP 101 Guide
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="https://maps.org/research-archive/mdma/MDMA-Ketamine_Paradigms_RaquelBennett.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="link"
+							>
+								Paradigms of Ketamine Treatment - Raquel Bennett, Psy.D. (MAPS)
+							</Link>
+						</li>
+						<li>
+							<Link
+								href="https://pubmed.ncbi.nlm.nih.gov/30360952/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="link"
+							>
+								Research Study: KAP Outcomes in Three Large Practices - Dore et
+								al., 2018
+							</Link>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
 	);
 }
