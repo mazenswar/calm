@@ -55,8 +55,8 @@ function KetamineSEOLanding() {
 					<p>
 						KAP combines low-dose ketamine with structured psychotherapy to
 						support emotional healing and inner transformation. Research shows
-						it may help people with depression, anxiety, PTSD, and
-						OCD—especially when traditional therapy hasn{"'"}t been enough.
+						it may help people with depression, anxiety, PTSD, and OCD,
+						especially when other approaches haven{"'"}t led to lasting change.
 					</p>
 					<p>The medicine opens a window. Therapy helps you walk through it.</p>
 				</div>
@@ -67,31 +67,43 @@ function KetamineSEOLanding() {
 					<h2>How It Works</h2>
 					<ol>
 						<li>
+							<strong>Foundational Therapy Sessions</strong>
+							<p>
+								Before beginning ketamine work, clients complete at least six
+								foundational sessions to build trust, explore intentions, and
+								prepare emotionally and practically for dosing.
+							</p>
+						</li>
+						<li>
 							<strong>Medical Screening</strong>
 							<p>
-								We partner with Journey Clinical to review your history and
-								prescribe ketamine if appropriate.
+								We partner with Journey Clinical to conduct a medical
+								evaluation. If approved, they prescribe ketamine lozenges and
+								handle all medical follow-ups.
 							</p>
 						</li>
 						<li>
-							<strong>Preparation Sessions</strong>
+							<strong>Dosing Sessions</strong>
 							<p>
-								Build trust and prepare the groundwork before beginning KAP.
-								Learn how to navigate your experience safely, with 6 sessions
-								before dosing.
+								Held virtually with your therapist present via secure video. A
+								support person must be home during the session. Most clients
+								complete eight dosing sessions.
 							</p>
 						</li>
 						<li>
-							<strong>Dosing</strong>
+							<strong>Integration Sessions</strong>
 							<p>
-								Held virtually with a therapist present throughout. In select
-								cases, in-person sessions may be available.
+								We meet after each dose (typically within 24–72 hours) to
+								process insights, support meaning-making, and apply the
+								experience to your healing work.
 							</p>
 						</li>
 						<li>
-							<strong>Integration</strong>
+							<strong>Ongoing Support</strong>
 							<p>
-								Make sense of what came up and apply insights to everyday life.
+								After the initial series, clients may return for booster
+								sessions every 6–8 weeks and continue therapy as needed to
+								support long-term integration.
 							</p>
 						</li>
 					</ol>
@@ -114,12 +126,12 @@ function KetamineSEOLanding() {
 				<div className="content">
 					<h2>Is Ketamine Therapy Right for You?</h2>
 					<ul>
+						<li>You{"'"}ve tried therapy or medication but still feel stuck</li>
+						<li>You{"'"}re addressing anxiety, depression, OCD, or trauma</li>
 						<li>
-							You{"'"}ve tried talk therapy or medication but still feel stuck
+							You{"'"}re open to using altered states of consciousness as part
+							of healing
 						</li>
-						<li>You struggle with anxiety, depression, OCD, or trauma</li>
-						<li>You{"'"}re open to non-ordinary states as part of healing</li>
-						<li>You want to explore yourself more deeply, with support</li>
 					</ul>
 					<p>We{"'"}ll help you assess whether this is a good fit.</p>
 				</div>
