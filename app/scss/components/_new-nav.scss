@@ -228,7 +228,7 @@
 						font-size: 1em; // match your link size
 						color: var(--three); // same color as your links
 						position: absolute;
-						right: 40%;
+						right: 30%;
 					}
 					&.open::after {
 						content: "▴"; // knob/up-arrow when open
