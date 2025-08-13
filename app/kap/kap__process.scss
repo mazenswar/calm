@@ -1,0 +1,33 @@
+table {
+	// width: 100%;
+	border-collapse: collapse;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+thead {
+	background-color: var(--three);
+	// opacity: 0.3;
+	th {
+		color: ivory;
+	}
+}
+
+th,
+td {
+	padding: 1rem 1.25rem;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+}
+
+th {
+	font-weight: 600;
+	color: #4d4d4d;
+}
+
+tbody tr:last-child td {
+	border-bottom: none;
+}

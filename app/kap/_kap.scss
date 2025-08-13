@@ -3,7 +3,13 @@
 .content {
 	flex-direction: column;
 	width: 100%;
-
+	div {
+		padding: 2rem 0;
+	}
+	.subhead {
+		width: 100%;
+		text-align: center;
+	}
 	.img-container {
 		width: clamp(200px, 25%, 1000px);
 		margin-bottom: 2em;
@@ -24,7 +30,9 @@
 	// Header Section
 
 	.content {
-		flex-direction: row-reverse;
+		// flex-direction: row-reverse;
+		justify-content: flex-start;
+		align-items: flex-start;
 		width: 100%;
 	}
 	.keta-box.alt {
@@ -36,6 +44,7 @@
 	}
 	.keta-header {
 		width: 100%;
+		padding-bottom: 0;
 		.content {
 			flex-direction: row-reverse;
 			flex-wrap: wrap;
@@ -170,19 +179,40 @@
 			margin: 0;
 			padding-left: 2rem;
 		}
-
+		.content {
+			div {
+				padding: 0;
+			}
+			.investment-summary {
+				margin: 2rem 0;
+				.muted {
+					font-size: 1rem;
+				}
+			}
+		}
 		.keta-header {
 			padding: 2em;
+
 			.content {
 				flex-direction: column;
+				.text {
+					padding: 0;
+				}
 				.img-container {
-					margin-bottom: 2em;
+					margin: 0;
+					padding: 0;
+					// margin-bottom: 2em;
 				}
 			}
 		}
 		.keta-box {
 			ol {
 				padding-left: 1rem;
+			}
+			ul {
+				li {
+					margin: 1rem 0;
+				}
 			}
 		}
 	}
