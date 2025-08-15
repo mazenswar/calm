@@ -8,6 +8,7 @@
 		color: var(--three);
 		text-align: center;
 	}
+
 	#cta-button {
 		p {
 			font-size: inherit;
@@ -40,6 +41,9 @@
 	}
 	.ad__hero {
 		padding-top: 6em;
+		.link {
+			font-size: inherit;
+		}
 		.content {
 			flex-direction: row-reverse;
 			justify-content: center;

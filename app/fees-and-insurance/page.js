@@ -9,14 +9,14 @@ export const metadata = {
 	description:
 		"Learn about session fees and out-of-network insurance reimbursement for virtual therapy with CALM Therapy. We offer transparent pricing and support you in navigating your benefits.",
 	alternates: {
-		canonical: "https://calmtherapy.center/insurance",
+		canonical: "https://calmtherapy.center/fees-and-insurance",
 	},
 	openGraph: {
 		title:
 			"Fees & Insurance | CALM Therapy (Center for Anxiety and Life Management)",
 		description:
 			"Learn about session fees and out-of-network insurance reimbursement for virtual therapy with CALM Therapy. We offer transparent pricing and support you in navigating your benefits.",
-		url: "https://calmtherapy.center/insurance",
+		url: "https://calmtherapy.center/fees-and-insurance",
 		siteName: "CALM Therapy",
 		type: "website",
 		images: [
@@ -89,7 +89,7 @@ const jsonLD = {
 				price: 250,
 			},
 		],
-		url: "https://calmtherapy.center/insurance",
+		url: "https://calmtherapy.center/fees-and-insurance",
 	},
 };
 

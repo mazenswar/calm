@@ -21,9 +21,9 @@ function Bio() {
 					<p>
 						PhD psychologist integrating exposure, somatic, and mindfulness
 						approaches to help high-achieving adults calm intrusive thoughts,
-						reduce anxiety, and reconnect with meaning. Licensed in NY, NJ, and
-						PA; 7+ years supporting clients through evidence-based, culturally
-						attuned care.
+						reduce anxiety, and reconnect with meaning. Licensed in NY, NJ, PA
+						and over 40 other PSYPACT-participating states.; 7+ years supporting
+						clients through evidence-based, culturally attuned care.
 					</p>
 				</div>
 			</div>

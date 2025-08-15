@@ -38,7 +38,7 @@ export default function BookingSection({ setFormState }) {
 						need. You{"'"}ll receive a receipt (called a superbill) after each
 						session to submit to your insurance for potential reimbursement. For
 						more infomation please visit our{" "}
-						<Link className="link" href="/insurance">
+						<Link className="link" href="/fees-and-insurance">
 							Fees & Insurance
 						</Link>{" "}
 						page

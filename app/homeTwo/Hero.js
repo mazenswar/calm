@@ -4,6 +4,7 @@ import bb1 from "./assets/bb1(small).webp";
 
 import CTAButton from "../components/CTAButton";
 import "./hero.scss";
+import Link from "next/link";
 
 function Hero() {
 	return (
@@ -18,10 +19,15 @@ function Hero() {
 						spiritual uncertainty, or emotional burnout, and seeking meaningful
 						change.
 					</p>
+					<h4 className="sub">
+						Online Therapy ·{" "}
+						<Link href="/where-we-serve" className="link">
+							44 States
+						</Link>{" "}
+						· East-Coast Based
+					</h4>
 
-					<h4 className="sub">Online sessions • Licensed in NY · NJ · PA</h4>
-
-					<CTAButton />
+					<CTAButton text="Book a 15-min Consult" subtext="" />
 				</div>
 				<div className="floating-wrapper">
 					<div className="img-container">

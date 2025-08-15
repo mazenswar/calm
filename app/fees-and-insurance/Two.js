@@ -6,13 +6,13 @@ export const metadata = {
 		"Information about why we do not directly take insurance and how to get reimbursed by your insurance provider for our services",
 	keywords: "insurance, out-of-network provider, reimbursement",
 	alternates: {
-		canonical: "https://calmtherapy.center/insurance",
+		canonical: "https://calmtherapy.center/fees-and-insurance",
 	},
 	openGraph: {
 		title: "Insurance Information",
 		description:
 			"Information about why we do not directly take insurance and how to get reimbursed by your insurance provider for our services",
-		url: "https://calmtherapy.center/insurance",
+		url: "https://calmtherapy.center/fees-and-insurance",
 		siteName: "CALM Therapy",
 		locale: "en_US",
 		type: "website",
