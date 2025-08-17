@@ -18,7 +18,7 @@ function WomenCopy() {
 					rel="noopener noreferrer"
 					className="link"
 				>
-					44 states
+					44 U.S. states and territories
 				</Link>{" "}
 				through PSYPACT.
 			</p>
@@ -40,7 +40,7 @@ function POCCopy() {
 					rel="noopener noreferrer"
 					className="link"
 				>
-					44 states
+					44 U.S. states and territories
 				</Link>{" "}
 				through PSYPACT.
 			</p>
@@ -67,7 +67,7 @@ function ClinicalCopy() {
 					rel="noopener noreferrer"
 					className="link"
 				>
-					44 states
+					44 U.S. states and territories
 				</Link>{" "}
 				through PSYPACT.
 			</p>
