@@ -14,7 +14,7 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy branding and specialities overview",
@@ -26,7 +26,7 @@ export const metadata = {
 		title: "Specialities | CALM Therapy",
 		description:
 			"Explore therapy services tailored for anxiety, mood challenges, life transitions, and spiritual growth. Virtual therapy in NJ, NY, and PA.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {
 		canonical: "https://calmtherapy.center/specialities",

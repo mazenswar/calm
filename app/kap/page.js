@@ -6,19 +6,19 @@ import "./_kap.scss";
 
 export const metadata = {
 	title:
-		"Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy - A Gentle Path to Emotional Healing",
+		"Ketamine-Assisted Psychotherapy (KAP) | Virtual Therapy in 44 States | CALM Therapy",
 	description:
-		"Learn how ketamine-assisted psychotherapy (KAP) at CALM Therapy can support emotional healing, anxiety relief, and self-discovery. We offer intentional, trauma-informed KAP for adults seeking transformation and long-term change.",
+		"Explore virtual ketamine-assisted psychotherapy (KAP) at CALM Therapy — a trauma-informed, spiritually grounded path to healing anxiety, OCD, and emotional stuckness. Available to adults in 44 PSYPACT-participating states and licensed in NY, NJ, and PA.",
 	openGraph: {
 		title:
-			"Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy - A Gentle Path to Emotional Healing",
+			"Ketamine-Assisted Psychotherapy (KAP) | Virtual Therapy in 44 States | CALM Therapy",
 		description:
-			"Explore KAP at CALM Therapy: evidence-based, spiritually grounded ketamine-assisted psychotherapy for individuals navigating anxiety, OCD, and emotional stuckness.",
+			"Explore virtual KAP at CALM Therapy: evidence-based and spiritually grounded care for anxiety, OCD, and emotional stuckness. Available in 44 PSYPACT states and licensed in NY, NJ, PA.",
 		url: "https://calmtherapy.center/kap",
 		type: "website",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy social preview image",
@@ -29,8 +29,8 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy",
 		description:
-			"CALM Therapy offers integrative ketamine-assisted psychotherapy (KAP) to support emotional healing and deeper self-understanding.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+			"CALM Therapy offers virtual, trauma-informed KAP to help adults heal from anxiety, OCD, and emotional stuckness. Now available in 44 states.",
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {
 		canonical: "https://calmtherapy.center/kap",

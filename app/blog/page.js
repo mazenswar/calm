@@ -14,7 +14,7 @@ export const metadata = {
 		siteName: "Center for Anxiety and Life Management (CALM Therapy)",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy",
@@ -27,7 +27,7 @@ export const metadata = {
 		title: "Blog | CALM Therapy",
 		description:
 			"Articles exploring mental wellness, self-understanding, and integrative therapy—rooted in both science and spirit.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {
 		canonical: "https://calmtherapy.center/blog",

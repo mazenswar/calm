@@ -20,7 +20,7 @@ export const metadata = {
 		siteName: "Center for Anxiety and Life Management (CALM Therapy)",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy logo and tagline",
@@ -34,7 +34,7 @@ export const metadata = {
 		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:
 			"Virtual therapy rooted in science and soul. We help adults move through anxiety, burnout, and spiritual inquiry with grounded care. Serving NJ, NY, and PA.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 };
 

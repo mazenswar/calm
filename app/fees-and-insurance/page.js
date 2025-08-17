@@ -21,7 +21,7 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy - Virtual Therapy for Anxiety and Self-Discovery",
@@ -33,7 +33,7 @@ export const metadata = {
 		title: "Fees & Insurance | CALM Therapy",
 		description:
 			"Explore our virtual therapy session rates and how to get reimbursed through your insurance. We'll help you understand your out-of-network benefits.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	robots: {
 		index: true,

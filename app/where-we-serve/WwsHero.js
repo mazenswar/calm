@@ -17,7 +17,7 @@ function WwsHero() {
 						and <strong>Pennsylvania</strong> through our direct licenses, and
 						virtually in{" "}
 						<Link className="link" href="/where-we-serve#states">
-							40+ other states
+							41 other states
 						</Link>{" "}
 						through PSYPACT authorization.
 					</p>

@@ -15,7 +15,7 @@ export const metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy social preview image",
@@ -27,7 +27,7 @@ export const metadata = {
 		title: "Ketamine Therapy Online | CALM Therapy",
 		description:
 			"Safe, evidence-based ketamine-assisted psychotherapy (KAP) from the comfort of home. CALM Therapy offers online support for deep emotional healing.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {
 		canonical: "https://calmtherapy.center/ketamine-assisted-psychotherapy",

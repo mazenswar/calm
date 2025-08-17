@@ -22,7 +22,7 @@ export const metadata = {
 		siteName: "CALM Therapy",
 		images: [
 			{
-				url: "https://calmtherapy.center/social/ss.png",
+				url: "https://calmtherapy.center/social/ss.webp",
 				width: 1200,
 				height: 630,
 				alt: "CALM Therapy logo and branding",
@@ -36,7 +36,7 @@ export const metadata = {
 		title: "About | CALM Therapy",
 		description:
 			"Meet Dr. Tanya Singh, co-founder of CALM Therapy. Explore our unique, integrative approach blending Western psychology with Eastern spiritual insight.",
-		images: ["https://calmtherapy.center/social/ss.png"],
+		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {
 		canonical: "https://calmtherapy.center/about",

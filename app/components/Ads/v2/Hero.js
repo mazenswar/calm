@@ -18,7 +18,7 @@ function WomenCopy() {
 					rel="noopener noreferrer"
 					className="link"
 				>
-					40+ states
+					44 states
 				</Link>{" "}
 				through PSYPACT.
 			</p>
@@ -40,7 +40,7 @@ function POCCopy() {
 					rel="noopener noreferrer"
 					className="link"
 				>
-					40+ states
+					44 states
 				</Link>{" "}
 				through PSYPACT.
 			</p>
@@ -53,9 +53,12 @@ function ClinicalCopy() {
 		<>
 			<h1>Healing Anxiety & Intrusive Thoughts with Care That Goes Deeper</h1>
 			<p className="linebreak">
-				Struggling with anxiety, OCD, or intrusive thoughts? We use
-				evidence-based approaches like ERP and CBT, blended with integrative and
-				holistic care to help you heal at the root. <br />
+				Struggling with OCD, anxiety, or intrusive thoughts? We offer
+				evidence-based care, including gold standard treatments like Exposure
+				and Response Prevention (ERP) therapy, along with newer approaches such
+				as Inference-Based Cognitive Behavioral Therapy (I-CBT) and Acceptance
+				and Commitment Therapy (ACT), blended with integrative and holistic care
+				to help you heal at the root. <br />
 				<br />
 				Online · Licensed in NY · NJ · PA · Available in{" "}
 				<Link
@@ -64,7 +67,7 @@ function ClinicalCopy() {
 					rel="noopener noreferrer"
 					className="link"
 				>
-					40+ states
+					44 states
 				</Link>{" "}
 				through PSYPACT.
 			</p>
