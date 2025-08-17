@@ -21,9 +21,11 @@ function Footer() {
 					<div className="contact-info">
 						<span>Center for Anxiety and Life Management (CALM Therapy)</span>
 						<p style={{ maxWidth: "600px" }}>
-							Offering virtual, integrative therapy to thoughtful adults in New
-							York, New Jersey, Pennsylvania, and over 40 other
-							PSYPACT-participating states.
+							Virtual, integrative therapy for thoughtful adults in{" "}
+							<Link href="/where-we-serve" className="link">
+								44 U.S. states and territories
+							</Link>
+							. East Coast-based practice grounded in care and clarity.
 						</p>
 						<Link className="link" href="tel: 9145704196">
 							(914) 570-4196

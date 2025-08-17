@@ -9,15 +9,15 @@ function WwsHero() {
 			<div className="content">
 				<div className="text">
 					<h1 className="center-title">
-						Online Therapy Available in Over 40 States
+						Online Therapy Available in 44 U.S. States and Territories
 					</h1>
 					<p>
-						We provide online therapy to adults across the country, including
+						We provide virtual therapy to adults across the country, including
 						clients in <strong>New York</strong>, <strong>New Jersey</strong>,
 						and <strong>Pennsylvania</strong> through our direct licenses, and
-						virtually in{" "}
+						in{" "}
 						<Link className="link" href="/where-we-serve#states">
-							41 other states
+							41 additional states and territories
 						</Link>{" "}
 						through PSYPACT authorization.
 					</p>

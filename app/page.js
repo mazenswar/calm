@@ -4,7 +4,7 @@ import HomeTwo from "./homeTwo/HomeTwo";
 export const metadata = {
 	title: "Center for Anxiety and Life Management (CALM Therapy)",
 	description:
-		"Offering virtual therapy for adults navigating anxiety, OCD, perfectionism, and spiritual inquiry. Our integrative approach combines evidence-based psychology with Eastern wisdom traditions. Licensed in NJ, NY, and PA.",
+		"Virtual therapy for adults in 44 states. CALM Therapy helps with anxiety, OCD, and emotional overwhelm through an integrative approach rooted in science and soul. Based on the East Coast.",
 	alternates: {
 		canonical: "https://calmtherapy.center",
 	},
@@ -15,7 +15,7 @@ export const metadata = {
 	openGraph: {
 		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:
-			"Offering virtual therapy for adults navigating anxiety, OCD, perfectionism, and spiritual inquiry. Our integrative approach combines evidence-based psychology with Eastern wisdom traditions. Licensed in NJ, NY, and PA.",
+			"Virtual therapy for adults in 44 states. CALM Therapy helps with anxiety, OCD, and emotional overwhelm through an integrative approach rooted in science and soul. Based on the East Coast.",
 		url: "https://calmtherapy.center",
 		siteName: "Center for Anxiety and Life Management (CALM Therapy)",
 		images: [
@@ -33,7 +33,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:
-			"Virtual therapy rooted in science and soul. We help adults move through anxiety, burnout, and spiritual inquiry with grounded care. Serving NJ, NY, and PA.",
+			"Online therapy across 44 states, rooted in science and soul. Supporting adults through anxiety, burnout, and spiritual inquiry. East Coast-based and trauma-informed.",
 		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 };
@@ -58,7 +58,6 @@ const jsonLd = {
 	],
 	sameAs: [
 		"https://www.linkedin.com/company/center-for-anxiety-and-life-management-calm-therapy",
-		"https://www.psychologytoday.com/us/therapists/tanya-singh-edison-nj/1338674",
 		"https://zencare.co/provider/therapist/tanya-singh",
 	],
 	areaServed: [
@@ -74,6 +73,35 @@ const jsonLd = {
 			"@type": "State",
 			name: "Pennsylvania",
 		},
+		{
+			"@type": "State",
+			name: "Connecticut",
+		},
+		{
+			"@type": "State",
+			name: "Maryland",
+		},
+		{
+			"@type": "State",
+			name: "Virginia",
+		},
+		{
+			"@type": "State",
+			name: "Georgia",
+		},
+		{
+			"@type": "State",
+			name: "Minnesota",
+		},
+		{
+			"@type": "State",
+			name: "Illinois",
+		},
+		{
+			"@type": "State",
+			name: "Texas",
+		},
+		// Add remaining PSYPACT states as needed
 	],
 	availableLanguage: ["English"],
 	contactPoint: {

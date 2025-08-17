@@ -15,16 +15,16 @@ function Hero() {
 						You{"'"}re not broken. You{"'"}re becoming.
 					</h2>
 					<p>
-						A space for thoughtful adults navigating anxiety, perfectionism,
-						spiritual uncertainty, or emotional burnout, and seeking meaningful
-						change.
+						Virtual therapy for thoughtful adults seeking lasting change while
+						navigating anxiety, perfectionism, spiritual uncertainty, or
+						emotional burnout.
 					</p>
 					<h4 className="sub">
-						Online Therapy ·{" "}
+						Virtual Therapy in{" "}
 						<Link href="/where-we-serve" className="link">
-							44 States
+							44 U.S. states and territories
 						</Link>{" "}
-						· East-Coast Based
+						· East Coast-based
 					</h4>
 
 					<CTAButton text="Book a 15-min Consult" subtext="" />

@@ -61,11 +61,13 @@ function States() {
 	return (
 		<section className="state__coverage" id="states">
 			<div className="content">
-				<h2 className="center-title">Where We{"'"}re Licensed to Practice</h2>
+				<h2 className="center-title">
+					Where We{"'"}re Licensed to Practice in the U.S.
+				</h2>
 				<p>
-					We offer virtual therapy to adults across the states listed below. All
-					sessions are held remotely; in-person therapy is not available at this
-					time.
+					We provide virtual therapy to adults across 44 U.S. states and
+					territories. All sessions are conducted remotely; in-person therapy is
+					not currently offered.
 				</p>
 				<p>Use the map or search below to see if we serve your state.</p>
 
