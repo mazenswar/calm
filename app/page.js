@@ -4,7 +4,7 @@ import HomeTwo from "./homeTwo/HomeTwo";
 export const metadata = {
 	title: "Center for Anxiety and Life Management (CALM Therapy)",
 	description:
-		"Virtual therapy for adults in 44 states. CALM Therapy helps with anxiety, OCD, and emotional overwhelm through an integrative approach rooted in science and soul. Based on the East Coast.",
+		"Virtual therapy for adults in 43 states. CALM Therapy helps with anxiety, OCD, and emotional overwhelm through an integrative approach rooted in science and soul. Based on the East Coast.",
 	alternates: {
 		canonical: "https://calmtherapy.center",
 	},
@@ -15,7 +15,7 @@ export const metadata = {
 	openGraph: {
 		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:
-			"Virtual therapy for adults in 44 states. CALM Therapy helps with anxiety, OCD, and emotional overwhelm through an integrative approach rooted in science and soul. Based on the East Coast.",
+			"Virtual therapy for adults in 43 states. CALM Therapy helps with anxiety, OCD, and emotional overwhelm through an integrative approach rooted in science and soul. Based on the East Coast.",
 		url: "https://calmtherapy.center",
 		siteName: "Center for Anxiety and Life Management (CALM Therapy)",
 		images: [
@@ -33,7 +33,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Center for Anxiety and Life Management (CALM Therapy)",
 		description:
-			"Online therapy across 44 states, rooted in science and soul. Supporting adults through anxiety, burnout, and spiritual inquiry. East Coast-based and trauma-informed.",
+			"Online therapy across 43 states, rooted in science and soul. Supporting adults through anxiety, burnout, and spiritual inquiry. East Coast-based and trauma-informed.",
 		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 };

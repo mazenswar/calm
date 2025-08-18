@@ -23,7 +23,7 @@ function Footer() {
 						<p style={{ maxWidth: "600px" }}>
 							Virtual, integrative therapy for thoughtful adults in{" "}
 							<Link href="/where-we-serve" className="link">
-								44 U.S. states and territories
+								43 U.S. states and jurisdictions
 							</Link>
 							. East Coast-based practice grounded in care and clarity.
 						</p>

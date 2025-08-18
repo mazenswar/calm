@@ -5,6 +5,7 @@ import bb1 from "./assets/bb1(small).webp";
 import CTAButton from "../components/CTAButton";
 import "./hero.scss";
 import Link from "next/link";
+import CalendlyCTA from "../components/CalendlyCTA";
 
 function Hero() {
 	return (
@@ -22,12 +23,12 @@ function Hero() {
 					<h4 className="sub">
 						Virtual Therapy in{" "}
 						<Link href="/where-we-serve" className="link">
-							44 U.S. states and territories
+							43 U.S. states and jurisdictions
 						</Link>{" "}
 						· East Coast-based
 					</h4>
 
-					<CTAButton text="Book a 15-min Consult" subtext="" />
+					<CalendlyCTA />
 				</div>
 				<div className="floating-wrapper">
 					<div className="img-container">

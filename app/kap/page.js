@@ -6,14 +6,14 @@ import "./_kap.scss";
 
 export const metadata = {
 	title:
-		"Ketamine-Assisted Psychotherapy (KAP) | Virtual Therapy in 44 States | CALM Therapy",
+		"Ketamine-Assisted Psychotherapy (KAP) | Virtual Therapy in 43 States | CALM Therapy",
 	description:
-		"Explore virtual ketamine-assisted psychotherapy (KAP) at CALM Therapy — a trauma-informed, spiritually grounded path to healing anxiety, OCD, and emotional stuckness. Available to adults in 44 PSYPACT-participating states and licensed in NY, NJ, and PA.",
+		"Explore virtual ketamine-assisted psychotherapy (KAP) at CALM Therapy — a trauma-informed, spiritually grounded path to healing anxiety, OCD, and emotional stuckness. Available to adults in 43 PSYPACT-participating states and licensed in NY, NJ, and PA.",
 	openGraph: {
 		title:
-			"Ketamine-Assisted Psychotherapy (KAP) | Virtual Therapy in 44 States | CALM Therapy",
+			"Ketamine-Assisted Psychotherapy (KAP) | Virtual Therapy in 43 States | CALM Therapy",
 		description:
-			"Explore virtual KAP at CALM Therapy: evidence-based and spiritually grounded care for anxiety, OCD, and emotional stuckness. Available in 44 PSYPACT states and licensed in NY, NJ, PA.",
+			"Explore virtual KAP at CALM Therapy: evidence-based and spiritually grounded care for anxiety, OCD, and emotional stuckness. Available in 43 PSYPACT states and licensed in NY, NJ, PA.",
 		url: "https://calmtherapy.center/kap",
 		type: "website",
 		images: [
@@ -29,7 +29,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Ketamine-Assisted Psychotherapy (KAP) | CALM Therapy",
 		description:
-			"CALM Therapy offers virtual, trauma-informed KAP to help adults heal from anxiety, OCD, and emotional stuckness. Now available in 44 states.",
+			"CALM Therapy offers virtual, trauma-informed KAP to help adults heal from anxiety, OCD, and emotional stuckness. Now available in 43 states.",
 		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {

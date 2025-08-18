@@ -6,6 +6,7 @@ import ContactButton from "./components/ContactButton";
 import { Inter, Roboto, Lexend } from "next/font/google";
 
 import Script from "next/script";
+import CalendlyBadge from "./components/CalendlyBadge";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -73,7 +74,8 @@ setTimeout(function(){
 				</noscript>
 				<NewNav />
 
-				<ContactButton />
+				{/* <ContactButton /> */}
+				<CalendlyBadge />
 				{children}
 				<Footer />
 			</body>

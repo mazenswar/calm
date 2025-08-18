@@ -54,6 +54,12 @@ export async function GET() {
 			changeFrequency: "monthly",
 			priority: 0.4,
 		},
+		{
+			url: "https://calmtherapy.center/where-we-serve",
+			lastModified: new Date().toISOString(),
+			changeFrequency: "monthly",
+			priority: 0.6,
+		},
 	];
 
 	const mediumFeed = await fetch(

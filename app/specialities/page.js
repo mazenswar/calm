@@ -4,11 +4,11 @@ import "../scss/components/_specialities.scss";
 export const metadata = {
 	title: "Specialities | CALM Therapy",
 	description:
-		"Explore CALM Therapy’s specialities, including anxiety, OCD, perfectionism, life transitions, and spiritual inquiry. Virtual therapy available in 44 states, licensed in NY, NJ, and PA.",
+		"Explore CALM Therapy’s specialities, including anxiety, OCD, perfectionism, life transitions, and spiritual inquiry. Virtual therapy available in 43 states, licensed in NY, NJ, and PA.",
 	openGraph: {
 		title: "Specialities | CALM Therapy",
 		description:
-			"Explore integrative therapy services for anxiety, mood challenges, and spiritual growth. Based on the East Coast, offering virtual therapy in 44 states.",
+			"Explore integrative therapy services for anxiety, mood challenges, and spiritual growth. Based on the East Coast, offering virtual therapy in 43 states.",
 		url: "https://calmtherapy.center/specialities",
 		siteName: "CALM Therapy",
 		type: "website",
@@ -25,7 +25,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Specialities | CALM Therapy",
 		description:
-			"Integrative therapy for anxiety, OCD, and emotional overwhelm. Virtual sessions in 44 states. Based on the East Coast.",
+			"Integrative therapy for anxiety, OCD, and emotional overwhelm. Virtual sessions in 43 states. Based on the East Coast.",
 		images: ["https://calmtherapy.center/social/ss.webp"],
 	},
 	alternates: {

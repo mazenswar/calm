@@ -65,9 +65,11 @@ function States() {
 					Where We{"'"}re Licensed to Practice in the U.S.
 				</h2>
 				<p>
-					We provide virtual therapy to adults across 44 U.S. states and
-					territories. All sessions are conducted remotely; in-person therapy is
-					not currently offered.
+					CALM Therapy provides online therapy for adults across 43 U.S. states
+					and jurisdictions. We are licensed in New Jersey, New York, and
+					Pennsylvania, and through PSYPACT we also serve clients in Maryland,
+					Connecticut, Virginia, and many other regions. All sessions are
+					remote; in-person therapy is not currently offered.
 				</p>
 				<p>Use the map or search below to see if we serve your state.</p>
 
