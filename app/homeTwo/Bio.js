@@ -20,8 +20,10 @@ function Bio() {
 				<div className="text">
 					<div className="name">
 						<h1 className="center-title">Dr. Tanya Singh</h1>
-						<span>Director & Co-Founder</span>
-						<span>Licensed Clinical Psychologist</span>
+						<span style={{ display: "block" }}>Director & Co-Founder</span>
+						<span style={{ display: "block" }}>
+							Licensed Clinical Psychologist
+						</span>
 					</div>
 					<p>
 						If you{"'"}re feeling stuck, anxious, or disconnected, you don{"'"}t
