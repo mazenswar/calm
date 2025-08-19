@@ -16,6 +16,7 @@ const navItems = [
 			{ label: "Specialities", href: "/specialities" },
 			{ label: "KAP", href: "/kap" },
 			{ label: "Fees & Insurance", href: "/fees-and-insurance" },
+			{ label: "Service Areas", href: "/where-we-serve" },
 		],
 	},
 	{ label: "About", href: "/about" },

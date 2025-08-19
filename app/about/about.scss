@@ -6,21 +6,20 @@
 		margin: 0;
 	}
 	.about-header {
-		background-color: ivory;
+		background: linear-gradient(
+			180deg,
+			rgba(252, 243, 232, 1) 50%,
+			rgba(231, 200, 231, 1) 100%
+		);
 		.header-content-container {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: center;
 			width: 100%;
-			background: linear-gradient(
-				180deg,
-				rgba(252, 243, 232, 1) 50%,
-				rgba(231, 200, 231, 1) 100%
-			);
 			padding: 4em 2em;
 			gap: 2em;
-			border-radius: 1em;
+			// border-radius: 1em;
 		}
 		.intro-card {
 			display: flex;
@@ -112,6 +111,7 @@
 			justify-content: center;
 			align-items: center;
 			background-color: ivory;
+			width: 100%;
 			.content {
 				// width: clamp(300px, 100%, 1200px);
 				// max-width: 1400px;
@@ -208,6 +208,15 @@
 	}
 	/////////////////////////////////////////
 	@include u.breakpoint-down(small) {
+		.about-sections {
+			.section-block {
+				.content {
+					h2 {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
 		.about-header {
 			padding: 0;
 			.header-content-container {

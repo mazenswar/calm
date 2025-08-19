@@ -1,7 +1,8 @@
 import Image from "next/image";
 import cImg from "../assets/contact.webp";
-import CTAButton from "@/app/components/CTAButton";
+
 import Link from "next/link";
+import ClientPortalCTA from "@/app/components/ClientPortalCTA";
 
 export default function BookingSection({ setFormState }) {
 	return (
@@ -43,7 +44,7 @@ export default function BookingSection({ setFormState }) {
 						</Link>{" "}
 						page
 					</p>
-					<CTAButton />
+					<ClientPortalCTA />
 				</div>
 			</div>
 		</section>

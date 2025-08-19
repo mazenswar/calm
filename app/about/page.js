@@ -252,7 +252,12 @@ function About() {
 							<h2 className="linebreak">
 								Ready to Start?{"\n\n"} If you feel drawn to this kind of work,
 								I invite you to{" "}
-								<Link href="/contact" className="link">
+								<Link
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://tanya-singh.clientsecure.me"
+									className="link"
+								>
 									book a consultation
 								</Link>
 								. Let{"'"}s explore whether we{"'"}re a good fit, and how

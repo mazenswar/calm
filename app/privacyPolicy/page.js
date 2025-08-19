@@ -20,24 +20,32 @@ function PrivacyPolicy() {
 						calmtherapy.center
 					</a>
 					.
+					{
+						" We currently operate in 43 states through a combination of direct licensure and participation in PSYPACT, an interstate compact that allows licensed psychologists to practice telepsychology across state lines."
+					}
 				</p>
 
 				<h2>Information We Collect</h2>
 				<p>
-					We do not collect personal information unless you voluntarily submit
-					it through our contact form. The form collects your name, email
-					address, phone number, and message. This information is sent directly
-					to a HIPAA-compliant email inbox and is not stored elsewhere or shared
-					with third parties.
+					We do not collect personal information through this website. When you
+					choose to book a consultation or appointment, you are securely
+					redirected to our SimplePractice client portal—a HIPAA-compliant
+					platform—where you may voluntarily provide your name, contact
+					information, and other relevant details to request an appointment or
+					consultation.
 				</p>
 
 				<h2>Analytics</h2>
 				<p>
-					We use Google Analytics to understand how visitors use our site.
-					Google Analytics collects basic usage data such as your browser type,
-					device, pages visited, and time spent on pages. This data is
-					anonymized and helps us improve our website. You can learn more about
-					how Google handles this data{" "}
+					We use Google Analytics in a privacy-conscious way. We have configured
+					our analytics setup to avoid tracking personal data and do not use
+					advertising cookies or personalization features. Our configuration
+					denies consent for ad_user_data, ad_personalization, and ad_storage by
+					default, while allowing analytics_storage only. This ensures your
+					browsing data is not used for targeted advertising. Google Analytics
+					may collect basic usage data such as your browser type, device, pages
+					visited, and time spent on pages. You can learn more about how Google
+					handles this data{" "}
 					<a
 						href="https://policies.google.com/privacy"
 						target="_blank"
@@ -58,16 +66,17 @@ function PrivacyPolicy() {
 				<h2>Data Sharing and Security</h2>
 				<p>
 					We do not sell, rent, or share your personal information with third
-					parties. Information submitted through the contact form is handled
-					securely via encrypted, HIPAA-compliant email. While we strive to
-					protect your information, no method of transmission over the Internet
-					is 100% secure.
+					parties. Initial appointment bookings occur via SimplePractice, a
+					HIPAA-compliant platform. Ongoing communication for scheduling
+					adjustments may also occur via email or text, depending on client
+					preferences. No client data is stored directly on our website.
 				</p>
 
 				<h2>Children{"'"}s Privacy</h2>
 				<p>
-					This website is not intended for individuals under the age of 13. We
-					do not knowingly collect personal information from children.
+					Our services and website are not intended for individuals under the
+					age of 13. We do not knowingly collect personal information from
+					children.
 				</p>
 
 				<h2>Changes to This Policy</h2>
