@@ -2,10 +2,9 @@ import Image from "next/image";
 import React from "react";
 import bb1 from "./assets/bb1(small).webp";
 
-import CTAButton from "../components/CTAButton";
 import "./hero.scss";
 import Link from "next/link";
-import CalendlyCTA from "../components/CalendlyCTA";
+import ClientPortalCTA from "../components/ClientPortalCTA";
 
 function Hero() {
 	return (
@@ -28,7 +27,7 @@ function Hero() {
 						· East Coast-based
 					</h4>
 
-					<CalendlyCTA />
+					<ClientPortalCTA />
 				</div>
 				<div className="floating-wrapper">
 					<div className="img-container">

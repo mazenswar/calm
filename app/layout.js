@@ -2,25 +2,25 @@ import "./scss/style.scss";
 import Footer from "./components/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
-import ContactButton from "./components/ContactButton";
+
 import { Inter, Roboto, Lexend } from "next/font/google";
 
 import Script from "next/script";
-import CalendlyBadge from "./components/CalendlyBadge";
+import ClientPortalStickyLink from "./components/ClientPortalStickyLink";
 
-const inter = Inter({
-	subsets: ["latin"],
-	weight: ["400", "600"], // add 500/700 if needed
-	display: "swap",
-	variable: "--font-inter",
-});
+// const inter = Inter({
+// 	subsets: ["latin"],
+// 	weight: ["400", "600"], // add 500/700 if needed
+// 	display: "swap",
+// 	variable: "--font-inter",
+// });
 
-const roboto = Roboto({
-	subsets: ["latin"],
-	weight: ["300", "400", "700"], // add 500/700 if needed
-	display: "swap",
-	variable: "--font-roboto",
-});
+// const roboto = Roboto({
+// 	subsets: ["latin"],
+// 	weight: ["300", "400", "700"], // add 500/700 if needed
+// 	display: "swap",
+// 	variable: "--font-roboto",
+// });
 
 const lexend = Lexend({
 	subsets: ["latin"],
@@ -41,6 +41,24 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={lexend.variable}>
 			<head>
+				<Script
+					id="consent-default"
+					strategy="beforeInteractive"
+					dangerouslySetInnerHTML={{
+						__html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+// Default consent: no ads, analytics allowed (adjust if you add a banner)
+gtag('consent', 'default', {
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'ad_storage': 'denied',
+  'analytics_storage': 'granted',
+  'wait_for_update': 500
+});
+    `,
+					}}
+				/>
 				<Script
 					id="gtm-init"
 					strategy="lazyOnload"
@@ -75,7 +93,7 @@ setTimeout(function(){
 				<NewNav />
 
 				{/* <ContactButton /> */}
-				<CalendlyBadge />
+				<ClientPortalStickyLink />
 				{children}
 				<Footer />
 			</body>

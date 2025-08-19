@@ -1,6 +1,9 @@
 import React from "react";
 import "./ketamine.scss";
-import CTAButton from "../components/CTAButton";
+
+import ClientPortalCTA from "../components/ClientPortalCTA";
+import Link from "next/link";
+
 export const metadata = {
 	title:
 		"Ketamine Therapy Online | CALM Therapy - Intentional Healing with KAP",
@@ -38,14 +41,17 @@ function KetamineSEOLanding() {
 		<main id="ketamine__seo__page">
 			<section className="ketamine__hero">
 				<div className="content">
-					<h1>Ketamine-assisted Psychotherapy Therapy in NY, NJ, and PA</h1>
+					<h1>Ketamine-Assisted Psychotherapy Available in 43 U.S. States</h1>
 					<p>
 						Break through depression, anxiety, or OCD with Ketamine-Assisted
 						Psychotherapy (KAP). Safe, virtual treatment led by a licensed
-						psychologist. Serving adults in New York, New Jersey, and
-						Pennsylvania.
+						psychologist. Serving adults across{" "}
+						<Link href="/where-we-serve" className="link">
+							43 U.S. states and jurisdictions
+						</Link>{" "}
+						via secure online sessions.
 					</p>
-					<CTAButton />
+					<ClientPortalCTA />
 				</div>
 			</section>
 
@@ -102,7 +108,7 @@ function KetamineSEOLanding() {
 							<strong>Ongoing Support</strong>
 							<p>
 								After the initial series, clients may return for booster
-								sessions every 6–8 weeks and continue therapy as needed to
+								sessions every 6-8 weeks and continue therapy as needed to
 								support long-term integration.
 							</p>
 						</li>
@@ -141,11 +147,16 @@ function KetamineSEOLanding() {
 				<div className="content">
 					<h2>Start Your Ketamine Therapy Journey</h2>
 					<p>
-						We work with adults across NY, NJ, and PA. You don{"'"}t have to go
-						through this alone. Book a consult and see if KAP is right for you.
+						We work with adults in{" "}
+						<Link href="/where-we-serve" className="link">
+							43 states and jurisdictions
+						</Link>{" "}
+						across the U.S. through PSYPACT and local licensure. You don{"'"}t
+						have to go through this alone. Book a consult and see if KAP is
+						right for you.
 					</p>
 
-					<CTAButton text="Free 15-Minute Consult" subtext="" />
+					<ClientPortalCTA />
 				</div>
 			</section>
 		</main>
