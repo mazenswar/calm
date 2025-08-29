@@ -25,3 +25,20 @@ body,
 // * {
 // 	outline: 1px solid red !important;
 // }
+
+////////////////// TEST 082025
+///
+
+:root {
+	--clr-primary: #6d4acc;
+	--clr-neutral-bg: #f7f4ef;
+	--clr-tint-bg: #eae5ff;
+	--clr-text: #1a1a1a;
+
+	--space-xs: 4px;
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 24px;
+	--space-xl: 48px;
+	--space-xxl: 96px;
+}

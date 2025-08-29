@@ -9,12 +9,14 @@
 	}
 	h3 {
 		color: #4d4d4d;
-		text-align: center;
+
 		margin: 1em 0;
 	}
 	h4 {
 		color: var(--four);
 		margin: 0;
+		width: 100%;
+		text-align: left;
 	}
 	p {
 		font-size: 1.15em;
@@ -102,9 +104,15 @@
 			// border: 10px solid red;
 			h3 {
 				width: 100%;
-				text-align: left;
+				text-align: center;
 				margin: 1em 0;
 			}
+		}
+		p {
+			text-align: center;
+		}
+		h4 {
+			text-align: center;
 		}
 		.specc-section {
 			margin-top: 3em;

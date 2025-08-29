@@ -1,0 +1,119 @@
+/* ----------------------------------------------------------------------
+   TestHome.module.scss  (place in the same directory)
+-----------------------------------------------------------------------*/
+
+.block {
+	background: var(--clr-neutral-bg);
+	padding: var(--space-xxl) 0;
+}
+
+.blockTint {
+	background: var(--clr-tint-bg);
+}
+
+.block__content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--space-lg);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-lg);
+}
+
+/* Hero */
+.blockHero {
+	background:
+		radial-gradient(
+			circle at 120% -40%,
+			rgba(109, 74, 204, 0.15) 0%,
+			rgba(109, 74, 204, 0) 60%
+		),
+		var(--clr-neutral-bg);
+}
+
+.heroCopy {
+	flex: 1;
+}
+
+.heroImg {
+	flex: 1;
+}
+
+@media (min-width: 768px) {
+	.block__content {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+/* Specialty grid */
+.specialtyGrid {
+	display: grid;
+	gap: var(--space-md);
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	list-style: none;
+	padding: 0;
+}
+
+.specialtyCard {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	padding: var(--space-md);
+	text-align: center;
+	background: #fff;
+	border-radius: 4px;
+}
+
+/* Fees */
+.feeTable {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: var(--space-md);
+}
+
+.feeTable th,
+.feeTable td {
+	padding: var(--space-sm);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	text-align: left;
+}
+
+/* Buttons */
+.btnPrimary {
+	display: inline-block;
+	margin-top: var(--space-md);
+	background: var(--clr-primary);
+	color: #fff;
+	padding: var(--space-sm) var(--space-lg);
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.btnSecondary {
+	display: inline-block;
+	color: var(--clr-primary);
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+/* Typography utility classes */
+.h1 {
+	font-family: var(--font-display), serif;
+	font-weight: 400;
+	font-size: clamp(2rem, 4vw + 1rem, 3.2rem);
+	line-height: 1.1;
+	color: var(--clr-text);
+}
+
+.h2 {
+	font-family: var(--font-display), serif;
+	font-weight: 400;
+	font-size: clamp(1.5rem, 2vw + 1rem, 2.4rem);
+	line-height: 1.2;
+	color: var(--clr-text);
+}
+
+.lead {
+	font-size: 1.125rem;
+	line-height: 1.6;
+	font-family: var(--font-body);
+}

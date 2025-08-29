@@ -7,7 +7,7 @@ export const questions = [
 	{
 		id: "two",
 		q: "Do you offer virtual sessions?",
-		a: "Yes. All therapy sessions are currently offered online via secure video conferencing. Many clients find virtual therapy just as effective and more accessible, especially when it fits seamlessly into their day.",
+		a: "Yes. All therapy sessions are offered online via secure video conferencing. Many clients find virtual therapy just as effective and more accessible, especially when it fits seamlessly into their day.",
 	},
 	{
 		id: "three",
@@ -17,12 +17,12 @@ export const questions = [
 	{
 		id: "four",
 		q: "Why don't you accept insurance?",
-		a: "To offer care that's flexible, personalized, and free from diagnostic labels or session limits, I work outside of insurance networks. This allows us to focus on what matters most: your healing. You can still use out-of-network benefits through your insurance provider. For more information, visit the Insurance page.",
+		a: "To offer care that's flexible, personalized, and free from diagnostic labels or session limits, I work outside of insurance networks. This allows us to focus on what matters most: your healing. You may be able to use out-of-network benefits through your insurance provider, depending on your plan. For more information, visit the Insurance page.",
 	},
 	{
 		id: "five",
 		q: "How much do sessions cost?",
-		a: "An Initial intake session (75 minutes) is $420 & Ongoing sessions (45 minutes) are $250 per session. You can find more details about fees and out-of-network reimbursement on the Fees page.",
+		a: "An initial intake session (75 minutes) is $420. Ongoing individual sessions (45 minutes) are $250. You can find more details about fees and out-of-network reimbursement on the Fees page.",
 	},
 	{
 		id: "six",
@@ -32,27 +32,27 @@ export const questions = [
 	{
 		id: "seven",
 		q: "How do I schedule a session?",
-		a: "You can request a free 15-minute consultation using the form on the Contact page. I'll follow up within 24 hours during business days.",
+		a: "You can request a free 15-minute consultation by clicking any of the scheduling buttons visible throughout the site. These include a prominent CTA on the Contact page and a sticky 'Schedule' button in the bottom-right corner. All scheduling is done through our secure SimplePractice portal, where you can choose a time and complete a HIPAA-compliant intake form.",
 	},
 	{
 		id: "eight",
 		q: "Do you work with couples, families, or teens?",
-		a: "At this time, I work with adults and older adolescents (age 16+). I do not currently provide couples or family therapy.",
+		a: "I work with adults and older adolescents (age 16+). I do not currently offer couples or family therapy.",
 	},
 	{
 		id: "nine",
 		q: "How long will I need to be in therapy?",
-		a: "Therapy isn't one-size-fits-all. Some clients come for short-term support around a specific issue, while others stay longer to do deeper work. We'll revisit this together over time, based on your goals and how things are unfolding.",
+		a: "Therapy isn't one-size-fits-all. Some clients seek short-term support for a specific issue, while others stay longer for deeper work. We'll regularly revisit your goals together to ensure therapy continues to serve your needs.",
 	},
 	{
 		id: "ten",
 		q: "What if I need to cancel or reschedule a session?",
-		a: "Please provide at least 24 hours' notice. Sessions canceled with less than 24 hours' notice may be charged in full.",
+		a: "Please provide at least 24 hours' notice to cancel or reschedule a session. Sessions canceled with less than 24 hours' notice may be charged the full session fee.",
 	},
 	{
 		id: "eleven",
 		q: "How will I know if you're the right therapist for me?",
-		a: "That's what the initial consultation is for. It's a chance for us to connect, explore what you're looking for, and see if it feels like a good fit. If not, I'll do my best to offer a referral.",
+		a: "That’s what the free consultation is for. It’s a chance for us to connect, discuss what you're looking for, and see if it feels like a good fit. If it doesn’t, I’ll gladly offer a referral to someone who might be a better match.",
 	},
 	{
 		id: "twelve",

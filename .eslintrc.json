@@ -1,7 +1,19 @@
 {
-	"extends": "next/core-web-vitals",
-	"rules": {
-		"quotes": ["error", "double", { "avoidEscape": true }],
-		"jsx-quotes": ["error", "prefer-double"]
-	}
+ "extends": [
+  "next/core-web-vitals",
+  "plugin:storybook/recommended"
+ ],
+ "rules": {
+  "quotes": [
+   "error",
+   "double",
+   {
+    "avoidEscape": true
+   }
+  ],
+  "jsx-quotes": [
+   "error",
+   "prefer-double"
+  ]
+ }
 }

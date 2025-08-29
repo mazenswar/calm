@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import bb1 from "./assets/bb1(small).webp";
-
 import "./hero.scss";
 import Link from "next/link";
 import ClientPortalCTA from "../components/ClientPortalCTA";
@@ -15,7 +14,7 @@ function Hero() {
 						You{"'"}re not broken. You{"'"}re becoming.
 					</h2>
 					<p>
-						Virtual therapy for thoughtful adults seeking lasting change while
+						Therapy for thoughtful adults seeking lasting change while
 						navigating anxiety, perfectionism, spiritual uncertainty, or
 						emotional burnout.
 					</p>

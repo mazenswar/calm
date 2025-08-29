@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import NewNav from "./components/NewNav";
 
-import { Inter, Roboto, Lexend } from "next/font/google";
+import { Inter, Roboto, Lexend, DM_Serif_Display } from "next/font/google";
 
 import Script from "next/script";
 import ClientPortalStickyLink from "./components/ClientPortalStickyLink";
@@ -39,9 +39,9 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={lexend.variable}>
+		<html lang="en" className={`${lexend.variable}`}>
 			<head>
-				<Script
+				{/* <Script
 					id="consent-default"
 					strategy="beforeInteractive"
 					dangerouslySetInnerHTML={{
@@ -78,7 +78,7 @@ setTimeout(function(){
 }, 5000);
        `,
 					}}
-				/>
+				/> */}
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
 			</head>
 			<body>
