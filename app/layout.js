@@ -40,8 +40,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${lexend.variable}`}>
-			<head>
-				{/* <Script
+			{/* <head>
+				<Script
 					id="consent-default"
 					strategy="beforeInteractive"
 					dangerouslySetInnerHTML={{
@@ -78,9 +78,9 @@ setTimeout(function(){
 }, 5000);
        `,
 					}}
-				/> */}
+				/>
 				<link rel="icon" href="/CALM_E2.png" sizes="any" />
-			</head>
+			</head> */}
 			<body>
 				<noscript>
 					<iframe
